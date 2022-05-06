@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  background-color: #212121;
+  background-color: #0a192ff3;
 }
 .App {
   margin: 0%;
@@ -17,7 +17,6 @@ body {
 .nav-wrapper {
   display: flex;
   align-items: center;
-  background-color: rgba(2, 194, 194, 0.114);
   height: 100%;
   width: 100%;
   padding-left: 30px;
@@ -36,12 +35,12 @@ body {
   text-align: center;
   height: auto;
   width: 100px;
-  color: #ffffff;
+  color: aquamarine;
   text-decoration: none;
 
   font-family: "Lato";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 15px;
 }
 
@@ -55,7 +54,7 @@ body {
 }
 
 .svg-icon {
-  fill: #ffffff;
+  fill: aquamarine;
 }
 
 .wrapper-title-name {
@@ -69,9 +68,10 @@ body {
 .title-name {
   text-align: center;
   width: 80%;
-  color: #ffffff;
+  color: aquamarine;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
 }
+
