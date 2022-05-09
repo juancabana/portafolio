@@ -1,6 +1,7 @@
 .wrapper-ContentAbout {
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 70px - 50px);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +14,7 @@
 
 .title-About {
   padding-left: 50px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: #ccd6f6;
   font-size: 35px;
   display: flex;

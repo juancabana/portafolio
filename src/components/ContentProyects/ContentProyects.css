@@ -1,31 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 .ContentProyects {
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 70px - 50px);
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .title-Proyects {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: #ccd6f6;
   font-size: 35px;
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 .title-Proyects::after {
   content: "";
-  width: 450px;
+  width: 490px;
   height: 1px;
   margin-left: 20px;
   background-color: #ccd6f6;
 }
 .title-Proyects::before {
   content: "";
-  width: 450px;
+  width: 490px;
   height: 1px;
   margin-right: 20px;
   background-color: #ccd6f6;
@@ -49,9 +50,14 @@
   background-color: #112240;
   cursor: pointer;
   padding: 25px;
-  height: 250px;
+  padding-top: 30px;
+  height: 220px;
 }
 
+.card-Proyects:hover{
+  transform: translateY(-7px);
+  transition: all 0.25s;
+}
 .svg-folder {
   width: 60px;
   height: 60px;

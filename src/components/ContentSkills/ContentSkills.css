@@ -1,19 +1,18 @@
 .ContentSkills{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 70px - 50px);
 }
 
 .title-Skills {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #ccd6f6;
     font-size: 35px;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
   }
   .title-Skills::after {

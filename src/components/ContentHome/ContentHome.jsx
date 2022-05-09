@@ -15,6 +15,15 @@ class ContentHome extends Component {
         <h3 className="text-third-line">
           Systems engineering student, fifth semester.
         </h3>
+
+        <a
+          class="email-link"
+          href="mailto:juandaka78@hotmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Contact me
+        </a>
       </div>
     );
   }
