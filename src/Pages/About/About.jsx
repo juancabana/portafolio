@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Header from "../../coponents/Header/Header";
-import ContentAbout from "../../coponents/ContentAbout/ContentAbout";
+import Header from "../../components/Header/Header";
+import ContentAbout from "../../components/ContentAbout/ContentAbout";
 
 class About extends Component{
     render(){
