@@ -6,12 +6,11 @@ class ContentContact extends Component {
     return (
       <div className="ContentContact">
         <div className="wrapperContact">
-          <h3 className="subtitleContact">What's Next?</h3>
+          <h3 className="subtitleContact">Contact me</h3>
           <h1 className="h1-Contact">Get in touch</h1>
           <p className="p-contact">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            sint magnam sit delectus beatae ut dicta, deserunt animi tempore
-            blanditiis.
+            Here you can contact me, I am looking for a job as a front-end web
+            developer, but I really like to learn any technology
           </p>
           <a
             className="email-link"
@@ -19,7 +18,7 @@ class ContentContact extends Component {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Contact me
+            Send email
           </a>
         </div>
       </div>
