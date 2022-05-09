@@ -45,6 +45,7 @@ body {
   font-size: 15px;
 }
 
+
 .img-container {
   background-color: transparent;
   display: flex;
@@ -52,11 +53,14 @@ body {
   justify-content: center;
   height: 100%;
   width: 190px;
+  font-size: 50px;
+  text-decoration: overline;
+  font-family: "Montserrat", sans-serif;
+
+
+  color: aquamarine;
 }
 
-.svg-icon {
-  fill: aquamarine;
-}
 
 .wrapper-title-name {
   display: flex;
