@@ -10,34 +10,40 @@ class ContentAbout extends Component {
           <div className="ContentAbout">
             <div className="paragraphAbout">
               <p className="text-about">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Similique alias ipsa expedita dolor asperiores magni, quis odit
-                modi corporis exercitationem eaque maxime, perferendis commodi.
-                Tempora ab quaerat provident laudantium dolorem.
-                Lorem ipsum<strong className="strong"> dolor sit amet, consectetur adipisicing elit.
-                Similique alias ipsa expedita dolor asperiores</strong> magni, quis odit
-                modi corporis exercitationem eaque maxime, perferendis commodi.
-                Tempora ab quaerat provident laudantium dolorem.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Similique alias ipsa expedita dolor asperiores magni, quis odit
-                modi corporis exercitationem eaque maxime, perferendis commodi.
-                Tempora ab quaerat <strong className="strong"> provident laudantium dolorem.
-                Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit.
-                Similique alias ipsa expedita dolor asperiores magni, quis odit
-                modi corporis exercitationem eaque maxime, perferendis commodi.
-                Tempora ab quaerat provident laudantium dolorem.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Similique alias ipsa expedita dolor asperiores magni, quis odit
-                modi corporis exercitationem <strong className="strong">eaque maxime, perferendis commodi.
-                Tempora ab</strong> quaerat provident laudantium dolorem.
-                Lorem ipsum dolor sit amet.
+                I am a junior frontend developer, in the technologies of:{" "}
+                <strong className="strong">
+                  HTML, CSS, JavaScript and React.
+                </strong>{" "}
+                I am a systems engineering student at Colombia Adventist
+                University. also passionate about design. I love learning new
+                skills every time and perfecting the ones I already have. I like
+                to work in a team, teach other people, I am dedicated and
+                passionate about this world of web programming, respectful and
+                responsible. <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                quam vero debitis, iure error, pariatur magnam veniam iste velit
+                ex nam officia tempore similique! Cum minima id aliquam quo
+                animi.
+                <strong className="strong">
+                  {" "}
+                  provident laudantium dolorem. Lorem
+                </strong>{" "}
+                ipsum dolor sit amet, consectetur adipisicing elit. Similique
+                alias ipsa expedita dolor asperiores magni, quis odit modi
+                corporis exercitationem eaque maxime, perferendis commodi.
+                Tempora ab quaerat provident laudantium dolorem. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Similique alias
+                ipsa expedita dolor asperiores magni, quis odit modi corporis
+                exercitationem{" "}
+                <strong className="strong">
+                  eaque maxime, perferendis commodi. Tempora ab
+                </strong>{" "}
+                quaerat provident laudantium dolorem. Lorem ipsum dolor sit
+                amet.
               </p>
             </div>
             <div className="imageAbout">
-                <div className="imgAbout">
-                    
-                </div>
-                
+              <div className="imgAbout"></div>
             </div>
           </div>
         </div>

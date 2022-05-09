@@ -2,13 +2,19 @@
 import React, { Component } from "react";
 import "./ContentProyects.css";
 
+const enlaceGit = () => {
+  console.log("hi");
+  window.location.assign(
+    "https://github.com/juancabana/ParcialProgWeb"
+  );
+};
 class ContentProyects extends Component {
   render() {
     return (
       <div className="ContentProyects">
         <h2 className="title-Proyects">Proyects</h2>
         <div className="content-cards-proyects">
-          <div className="card-Proyects cardProyect1">
+          <div className="card-Proyects cardProyect1" onClick={enlaceGit}>
             <div className="img-proyect">
               <svg
                 className="folder-img"
