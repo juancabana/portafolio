@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import imgparcial from "./NGAzmNp.jpeg";
 import "./diagonal.css";
-import "./Parcial.js";
+import Parcialjs, { calc } from './Parcial.js';
+
 
 class Diagonal extends Component {
   render() {

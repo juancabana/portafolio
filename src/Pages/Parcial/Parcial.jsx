@@ -4,6 +4,7 @@ import './index.css';
 
 class Parcial extends Component {
   render() {
+    
     return (
       <div className="Parcial">
         <div className="containerParcial">

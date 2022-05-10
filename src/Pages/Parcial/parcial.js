@@ -1,3 +1,9 @@
+import React, { Component } from "react";
+
+class Parcialjs extends Component{
+  render(){
+
+    
 const input = document.getElementById("inputDiagonal");
 
 function calc() {
@@ -31,5 +37,13 @@ function calc() {
     alert("La matriz no es cuadrada");
   }
 }
+    return(
+      <>
+      </>
+    );
+  }
+}
 
-export default calc();
+
+export default Parcialjs;
+export function calc() {};
