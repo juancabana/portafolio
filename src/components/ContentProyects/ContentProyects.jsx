@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./ContentProyects.css";
 
 const enlaceGit = () => {
@@ -38,7 +39,7 @@ class ContentProyects extends Component {
             </div>
           </div>
 
-          <div className="card-Proyects cardProyect2">
+          <Link className="card-Proyects cardProyect2" to="/parcial">
             {" "}
             <div className="img-proyect">
               <svg
@@ -63,7 +64,7 @@ class ContentProyects extends Component {
               <h4>CSS</h4>
               <h4>Javascript</h4>
             </div>
-          </div>
+          </Link>
           <div className="card-Proyects cardProyect3">
             {" "}
             <div className="img-proyect">

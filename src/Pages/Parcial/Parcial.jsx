@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import imgparcial from "./NGAzmNp.jpeg";
 import './index.css';
+import { Link } from "react-router-dom";
 
 class Parcial extends Component {
   render() {
@@ -19,7 +20,7 @@ class Parcial extends Component {
 
             <div className="buttonsParcial">
               <div className="btnParcial btn-diag">
-                <a href="./diagonal.html">Diagonal</a>
+                <Link to="/diagonal">Diagonal</Link>
               </div>
 
               <div className="btnParcial btn-dist">
