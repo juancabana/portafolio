@@ -5,6 +5,8 @@ import About from "../Pages/About/About";
 import Skills from "../Pages/Skills/Skills";
 import Proyects from "../Pages/Proyects/Proyects";
 import Contact from "../Pages/Contact/Contact";
+import Parcial from "../Pages/Parcial/Parcial";
+import Diagonal from "../Pages/Parcial/Diagonal";
 
 
 export default function AppRouter() {
@@ -16,6 +18,9 @@ export default function AppRouter() {
                     <Route path="/skills" element={<Skills/>} />
                     <Route path="/proyects" element={<Proyects/>}/>
                     <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/parcial" element={<Parcial/>}/>
+                    <Route path="/diagonal" element={<Diagonal/>}/>
+
                 </Routes>
             </BrowserRouter>
             
