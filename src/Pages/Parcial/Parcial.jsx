@@ -20,11 +20,11 @@ class Parcial extends Component {
 
             <div className="buttonsParcial">
               <div className="btnParcial btn-diag">
-                <Link to="/diagonal">Diagonal</Link>
+                <Link className="aDiag" to="/diagonal">Diagonal</Link>
               </div>
 
               <div className="btnParcial btn-dist">
-                <a href="#">Distancia</a>
+                <a className="aParcial" >Distancia</a>
               </div>
             </div>
           </div>
