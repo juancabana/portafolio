@@ -11,19 +11,16 @@ class ContentAbout extends Component {
             <div className="paragraphAbout">
               <p className="text-about">
                 I'm a junior front-end developer, the main technologies in which
-                I work are{" "}
-                <strong className="strong">
-                  HTML, CSS, JavaScript and React
-                </strong>
-                , I have managed the version control technology Git. I am a
-                systems engineering student at the Adventist University of
-                Colombia. Also passionate about UI and UX design. I love
-                learning new skills and technologies every time, and perfecting
-                the ones I already handle. I like to work in a team, teach other
-                people what I know, I am dedicated and passionate about this
-                world of web programming, I am also good at generating ideas for
-                problem solving. I have worked under agile development
-                methodologies such as Scrum and Kanban. <br /> <br />
+                I work are HTML, CSS, JavaScript and React , I have managed the
+                version control technology Git. I am a systems engineering
+                student at the Adventist University of Colombia. Also passionate
+                about UI and UX design. I love learning new skills and
+                technologies every time, and perfecting the ones I already
+                handle. I like to work in a team, teach other people what I
+                know, I am dedicated and passionate about this world of web
+                programming, I am also good at generating ideas for problem
+                solving. I have worked under agile development methodologies
+                such as Scrum and Kanban. <br /> <br />
                 <strong className="strong">Experience</strong> <br />
                 Currently I am in charge of the design, layout and development
                 of the new EdSoft platform, I have implemented the front-end of
@@ -31,8 +28,7 @@ class ContentAbout extends Component {
                 and page styles, I am in charge of making requests to the API
                 which is built in GraphQL, I was in charge of the configuration
                 of the front-end architecture of the project. <br /> <br />
-                <strong className="strong">Education</strong> <br />
-                I graduated
+                <strong className="strong">Education</strong> <br />I graduated
                 from high school in 2019, where I graduated as the best high
                 school graduate, because of that I got a scholarship for a year
                 at the Adventist University of Colombia (UNAC), where I am
