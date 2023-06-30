@@ -1,6 +1,6 @@
 .wrapper-ContentAbout {
   width: 100%;
-  height: auto;
+  min-height: calc(100vh - 70px - 50px);
 
   display: flex;
   justify-content: center;

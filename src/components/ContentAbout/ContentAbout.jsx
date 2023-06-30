@@ -10,17 +10,18 @@ class ContentAbout extends Component {
           <div className="ContentAbout">
             <div className="paragraphAbout">
               <p className="text-about">
-                I'm a junior front-end developer, the main technologies in which
-                I work are HTML, CSS, JavaScript and React , I have managed the
-                version control technology Git. I am a systems engineering
-                student at the Adventist University of Colombia. Also passionate
-                about UI and UX design. I love learning new skills and
-                technologies every time, and perfecting the ones I already
-                handle. I like to work in a team, teach other people what I
-                know, I am dedicated and passionate about this world of web
-                programming, I am also good at generating ideas for problem
-                solving. I have worked under agile development methodologies
-                such as Scrum and Kanban. <br /> <br />
+                Frontend and backend web developer, I am a happy, friendly,
+                altruistic person, I like teamwork, good camaraderie, responsible,
+                always willing and eager to learn new technologies and deepen the
+                ones I already know.
+                The technologies I handle are HTML, CSS, Javascript and its
+                versions of ECMAScript (ES6+), Node.js and its NPM package and
+                dependency management system, React.js, typescript, relational
+                database fundamentals with MySQL, Express. js, Passport.js, JSON
+                Web Token (JWT), and I've mostly used Git and Github for version
+                control, although I have some familiarity with Microsoft Azure.
+                I have worked under agile development methodologies such as scrum
+                and canva. <br /> <br />
                 <strong className="strong">Experience</strong> <br />
                 Currently I am in charge of the design, layout and development
                 of the new EdSoft platform, I have implemented the front-end of
