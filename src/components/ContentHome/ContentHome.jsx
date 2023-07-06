@@ -25,7 +25,6 @@ const ContentHome = () => {
   const TextSecondLine = styled('h1')(({ theme }) => ({
     margin: '0%',
     color: '#ccd6f6',
-    fontFamily: '"Quicksand", sans-serif',
     textAlign: 'center',
     fontFamily: '"Roboto Mono", monospace',
     fontWeight: '700',
