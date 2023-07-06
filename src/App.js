@@ -1,5 +1,7 @@
 import AppRouter from "./routes/AppRoutes";
 import { styled } from '@mui/material/styles';
+import './index.css';
+
 
 
 function App() {

@@ -15,7 +15,7 @@ const ContentSkills = () => {
     flexDirection: 'column',
     alignItems: 'center',
     width: '100%',
-    height: 'calc(100vh - 70px - 50px)',
+    height: 'calc(100vh - 69px - 50px)',
   }))
 
   const TittleSkills = styled('div')(({ theme }) => ({

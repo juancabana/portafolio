@@ -5,7 +5,7 @@ const ContentAbout = () => {
 
   const WrapperContentAboutContainer = styled('div')(({ theme }) => ({
     width: '100%',
-    minHeight: 'calc(100vh - 70px - 50px)',
+    minHeight: 'calc(100vh - 69px - 50px)',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',

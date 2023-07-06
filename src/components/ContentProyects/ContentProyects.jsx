@@ -8,7 +8,7 @@ const ContentProyects = () => {
 
   const ContentProyects = styled('div')(({ theme }) => ({
     width: '100%',
-    height: 'calc(100vh - 70px - 50px)',
+    height: 'calc(100vh - 69px - 50px)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

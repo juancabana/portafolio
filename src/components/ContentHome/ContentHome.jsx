@@ -11,7 +11,7 @@ const ContentHome = () => {
     alignItems: 'center',
     backgroundColor: '#0a192f',
     width: '100%',
-    height: 'calc(100vh - 70px - 50px)',
+    height: 'calc(100vh - 69px - 50px)',
   }))
 
   const TextFirstLine = styled('h2')(({ theme }) => ({
@@ -49,9 +49,13 @@ const ContentHome = () => {
     backgroundSize: '200px 250px',
     backgroundPosition: `center calc(50% - 3px)`,
     backgroundColor: 'rgba(255, 0, 0, 0.5)',
-    filter: 'grayscale(100%)',
+    filter: 'grayscale(0%)',
     ':hover': {
-      filter: 'grayscale(0%)',
+      width: '250px',
+    height: '250px',
+    backgroundPosition: `center 50%`,
+    transition: 'all 0.1s',
+
 
     }
   }))
