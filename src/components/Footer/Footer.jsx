@@ -1,14 +1,28 @@
-import React, { Component } from "react";
-import './Footer.css';
+import React from "react";
+import styled from "@emotion/styled";
 
-class Footer extends Component{
-    render(){
-        return(
-            <div className="Footer">
-                <h5 className="content-foter">Designed & built by Juan Cabana.</h5>
-            </div>
-        );
-    }
+const Footer = () => {
+
+    const Footer = styled('div')(({ theme }) => ({
+        height: '50px',
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+    }))
+
+    const ContentFooter = styled('h5')(({ theme }) => ({
+        fontFamily: 'monospace',
+        fontweight: '300',
+        color: '#ccd6f6',
+        margin: '0px',
+    }))
+
+    return (
+        <Footer>
+            <ContentFooter>Designed & built by Juan Cabana.</ContentFooter>
+        </Footer>
+    );
 
 }
 
