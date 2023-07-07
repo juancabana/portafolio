@@ -22,26 +22,30 @@ const ContentAbout = () => {
     
   }))
   const TittleAbout = styled('h2')(({theme}) => ({
-    paddingLeft: '50px',
-    paddingRight: '20px',
+    maxWidth: '1000px',
+    width: '56%',
+    height: '1px',
+    position: 'relative',
     fontFamily: ' monospace',
     color: '#ccd6f6',
     fontSize: '35px',
     display: 'flex',
     alignItems: 'center',
     whiteSpace: 'nowrap',
+    paddingLeft: '50px',
     [theme.breakpoints.down('md')]: {
-      paddingLeft: '20px',    },
-    ':after': {
+      width: 'auto',
+    },
+    // marginTop: '0px',
+    '&::after': {
       content: 'close-quote',
-      width: '330px',
-      height: '1px',
+      width: '100%',
+      height: '100%',
       marginLeft: '20px',
       backgroundColor: '#ccd6f6',
-      [theme.breakpoints.down('md')]: {
-        width: '100%',    
-      },
+      // background-color: lightgray;
     },
+
   }))
 
   const ParagraphAbout = styled('div')(({theme}) => ({

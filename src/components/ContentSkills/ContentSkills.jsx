@@ -17,123 +17,65 @@ const ContentSkills = () => {
     justifyContent: 'center',
     width: '100%',
     minHeight: 'calc(100vh - 50px)',
+
+  }))
+  const WrapperContent = styled('div')(({ theme }) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    boxSizing: 'border-box',
+    alignItems: 'center',
+    minHeight: 'calc(100vh - 50px)',
+    // height: '100%',
+    width: '100%',
+    padding: '0px 1rem',
+    paddingTop: '7rem',
+    // backgroundColor: 'blue',
+
+  }))
+  const ContentCardSkills = styled('div')(({ theme }) => ({
+    maxWidth: '1000px',
+    width: '100%',
+    height: '100%',
+    minHeight: '200px',
+    // gap: '15px',
+    // backgroundColor: 'red',
+    // margin: '0px 1rem',
+
   }))
 
   const TittleSkills = styled('div')(({ theme }) => ({
+    maxWidth: '1000px',
+    width: '100%',
+    height: '1px',
+
+    position: 'relative',
     fontFamily: ' monospace',
     color: '#ccd6f6',
     fontSize: '35px',
     display: 'flex',
     alignItems: 'center',
-    marginTop: '0px',
-    marginBottom: '10px',
+    // marginTop: '0px',
     '&::after': {
       content: 'close-quote',
-      width: '450px',
-      height: '1px',
+      width: '100%',
+      height: '100%',
       marginLeft: '20px',
       backgroundColor: '#ccd6f6',
+      // background-color: lightgray;
     },
-    '&::before': {
-      content: 'close-quote',
-      width: '450px',
-      height: '1px',
-      marginRight: '20px',
-      backgroundColor: '#ccd6f6',
-    }
+
   }))
 
-  const ContentCardSkills = styled('div')(({ theme }) => ({
-    width: '1000px',
-    height: '620px',
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',
-    gridTemplateRows: '1fr 1fr',
-    gap: '15px',
-  }))
 
-  const Cards = styled('div')(({ theme }) => ({
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    paddingTop: '20px',
-    paddingLeft: '10px',
-    paddingRight: '10px',
-  }))
 
-  const ImgCard = styled('img')(({ theme }) => ({
-    height: '90px',
-    width: '90px',
-    backgroundSize: 'cover',
-  }))
-  const PSkills = styled('p')(({ theme }) => ({
-    color: '#8892b0',
-    textAlign: 'center',
-    fontFamily: '"Montserrat", sans-serif',
-  }))
 
   return (
     <ContentSkillsContainer>
-      <TittleSkills>Skills</TittleSkills>
-
-      <ContentCardSkills>
-        <Cards>
-          <ImgCard src={Img1}>
-          </ImgCard>
-          <PSkills>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-            eveniet perspiciatis, unde praesentium, exercitationem dolorum
-            possimus dicta animi quasi labore quae! Rem facilis possimus,
-            corporis ut ullam ab. Enim, suscipit.
-          </PSkills>
-        </Cards>
-        <Cards>
-
-          <ImgCard src={Img2}></ImgCard>
-          <PSkills>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-            eveunde b. Enim, suscipit.
-          </PSkills>
-        </Cards>
-        <Cards>
-          <ImgCard src={Img3}></ImgCard>
-          <PSkills>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-            eveniet perspiciatis, unde praesentium, exercitationem dolorum
-            possimus dicta animi quasi labore quae! Rem facilis possimus,
-            corporis ut ullam ab. Enim, suscipit.
-          </PSkills>
-        </Cards>
-        <Cards>
-          <ImgCard src={Img4}></ImgCard>
-          <PSkills>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-            eveniet perspiciatis, unde praesentium, exercitationem dolorum
-            possimus dicta animi quasi labore quae! Rem facilis possimus,
-            corporis ut ullam ab. Enim, suscipit.
-          </PSkills>
-        </Cards>
-        <Cards>
-          {" "}
-          <ImgCard src={Img5}></ImgCard>
-          <PSkills>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-            eveniet perspiciatis, unde praesentium, exercitationem dolorum
-            possimus dicta animi quasi labore quae! Rem facilis possimus,
-            corporis ut ullam ab. Enim, suscipit.
-          </PSkills>
-        </Cards>
-        <Cards>
-          {" "}
-          <ImgCard src={Img6}></ImgCard>
-          <PSkills>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-            eveniet perspiciatis, unde praesentium, exercitationem dolorum
-            possimus dicta animi quasi labore quae! Rem facilis possimus,
-            corporis ut ullam ab. Enim, suscipit.
-          </PSkills>
-        </Cards>
-      </ContentCardSkills>
+      <WrapperContent>
+        <TittleSkills>Skills</TittleSkills>
+        <ContentCardSkills>
+        </ContentCardSkills>
+      </WrapperContent>
     </ContentSkillsContainer>
   );
 }
