@@ -19,6 +19,10 @@ const ContentContact = () => {
     alignItems: 'center',
     height: '100%',
     width: '35%',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',  
+      padding: '0px 2rem'  
+    },
   }))
   const SubtitleContact = styled('h3')(({ theme }) => ({
     fontSize: '16px',
