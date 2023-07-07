@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Img1 from './../../assets/img/css.png'
+import CardSkills from "../CardSkills/CardSkills";
 import Img2 from './../../assets/img/html.png'
 import Img3 from './../../assets/img/js.png'
 import Img4 from './../../assets/img/react.png'
@@ -9,6 +9,7 @@ import Img6 from './../../assets/img/ux.png'
 
 
 const ContentSkills = () => {
+  const Img1 = './../../assets/img/html.png';
 
   const ContentSkillsContainer = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -25,21 +26,20 @@ const ContentSkills = () => {
     boxSizing: 'border-box',
     alignItems: 'center',
     minHeight: 'calc(100vh - 50px)',
-    // height: '100%',
     width: '100%',
     padding: '0px 1rem',
     paddingTop: '7rem',
-    // backgroundColor: 'blue',
 
   }))
   const ContentCardSkills = styled('div')(({ theme }) => ({
+    display: 'flex',
+    flexDirection: 'column',
     maxWidth: '1000px',
     width: '100%',
     height: '100%',
     minHeight: '200px',
-    // gap: '15px',
-    // backgroundColor: 'red',
-    // margin: '0px 1rem',
+    paddingTop: '3rem',
+    gap: '1rem',
 
   }))
 
@@ -47,7 +47,6 @@ const ContentSkills = () => {
     maxWidth: '1000px',
     width: '100%',
     height: '1px',
-
     position: 'relative',
     fontFamily: ' monospace',
     color: '#ccd6f6',
@@ -67,13 +66,15 @@ const ContentSkills = () => {
   }))
 
 
-
-
   return (
     <ContentSkillsContainer>
       <WrapperContent>
         <TittleSkills>Skills</TittleSkills>
         <ContentCardSkills>
+          <CardSkills url={Img1}></CardSkills>          
+          <CardSkills url={Img1}></CardSkills>          
+          <CardSkills url={Img1}></CardSkills>     
+          <CardSkills url={Img1}></CardSkills>     
         </ContentCardSkills>
       </WrapperContent>
     </ContentSkillsContainer>

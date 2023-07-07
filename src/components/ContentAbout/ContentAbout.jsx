@@ -123,6 +123,7 @@ const ContentAbout = () => {
 
   }))
 
+
   return (
     <WrapperContentAboutContainer>
       <ContainerContentAbout>
