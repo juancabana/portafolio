@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "@emotion/styled";
-import javaImage from './../../assets/img/java.png';
+// import javaImage from './../../assets/img/java.png';
 
 
 
-const CardSkills = (props) => {
+const CardSkills = ({name, url, level}) => {
 
     const WrapperCard = styled('div')(({ theme }) => ({
         boxSizing: 'border-box',
@@ -14,6 +14,7 @@ const CardSkills = (props) => {
         width: '100%',
         borderRadius: '10px',
         border: '1px solid aquamarine',
+        // backgroundColor: 'rgba(100,255,218,0.1)',
         // gap: '1rem',
     }))
     const ImageCard = styled('div')(({ theme }) => ({
@@ -31,7 +32,7 @@ const CardSkills = (props) => {
         boxSizing: 'content-box',
         width: '100%',
         height: '100%',
-        backgroundImage: `url(${javaImage})`,
+        backgroundImage: `url(${url})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     }))
@@ -42,13 +43,13 @@ const CardSkills = (props) => {
         marginLeft: '1rem'
     }))
     const TittleSkill = styled('h2')(({ theme }) => ({
-        color: 'aquamarine',
+        color: '#ffffff',
         fontFamily: 'monospace',
         margin: '0px',
         fontSize: '25px',
     }))
     const TittleLevel = styled('h4')(({ theme }) => ({
-        color: '#ccd6f6',
+        color: 'aquamarine',
         // backgroundColor: 'red',
         fontFamily: 'monospace',
         marginTop: '5px',
@@ -68,12 +69,12 @@ const CardSkills = (props) => {
     return (
         <WrapperCard>
             <ImageCard>
-                <Image>
+                <Image >
                 </Image>
             </ImageCard>
             <WrapperContent>
-                <TittleSkill>Java</TittleSkill>
-                <TittleLevel>Level: Basic</TittleLevel>
+                <TittleSkill>{name}</TittleSkill>
+                <TittleLevel>Level: {level}</TittleLevel>
                 <Paragraph>I have basic knowledge in java, due to the object-oriented programming subjects I received at the University.</Paragraph>
             </WrapperContent>
         </WrapperCard>

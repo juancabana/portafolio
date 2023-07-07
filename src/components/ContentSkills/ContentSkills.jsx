@@ -1,15 +1,37 @@
 import React from "react";
 import styled from "@emotion/styled";
 import CardSkills from "../CardSkills/CardSkills";
-import Img2 from './../../assets/img/html.png'
-import Img3 from './../../assets/img/js.png'
-import Img4 from './../../assets/img/react.png'
-import Img5 from './../../assets/img/java.png'
-import Img6 from './../../assets/img/ux.png'
 
 
+// https://ibb.co/545VzTF
+// https://ibb.co/1m7gzbt
+// https://ibb.co/X2p28Z4
+// https://ibb.co/Fgkw6F0
 const ContentSkills = () => {
-  const Img1 = './../../assets/img/html.png';
+
+  const skills = [
+
+    {
+      name: 'CSS',
+      url: 'https://i.ibb.co/B3gR7LN/css.png',
+      level: 'Advanced',
+    },
+    {
+      name: 'HTML',
+      url: 'https://i.ibb.co/DRzJrLH/html.png',
+      level: 'Advanced',
+    },
+    {
+      name: 'JavaScript',
+      url: 'https://i.ibb.co/2g0tqTs/js.png',
+      level: 'Intermediate',
+    },
+    {
+      name: 'Java',
+      url: 'https://i.ibb.co/HFYFdD2/java.png',
+      level: 'Basic',
+    },
+  ]
 
   const ContentSkillsContainer = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -71,10 +93,12 @@ const ContentSkills = () => {
       <WrapperContent>
         <TittleSkills>Skills</TittleSkills>
         <ContentCardSkills>
-          <CardSkills url={Img1}></CardSkills>          
-          <CardSkills url={Img1}></CardSkills>          
-          <CardSkills url={Img1}></CardSkills>     
-          <CardSkills url={Img1}></CardSkills>     
+          {
+            skills.map((skill, index) => (
+
+              <CardSkills key={index} name={skill.name} url={skill.url} level={skill.level} ></CardSkills>
+            ))
+          }
         </ContentCardSkills>
       </WrapperContent>
     </ContentSkillsContainer>
