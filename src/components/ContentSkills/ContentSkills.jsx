@@ -14,8 +14,9 @@ const ContentSkills = () => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center',
     width: '100%',
-    height: 'calc(100vh - 69px - 50px)',
+    minHeight: '100vh',
   }))
 
   const TittleSkills = styled('div')(({ theme }) => ({
@@ -95,7 +96,7 @@ const ContentSkills = () => {
           </PSkills>
         </Cards>
         <Cards>
-        <ImgCard src={Img3}></ImgCard>
+          <ImgCard src={Img3}></ImgCard>
           <PSkills>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
             eveniet perspiciatis, unde praesentium, exercitationem dolorum
@@ -104,7 +105,7 @@ const ContentSkills = () => {
           </PSkills>
         </Cards>
         <Cards>
-        <ImgCard src={Img4}></ImgCard>
+          <ImgCard src={Img4}></ImgCard>
           <PSkills>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
             eveniet perspiciatis, unde praesentium, exercitationem dolorum

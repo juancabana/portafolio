@@ -4,14 +4,17 @@ import { Link } from "react-router-dom";
 
 const ContentHome = () => {
 
+  
   const ContentHomeContainer = styled('div')(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#0a192f',
-    width: '100%',
-    height: 'calc(100vh - 69px - 50px)',
+    width: 'auto',
+    height: '100vh',
+    padding: '0px 1rem'
+    
   }))
 
   const TextFirstLine = styled('h2')(({ theme }) => ({
@@ -20,6 +23,13 @@ const ContentHome = () => {
     fontFamily: '"Quicksand", sans-serif',
     fontWeight: '500',
     fontSize: '25px',
+    textAlign: 'center',
+    
+    
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '2rem',
+      fontSize: '20px',
+    },
 
   }))
   const TextSecondLine = styled('h1')(({ theme }) => ({
@@ -29,6 +39,10 @@ const ContentHome = () => {
     fontFamily: '"Roboto Mono", monospace',
     fontWeight: '700',
     fontSize: '40px',
+    marginTop: '1rem',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '30px',
+    },
   }))
   const TextTrhirdLine = styled('h3')(({ theme }) => ({
     margin: '0%',
@@ -37,6 +51,10 @@ const ContentHome = () => {
     textAlign: 'center',
     fontWeight: '300',
     fontSize: '20px',
+    marginTop: '1rem',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '17px',
+    },
   }))
   const ContentPerfil = styled(Link)(({ theme }) => ({
     position: 'relative',
@@ -52,9 +70,9 @@ const ContentHome = () => {
     filter: 'grayscale(0%)',
     ':hover': {
       width: '250px',
-    height: '250px',
-    backgroundPosition: `center 50%`,
-    transition: 'all 0.1s',
+      height: '250px',
+      backgroundPosition: `center 50%`,
+      transition: 'all 0.1s',
 
 
     }

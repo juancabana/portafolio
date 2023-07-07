@@ -5,7 +5,7 @@ const ContentContact = () => {
 
   const ContentContactContainer = styled('div')(({ theme }) => ({
     width: '100%',
-    height: 'calc(100vh - 69px - 50px)',
+    height: '100vh',
     display: 'flex',
     textAlign: 'center',
     alignItems: 'center',

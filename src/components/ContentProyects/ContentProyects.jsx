@@ -8,10 +8,11 @@ const ContentProyects = () => {
 
   const ContentProyects = styled('div')(({ theme }) => ({
     width: '100%',
-    height: 'calc(100vh - 69px - 50px)',
+    minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center'
   }))
   const TittleProjects = styled('div')(({ theme }) => ({
     fontFamily: '"Roboto Mono", monospace',

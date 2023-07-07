@@ -15,7 +15,6 @@ import ApiOutlinedIcon from '@mui/icons-material/ApiOutlined';
 import TranslateOutlinedIcon from '@mui/icons-material/TranslateOutlined';
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
-import { useEffect } from 'react';
 
 
 const pages = [
@@ -31,10 +30,6 @@ function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [activeIndex, setActiveIndex] = useState(null);
-
-  // useEffect(() => {
-  //   setActiveIndex(0)
-  // }, [])
 
 
   const handleOpenNavMenu = (event) => {
@@ -58,14 +53,12 @@ function Header() {
     display: 'block',
     width: 'auto',
     height: '67px',
-
-
   }));
 
 
 
   return (
-    <AppBar position="static" style={{ backgroundColor: '#0a192f' }}>
+    <AppBar position="absolute" style={{ backgroundColor: '#0a192f', top: '0px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Icono  */}
@@ -153,7 +146,7 @@ function Header() {
                 key={page.page}
                 to={`/${page.route}`}
                 className={activeIndex === index ? 'active' : ''}
-                onClick={() => { setActiveIndex(index)}}
+                onClick={() => { setActiveIndex(index) }}
               >
                 <Button sx={{ color: 'white', display: 'block', width: '100%', height: '100%' }} >
                   {page.page}
