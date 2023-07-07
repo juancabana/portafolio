@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 
 const ContentAbout = () => {
 
@@ -47,7 +48,11 @@ const ContentAbout = () => {
     paddingLeft: '50px',
     paddingRight: '20px',
     [theme.breakpoints.down('md')]: {
-      paddingLeft: '20px',    },
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      paddingLeft: '20px',    
+    },
   }))
   const Strong = styled('strong')(({theme}) => ({
     fontSize: '20px',
@@ -95,6 +100,24 @@ const ContentAbout = () => {
       borderRadius: '50%'
     },
   }))
+  const LinkContact = styled(NavLink)(({ theme }) => ({
+    padding: '0%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    fontFamily: ' monospace',
+    border: '1px solid aquamarine',
+    color: 'aquamarine',
+    height: '60px',
+    width: '140px',
+    ':hover': {
+      backgroundColor: 'rgba(100,255,218,0.1)',
+      transition: 'all 0.3s',
+    }
+
+  }))
 
   return (
     <WrapperContentAboutContainer>
@@ -130,6 +153,7 @@ const ContentAbout = () => {
               engineering. At the beginning of 2020 I met web development and
               I became passionate about it. passionate about it.
             </TextAbout>
+        <LinkContact to="/contact">CONTACT</LinkContact>
           </ParagraphAbout>
           <ImageAboutContainer>
             <ImageAbout></ImageAbout>
