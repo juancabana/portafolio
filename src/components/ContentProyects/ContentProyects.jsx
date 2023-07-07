@@ -8,14 +8,14 @@ const ContentProyects = () => {
 
   const ContentProyects = styled('div')(({ theme }) => ({
     width: '100%',
-    minHeight: '100vh',
+    minHeight: 'calc(100vh - 50px)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center'
   }))
   const TittleProjects = styled('div')(({ theme }) => ({
-    fontFamily: '"Roboto Mono", monospace',
+    fontFamily: ' monospace',
     color: '#ccd6f6',
     fontSize: '35px',
     display: 'flex',

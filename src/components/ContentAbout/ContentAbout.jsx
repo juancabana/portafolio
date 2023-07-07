@@ -1,67 +1,99 @@
-import styled from "@emotion/styled";
 import React from "react";
+import styled from "@emotion/styled";
 
 const ContentAbout = () => {
 
   const WrapperContentAboutContainer = styled('div')(({ theme }) => ({
     width: '100%',
-    minHeight: '100vh',
+    minHeight: 'calc(100vh - 50px)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    [theme.breakpoints.down('md')]: {
+      marginTop: '50px',    
+    },
   }))
 
-  const ContainerContentAbout = styled('div')((theme) => ({
-    width: '1000px',
+  const ContainerContentAbout = styled('div')(({theme}) => ({
+    maxWidth: '1400px',
     height: '90%',
+    padding: '1rem',
+    
   }))
-  const TittleAbout = styled('h2')((theme) => ({
+  const TittleAbout = styled('h2')(({theme}) => ({
     paddingLeft: '50px',
-    fontFamily: '"Roboto Mono", monospace',
+    paddingRight: '20px',
+    fontFamily: ' monospace',
     color: '#ccd6f6',
     fontSize: '35px',
     display: 'flex',
     alignItems: 'center',
+    whiteSpace: 'nowrap',
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: '20px',    },
     ':after': {
       content: 'close-quote',
       width: '330px',
       height: '1px',
       marginLeft: '20px',
       backgroundColor: '#ccd6f6',
-    }
+      [theme.breakpoints.down('md')]: {
+        width: '100%',    
+      },
+    },
   }))
 
-  const ParagraphAbout = styled('div')((theme) => ({
+  const ParagraphAbout = styled('div')(({theme}) => ({
     paddingLeft: '50px',
     paddingRight: '20px',
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: '20px',    },
   }))
-  const Strong = styled('strong')((theme) => ({
+  const Strong = styled('strong')(({theme}) => ({
     fontSize: '20px',
     fontWeight: '400',
     color: 'aquamarine',
   }))
-  const ContentAbout = styled('div')((theme) => ({
+  const ContentAbout = styled('div')(({theme}) => ({
     display: 'grid',
     gridTemplateColumns: '1.2fr 0.8fr',
     width: '100%',
     height: '70%',
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      flexDirection: 'column-reverse',
+    },
   }))
-  const TextAbout = styled('p')((theme) => ({
+  const TextAbout = styled('p')(({theme}) => ({
     color: '#8892b0',
     fontFamily: '"Montserrat", sans-serif',
     lineHeight: '1.5',
   }))
-  const ImageAboutContainer = styled('p')((theme) => ({
+  const ImageAboutContainer = styled('p')(({theme}) => ({
     marginTop: '15px',
     display: 'flex',
     justifyContent: 'center',
+    paddingRight: '50px',
+    [theme.breakpoints.down('md')]: {
+      paddingRight: '0px',
+    },
+    
   }))
-  const ImageAbout = styled('div')((theme) => ({
-    width: '70%',
+  const ImageAbout = styled('div')(({theme}) => ({
+    width: '450px',
     height: '450px',
     borderRadius: '10px',
-    backgroundImage: `url(${require('./../../assets/img/imageVertical.jpeg')})`,
+    backgroundImage: `url(${require('./../../assets/img/verticalImage.jpg')})`,
     backgroundSize: 'cover',
+    backgroundPosition: `right 30%`,
+    [theme.breakpoints.down('lg')]: {
+      width: '300px',
+    },
+    [theme.breakpoints.down('md')]: {
+      width: '300px',
+      height: '300px',
+      borderRadius: '50%'
+    },
   }))
 
   return (

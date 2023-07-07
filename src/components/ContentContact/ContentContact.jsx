@@ -5,7 +5,7 @@ const ContentContact = () => {
 
   const ContentContactContainer = styled('div')(({ theme }) => ({
     width: '100%',
-    height: '100vh',
+    height: 'calc(100vh - 50px)',
     display: 'flex',
     textAlign: 'center',
     alignItems: 'center',
@@ -23,7 +23,7 @@ const ContentContact = () => {
   const SubtitleContact = styled('h3')(({ theme }) => ({
     fontSize: '16px',
     fontWeight: '400',
-    fontFamily: '"Roboto Mono", monospace',
+    fontFamily: ' monospace',
     color: 'aquamarine',
   }))
   const H1Contact = styled('h1')(({ theme }) => ({
@@ -45,7 +45,7 @@ const ContentContact = () => {
     justifyContent: 'center',
     textDecoration: 'none',
     borderRadius: '5px',
-    fontFamily: '"Roboto Mono", monospace',
+    fontFamily: ' monospace',
     border: '1px solid aquamarine',
     color: 'aquamarine',
     height: '60px',

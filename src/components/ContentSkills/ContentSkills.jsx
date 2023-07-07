@@ -16,11 +16,11 @@ const ContentSkills = () => {
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
-    minHeight: '100vh',
+    minHeight: 'calc(100vh - 50px)',
   }))
 
   const TittleSkills = styled('div')(({ theme }) => ({
-    fontFamily: '"Roboto Mono", monospace',
+    fontFamily: ' monospace',
     color: '#ccd6f6',
     fontSize: '35px',
     display: 'flex',

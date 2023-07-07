@@ -4,8 +4,8 @@ import styled from "@emotion/styled";
 const Footer = () => {
 
     const Footer = styled('div')(({ theme }) => ({
-        position: 'absolute',
-        bottom: '0px',
+        // position: 'absolute',
+        // bottom: '0px',
         height: '50px',
         width: '100%',
         display: 'flex',

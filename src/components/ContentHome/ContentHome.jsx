@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ContentHome = () => {
 
-  
+
   const ContentHomeContainer = styled('div')(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
@@ -12,9 +12,9 @@ const ContentHome = () => {
     alignItems: 'center',
     backgroundColor: '#0a192f',
     width: 'auto',
-    height: '100vh',
+    height: 'calc(100vh - 50px)',
     padding: '0px 1rem'
-    
+
   }))
 
   const TextFirstLine = styled('h2')(({ theme }) => ({
@@ -24,8 +24,8 @@ const ContentHome = () => {
     fontWeight: '500',
     fontSize: '25px',
     textAlign: 'center',
-    
-    
+
+
     [theme.breakpoints.down('sm')]: {
       marginTop: '2rem',
       fontSize: '20px',
@@ -36,7 +36,7 @@ const ContentHome = () => {
     margin: '0%',
     color: '#ccd6f6',
     textAlign: 'center',
-    fontFamily: '"Roboto Mono", monospace',
+    fontFamily: ' monospace',
     fontWeight: '700',
     fontSize: '40px',
     marginTop: '1rem',
@@ -73,9 +73,19 @@ const ContentHome = () => {
       height: '250px',
       backgroundPosition: `center 50%`,
       transition: 'all 0.1s',
+      [theme.breakpoints.down('sm')]: {
 
-
-    }
+        width: '220px',
+        height: '220px',
+      },
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '2rem',
+      fontSize: '20px',
+      width: '210px',
+      height: '210px',
+    },
+    
   }))
   const Canva = styled('div')(({ theme }) => ({
     position: 'absolute',
