@@ -1,19 +1,55 @@
 import React from 'react';
-import styles from './NotFound.module.css';
 import { NavLink } from 'react-router-dom';
+import styled from '@emotion/styled';
 
-function NotFoundPage() {
+const NotFoundPage = () => {
+
+    const Page404 = styled('section')(({ theme }) => ({
+        background: '#ffffff',
+        height: '100vh',
+        fontFamily: 'monospace',
+    }))
+    const Container = styled('section')(({ theme }) => ({
+        width: '100%,',
+        height: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+    }))
+    const FourZeroFourBg = styled('div')(({ theme }) => ({
+        width: '800px',
+        height: '400px',
+        backgroundImage: `url(${require('./../../assets/img/dribbble_1.gif')})`,
+        fontSize: 'cover',
+        backgroundPosition: 'center',
+    }))
+    const Text = styled('div')(({ theme }) => ({
+        fontSize: '60px',
+
+    }))
+    const Link404 = styled(NavLink)(({ theme }) => ({
+        color: '#fff !important',
+        padding: '10px 20px',
+        background: '#39ac31',
+        margin: '20px 0',
+        display: 'inline-block',
+        textDecoration: 'none',
+        fontSize: '25px',
+
+    }))
+
     return (
-        <><section className={styles.page_404}>
-            <div className={styles.container}>
-                <div className={styles.four_zero_four_bg}>
-                </div>
-                <h1 className={styles.text}>404 | Page not found</h1>
+        <Page404>
+            <Container>
+                <FourZeroFourBg>
+                </FourZeroFourBg>
+                <Text>404 | Page not found</Text>
 
-                <NavLink to="/" className={styles.link_404}>Go to Home</NavLink>
-            </div>
-        </section>
-        </>
+                <Link404 to="/" >Go to Home</Link404>
+            </Container>
+        </Page404>
+
     );
 }
 
