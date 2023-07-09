@@ -24,9 +24,9 @@ const CardSkills = ({name, url, level}) => {
         minWidth: '90px',
         // minHeight: '100px',
         borderRadius: '10px',
-        border: '1px solid aquamarine',
+        // border: '1px solid aquamarine',
         padding: '10px',
-        backgroundColor: 'white',
+        // backgroundColor: 'white',
     }))
     const Image = styled('div')(({ theme }) => ({
         boxSizing: 'content-box',

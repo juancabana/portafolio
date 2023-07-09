@@ -6,6 +6,7 @@ const ContentHome = () => {
 
 
   const ContentHomeContainer = styled('div')(({ theme }) => ({
+    position: 'relative',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -95,6 +96,24 @@ const ContentHome = () => {
     backgroundSize: '200px 250px',
     // backgroundColor: 'rgba(127,255,212, 0.5)',
   }))
+  const EmailLink = styled('a')(({ theme }) => ({
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    fontFamily: ' monospace',
+    border: '1px solid aquamarine',
+    color: 'aquamarine',
+    height: '60px',
+    width: '140px',
+    marginTop: '2rem',
+    ':hover': {
+      backgroundColor: 'rgba(100,255,218,0.1)',
+      transition: 'all 0.3s',
+    }
+
+  }))
 
   return (
     <ContentHomeContainer>
@@ -110,6 +129,8 @@ const ContentHome = () => {
       <TextTrhirdLine>
         Systems engineering student, 8th semester.
       </TextTrhirdLine>
+      <EmailLink href="./../../assets/cv/CV Juan Cabana.pdf" download={true}>Download CV</EmailLink>
+
     </ContentHomeContainer>
   );
 }
