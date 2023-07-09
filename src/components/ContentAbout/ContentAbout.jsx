@@ -58,11 +58,7 @@ const ContentAbout = () => {
       paddingLeft: '20px',    
     },
   }))
-  const Strong = styled('strong')(({theme}) => ({
-    fontSize: '20px',
-    fontWeight: '400',
-    color: 'aquamarine',
-  }))
+
   const ContentAbout = styled('div')(({theme}) => ({
     display: 'grid',
     gridTemplateColumns: '1.2fr 0.8fr',
@@ -121,6 +117,11 @@ const ContentAbout = () => {
       transition: 'all 0.3s',
     }
 
+  }))
+  const Strong = styled('strong')(({theme}) => ({
+    fontSize: '20px',
+    fontWeight: '400',
+    color: 'aquamarine',
   }))
 
 
