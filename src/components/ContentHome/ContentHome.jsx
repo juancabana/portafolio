@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const ContentHome = () => {
+  const homeData = useSelector(state => state.home.home)
+  console.log(homeData)
 
 
   const ContentHomeContainer = styled('div')(({ theme }) => ({
@@ -117,18 +120,13 @@ const ContentHome = () => {
 
   return (
     <ContentHomeContainer>
-      <TextFirstLine>Hi, I am Juan David Cabana Trejos</TextFirstLine>
-      <TextSecondLine>Web full-stack developer (Node - React).</TextSecondLine>
-      <TextTrhirdLine>
-        I am passionate about web development, I handle HTML, CSS, JavaScript
-        and React technologies.
-      </TextTrhirdLine>
+      <TextFirstLine>{homeData.firstLine}</TextFirstLine>
+      <TextSecondLine>{homeData.secondLine}</TextSecondLine>
+      <TextTrhirdLine>{homeData.thirdLine}</TextTrhirdLine>
       <ContentPerfil to="/about">
         <Canva></Canva>
       </ContentPerfil>
-      <TextTrhirdLine>
-        Systems engineering student, 8th semester.
-      </TextTrhirdLine>
+      <TextTrhirdLine>{homeData.fourthLine}</TextTrhirdLine>
       <EmailLink href="./../../assets/cv/CV Juan Cabana.pdf" download={true}>Download CV</EmailLink>
 
     </ContentHomeContainer>

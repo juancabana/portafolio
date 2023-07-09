@@ -3,6 +3,14 @@ import { styled } from "@mui/material/styles";
 import "./index.css";
 import { ThemeProvider } from "@mui/material/styles";
 import { createTheme } from "@mui/material/styles";
+// Redux
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+// Fetch info 
+import { fetchHomeEnglish } from "./store/slices/home";
+import { fetchAboutEnglish } from "./store/slices/about";
+import { fetchSkillsEnglish } from "./store/slices/skills";
+import { fetchProjectsEnglish } from "./store/slices/projects";
 
 const theme = createTheme({
   breakpoints: {
@@ -16,18 +24,30 @@ const theme = createTheme({
   },
 });
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+
+
+  
+  useEffect(() => {
+    dispatch(fetchHomeEnglish());
+    dispatch(fetchAboutEnglish());
+    dispatch(fetchSkillsEnglish());
+    dispatch(fetchProjectsEnglish());
+  }, [])
+
   const AppContainer = styled("div")(({ theme }) => ({
     backgroundColor: "#0a192f",
     margin: "0%",
   }));
 
   return (
-    <ThemeProvider theme={theme}>
-      <AppContainer>
-        <AppRouter />
-      </AppContainer>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <AppContainer>
+          <AppRouter />
+        </AppContainer>
+      </ThemeProvider>
+    
   );
 }
 
