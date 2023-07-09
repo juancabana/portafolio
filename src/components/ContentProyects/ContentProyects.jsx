@@ -32,6 +32,9 @@ const ContentProyects = () => {
     [theme.breakpoints.down('md')]: {
       padding: '0px 5rem',
     },
+    [theme.breakpoints.down('sm')]: {
+      padding: '0px 2rem',
+    },
 
   }))
   const TittleProjects = styled('div')(({ theme }) => ({
@@ -167,131 +170,117 @@ const ContentProyects = () => {
               <h4>Javascript</h4>
             </DescriptionCard>
           </CardsProyects>
+          <CardsProyects href="https://github.com/juancabana/ParcialProgWeb" target="_blank" rel="noopener noreferrer">
+            <ImgProject>
+              <FolderImg
+                xmlns="http://www.w3.org/2000/svg"
+                height="60"
+                width="60"
+              >
+                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
+              </FolderImg>
+            </ImgProject>
+            <SubtittleCard>Proyecto del parcial</SubtittleCard>
+            <PCard>
+              En este link, puedes aceder al proyecto que corresponde a el
+              examen parcial de la materia "programación en la web", materia
+              dictada por el profeser Denny Villalobos.
+            </PCard>
+            <DescriptionCard>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+              <h4>Javascript</h4>
+            </DescriptionCard>
+          </CardsProyects>
+          <CardsProyects href="https://github.com/juancabana/ParcialProgWeb" target="_blank" rel="noopener noreferrer">
+            <ImgProject>
+              <FolderImg
+                xmlns="http://www.w3.org/2000/svg"
+                height="60"
+                width="60"
+              >
+                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
+              </FolderImg>
+            </ImgProject>
+            <SubtittleCard>Proyecto del parcial</SubtittleCard>
+            <PCard>
+              En este link, puedes aceder al proyecto que corresponde a el
+              examen parcial de la materia "programación en la web", materia
+              dictada por el profeser Denny Villalobos.
+            </PCard>
+            <DescriptionCard>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+              <h4>Javascript</h4>
+            </DescriptionCard>
+          </CardsProyects>
+          <CardsProyects href="https://github.com/juancabana/ParcialProgWeb" target="_blank" rel="noopener noreferrer">
+            <ImgProject>
+              <FolderImg
+                xmlns="http://www.w3.org/2000/svg"
+                height="60"
+                width="60"
+              >
+                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
+              </FolderImg>
+            </ImgProject>
+            <SubtittleCard>Proyecto del parcial</SubtittleCard>
+            <PCard>
+              En este link, puedes aceder al proyecto que corresponde a el
+              examen parcial de la materia "programación en la web", materia
+              dictada por el profeser Denny Villalobos.
+            </PCard>
+            <DescriptionCard>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+              <h4>Javascript</h4>
+            </DescriptionCard>
+          </CardsProyects>
+          <CardsProyects href="https://github.com/juancabana/ParcialProgWeb" target="_blank" rel="noopener noreferrer">
+            <ImgProject>
+              <FolderImg
+                xmlns="http://www.w3.org/2000/svg"
+                height="60"
+                width="60"
+              >
+                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
+              </FolderImg>
+            </ImgProject>
+            <SubtittleCard>Proyecto del parcial</SubtittleCard>
+            <PCard>
+              En este link, puedes aceder al proyecto que corresponde a el
+              examen parcial de la materia "programación en la web", materia
+              dictada por el profeser Denny Villalobos.
+            </PCard>
+            <DescriptionCard>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+              <h4>Javascript</h4>
+            </DescriptionCard>
+          </CardsProyects>
+          <CardsProyects href="https://github.com/juancabana/ParcialProgWeb" target="_blank" rel="noopener noreferrer">
+            <ImgProject>
+              <FolderImg
+                xmlns="http://www.w3.org/2000/svg"
+                height="60"
+                width="60"
+              >
+                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
+              </FolderImg>
+            </ImgProject>
+            <SubtittleCard>Proyecto del parcial</SubtittleCard>
+            <PCard>
+              En este link, puedes aceder al proyecto que corresponde a el
+              examen parcial de la materia "programación en la web", materia
+              dictada por el profeser Denny Villalobos.
+            </PCard>
+            <DescriptionCard>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+              <h4>Javascript</h4>
+            </DescriptionCard>
+          </CardsProyects>
 
-          <CardsProyects to="/parcial">
-            {" "}
-            <ImgProject>
-              <FolderImg
-                xmlns="http://www.w3.org/2000/svg"
-                height="60"
-                width="60"
-              >
-                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
-              </FolderImg>
-            </ImgProject>
-            <SubtittleCard>Lorem, ipsum </SubtittleCard>
-            <PCard>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repellendus optio laboriosam omnis ratione ea, recusandae eaque
-              obcaecati labore dolores libero distinctio mollitia odio eligendi
-              sint, doloremque iusto eius facere. Ad.
-            </PCard>
-            <DescriptionCard>
-              <h4>React</h4>
-              <h4>HTML</h4>
-              <h4>CSS</h4>
-              <h4>Javascript</h4>
-            </DescriptionCard>
-          </CardsProyects>
-          <CardsProyects to="/parcial">
-            {" "}
-            <ImgProject>
-              <FolderImg
-                xmlns="http://www.w3.org/2000/svg"
-                height="60"
-                width="60"
-              >
-                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
-              </FolderImg>
-            </ImgProject>
-            <SubtittleCard>Lorem, ipsum </SubtittleCard>
-            <PCard>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repellendus optio laboriosam omnis ratione ea, recusandae eaque
-              obcaecati labore dolores libero distinctio mollitia odio eligendi
-              sint, doloremque iusto eius facere. Ad.
-            </PCard>
-            <DescriptionCard>
-              <h4>React</h4>
-              <h4>HTML</h4>
-              <h4>CSS</h4>
-              <h4>Javascript</h4>
-            </DescriptionCard>
-          </CardsProyects>
-          <CardsProyects to="/parcial">
-            {" "}
-            <ImgProject>
-              <FolderImg
-                xmlns="http://www.w3.org/2000/svg"
-                height="60"
-                width="60"
-              >
-                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
-              </FolderImg>
-            </ImgProject>
-            <SubtittleCard>Lorem, ipsum </SubtittleCard>
-            <PCard>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repellendus optio laboriosam omnis ratione ea, recusandae eaque
-              obcaecati labore dolores libero distinctio mollitia odio eligendi
-              sint, doloremque iusto eius facere. Ad.
-            </PCard>
-            <DescriptionCard>
-              <h4>React</h4>
-              <h4>HTML</h4>
-              <h4>CSS</h4>
-              <h4>Javascript</h4>
-            </DescriptionCard>
-          </CardsProyects>
-          <CardsProyects to="/parcial">
-            {" "}
-            <ImgProject>
-              <FolderImg
-                xmlns="http://www.w3.org/2000/svg"
-                height="60"
-                width="60"
-              >
-                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
-              </FolderImg>
-            </ImgProject>
-            <SubtittleCard>Lorem, ipsum </SubtittleCard>
-            <PCard>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repellendus optio laboriosam omnis ratione ea, recusandae eaque
-              obcaecati labore dolores libero distinctio mollitia odio eligendi
-              sint, doloremque iusto eius facere. Ad.
-            </PCard>
-            <DescriptionCard>
-              <h4>React</h4>
-              <h4>HTML</h4>
-              <h4>CSS</h4>
-              <h4>Javascript</h4>
-            </DescriptionCard>
-          </CardsProyects>
-          <CardsProyects to="/parcial">
-            <ImgProject>
-              <FolderImg
-                xmlns="http://www.w3.org/2000/svg"
-                height="60"
-                width="60"
-              >
-                <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
-              </FolderImg>
-            </ImgProject>
-            <SubtittleCard>Lorem, ipsum </SubtittleCard>
-            <PCard>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repellendus optio laboriosam omnis ratione ea, recusandae eaque
-              obcaecati labore dolores libero distinctio mollitia odio eligendi
-              sint, doloremque iusto eius facere. Ad.
-            </PCard>
-            <DescriptionCard>
-              <h4>React</h4>
-              <h4>HTML</h4>
-              <h4>CSS</h4>
-              <h4>Javascript</h4>
-            </DescriptionCard>
-          </CardsProyects>
         </ContentCardsProyects>
       </WrapperContent>
     </ContentProyects>

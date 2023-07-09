@@ -66,7 +66,7 @@ const ContentHome = () => {
     borderRadius: '50%',
     backgroundSize: '200px 250px',
     backgroundPosition: `center calc(50% - 3px)`,
-    backgroundColor: 'rgba(245, 255, 0, 0.5)',
+    backgroundColor: 'rgba(0, 176, 156, 0.5)',
     filter: 'grayscale(0%)',
     ':hover': {
       width: '250px',
