@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import React from "react";
-import { Link } from "react-router-dom";
 import CardProjects from "../CardProjects/CardProjects";
-
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const ContentProyects = () => {
+  const projectsData = useSelector(state => state.projects.projects)
 
 
   const ContentProyects = styled('div')(({ theme }) => ({
@@ -17,12 +17,10 @@ const ContentProyects = () => {
     paddingTop: '7rem',
     boxSizing: 'border-box'
 
-    // justifyContent: 'center'
   }))
   const WrapperContent = styled('div')(({ theme }) => ({
     width: '100%',
     maxWidth: '1200px',
-    // padding: '0px 12rem',
     boxSizing: 'border-box',
     display: 'flex',
     flexDirection: 'column',
@@ -75,53 +73,13 @@ const ContentProyects = () => {
 
   }))
 
-  const projects = [
-    {
-      url: 'https://github.com/juancabana/ParcialProgWeb',
-      title: 'Proyecto del parcial',
-      description: 'En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia "programación en la web", materia dictada por el profeser Denny Villalobos.',
-      tecnologies: ['HTML', 'CSS', 'JavaScript']
-    },
-
-    {
-      url: 'https://github.com/juancabana/ParcialProgWeb',
-      title: 'Proyecto del parcial',
-      description: 'En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia "programación en la web", materia dictada por el profeser Denny Villalobos.',
-      tecnologies: ['HTML', 'CSS', 'JavaScript']
-    },
-    {
-      url: 'https://github.com/juancabana/ParcialProgWeb',
-      title: 'Proyecto del parcial',
-      description: 'En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia "programación en la web", materia dictada por el profeser Denny Villalobos.',
-      tecnologies: ['HTML', 'CSS', 'JavaScript']
-    },
-    {
-      url: 'https://github.com/juancabana/ParcialProgWeb',
-      title: 'Proyecto del parcial',
-      description: 'En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia "programación en la web", materia dictada por el profeser Denny Villalobos.',
-      tecnologies: ['HTML', 'CSS', 'JavaScript']
-    },
-    {
-      url: 'https://github.com/juancabana/ParcialProgWeb',
-      title: 'Proyecto del parcial',
-      description: 'En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia "programación en la web", materia dictada por el profeser Denny Villalobos.',
-      tecnologies: ['HTML', 'CSS', 'JavaScript']
-    },
-    {
-      url: 'https://github.com/juancabana/ParcialProgWeb',
-      title: 'Proyecto del parcial',
-      description: 'En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia "programación en la web", materia dictada por el profeser Denny Villalobos.',
-      tecnologies: ['HTML', 'CSS', 'JavaScript']
-    },
-  ]
-
 
   return (
     <ContentProyects>
       <WrapperContent>
         <ContentCardsProyects>
           <TittleProjects>Proyects</TittleProjects>
-          {projects.map((project, index) => (
+          {projectsData.map((project, index) => (
             <CardProjects url={project.url} title={project.title} description={project.description} tecnologies={project.tecnologies} />
           ))}
 

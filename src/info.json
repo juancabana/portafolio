@@ -3,15 +3,40 @@
     "home": {
       "firstLine": "Hi, I am Juan David Cabana Trejos.",
       "secondLine": "Web full-stack developer (Node - React).",
-      "thirdLine": "I am passionate about web development, I handle HTML, CSS, JavaScript and React technologies.",
+      "thirdLine": "I am passionate about web development, especially frontend development, although I have knowledge in backend.",
       "fourthLine": "Systems engineering student, 8th semester."
     },
     "about": {
-      "about": "Frontend and backend web developer, I am a happy, friendly, altruistic person, I like teamwork, good camaraderie, responsible, always willing and eager to learn new technologies and deepen the ones I already know. The technologies I handle are HTML, CSS, Javascript and its versions of ECMAScript (ES6+), Node.js and its NPM package and dependency management system, React.js, typescript, relational database fundamentals with MySQL, Express. js, Passport.js, JSON Web Token (JWT), and I've mostly used Git and Github for version control, although I have some familiarity with Microsoft Azure. I have worked under agile development methodologies such as scrum and canva.",
-      "experience": "Currently I am in charge of the design, layout and development of the new EdSoft platform, I have implemented the front-end of the page in React, using several of its libraries for routing and page styles, I am in charge of making requests to the API which is built in GraphQL, I was in charge of the configuration of the front-end architecture of the project.",
-      "education": "from high school in 2019, where I graduated as the best high school graduate, because of that I got a scholarship for a year at the Adventist University of Colombia (UNAC), where I am currently studying 5th semester of engineering in systems. engineering. At the beginning of 2020 I met web development and I became passionate about it. passionate about it."
+      "about": "Frontend and backend web developer, I am a cheerful, friendly, altruistic person, I like teamwork, good fellowship, responsible, always willing and eager to learn new technologies and deepen the ones I already know. The technologies I handle are HTML, CSS, Javascript and its versions of ECMAScript (ES6+), Node.js and its package and dependency management system NPM, React.js, a bit of typescript, relational database basics with MySQL, Express.js, Passport.js, JSON Web Token (JWT), and I have mainly used Git and Github for version control, although I have some familiarity with Microsoft Azure. I have worked under agile development methodologies such as scrum and canva.",
+      "experience": "I have worked in two companies, both are dedicated to the educational field, they develop products for schools to manage all their academic records, one is called Siempre.net, in this I worked full time, and I am currently working in freelance mode in EdSoft, which is making a new product, whose purpose is to replace the existing one. I'm in charge of the design, layout and development of the new EdSoft platform, whose frontend is mainly developed in React.js, and GraphQL is used for consumption.",
+      "education": "In 2019, I graduated as the best high school graduate in the Adventist school of Cartagena, thanks to that I got a scholarship for a year at the Adventist University of Colombia (UNAC), where I am currently studying 8th semester of systems engineering. engineering. At the beginning of 2020 I met the web development and I went deeper and deeper into this world of web development, until I became passionate about it."
     },
     "skills": [
+      {
+        "name": "JavaScript",
+        "url": "https://i.ibb.co/2g0tqTs/js.png",
+        "level": "Intermediate"
+      },
+      {
+        "name": "React",
+        "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
+        "level": "Basic"
+      },
+      {
+        "name": "Typescript",
+        "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
+        "level": "Basic"
+      },
+      {
+        "name": "Git & Github",
+        "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Express.js",
+        "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
+        "level": "Basic"
+      },
       {
         "name": "CSS",
         "url": "https://i.ibb.co/B3gR7LN/css.png",
@@ -21,16 +46,6 @@
         "name": "HTML",
         "url": "https://i.ibb.co/DRzJrLH/html.png",
         "level": "Advanced"
-      },
-      {
-        "name": "JavaScript",
-        "url": "https://i.ibb.co/2g0tqTs/js.png",
-        "level": "Intermediate"
-      },
-      {
-        "name": "Java",
-        "url": "https://i.ibb.co/HFYFdD2/java.png",
-        "level": "Basic"
       }
     ],
     "projects": [
@@ -73,6 +88,91 @@
     ]
   },
   "spanish": {
-    
+    "home": {
+      "firstLine": "Hola, soy Juan David Cabana Trejos.",
+      "secondLine": "Desarrollador web full-stack (Node - React).",
+      "thirdLine": "Me apasiona el desarrollo web, en especial el desarrollo frontend, aunque tengo conocimientos en el backend.",
+      "fourthLine": "Estudiante de ingeniería de sistemas, 8º semestre."
+    },
+    "about": {
+      "about": "Desarrollador web frontend y backend, soy una persona alegre, amable, altruista, me gusta el trabajo en equipo, el buen compañerismo, responsable, siempre dispuesto y con ganas de aprender nuevas tecnologías y profundizar en las que ya conozco. Las tecnologías que manejo son HTML, CSS, Javascript y sus versiones de ECMAScript (ES6+), Node.js y su sistema de gestión de paquetes y dependencias NPM, React.js, un poco de typescript, fundamentos de bases de datos relacionales con MySQL, Express.js, Passport.js, JSON Web Token (JWT), y he utilizado principalmente Git y Github para el control de versiones, aunque tengo cierta familiaridad con Microsoft Azure. He trabajado bajo metodologías ágiles de desarrollo como scrum y canva.",
+      "experience": "He trabajado en dos empresas, ambas se dedican al ámbito educativo, desarrollan productos para que los colegios gestionen todos sus expedientes académicos, una se llama Siempre.net, en esta trabajé a tiempo completo, y actualmente estoy trabajando en modo freelance en EdSoft, que está realizando un nuevo producto, cuya finalidad es sustituir al ya existente. Me encargo del diseño, maquetación y desarrollo de la nueva plataforma de EdSoft, cuyo frontend está desarrollado principalmente en React.js, y para el consumo se usa GraphQL.",
+      "education": "En el 2019, me gradué como el mejor bachiller en el colegio Adventista de Cartagena, gracias a eso obtuve una beca por un año en la Universidad Adventista de Colombia (UNAC), donde actualmente estudio 8vo semestre de ingeniería en sistemas. ingeniería. A principios del 2020 conocí el desarrollo web y fui adentrándome cada vez más en este mundo del desarrollo web, hasta apasionarme por este."
+    },
+    "skills": [
+      {
+        "name": "JavaScript",
+        "url": "https://i.ibb.co/2g0tqTs/js.png",
+        "level": "Intermediate"
+      },
+      {
+        "name": "React",
+        "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
+        "level": "Basic"
+      },
+      {
+        "name": "Typescript",
+        "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
+        "level": "Basic"
+      },
+      {
+        "name": "Git & Github",
+        "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Express.js",
+        "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
+        "level": "Basic"
+      },
+      {
+        "name": "CSS",
+        "url": "https://i.ibb.co/B3gR7LN/css.png",
+        "level": "Advanced"
+      },
+      {
+        "name": "HTML",
+        "url": "https://i.ibb.co/DRzJrLH/html.png",
+        "level": "Advanced"
+      }
+    ],
+    "projects": [
+      {
+        "url": "https://github.com/juancabana/ParcialProgWeb",
+        "title": "Proyecto del parcial",
+        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
+        "tecnologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "url": "https://github.com/juancabana/ParcialProgWeb",
+        "title": "Proyecto del parcial",
+        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
+        "tecnologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "url": "https://github.com/juancabana/ParcialProgWeb",
+        "title": "Proyecto del parcial",
+        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
+        "tecnologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "url": "https://github.com/juancabana/ParcialProgWeb",
+        "title": "Proyecto del parcial",
+        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
+        "tecnologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "url": "https://github.com/juancabana/ParcialProgWeb",
+        "title": "Proyecto del parcial",
+        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
+        "tecnologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "url": "https://github.com/juancabana/ParcialProgWeb",
+        "title": "Proyecto del parcial",
+        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
+        "tecnologies": ["HTML", "CSS", "JavaScript"]
+      }
+    ]
   }
 }

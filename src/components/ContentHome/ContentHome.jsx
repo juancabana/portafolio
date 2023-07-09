@@ -5,8 +5,6 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const ContentHome = () => {
   const homeData = useSelector(state => state.home.home)
-  console.log(homeData)
-
 
   const ContentHomeContainer = styled('div')(({ theme }) => ({
     position: 'relative',

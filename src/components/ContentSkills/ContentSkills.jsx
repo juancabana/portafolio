@@ -1,37 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
 import CardSkills from "../CardSkills/CardSkills";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
-
-// https://ibb.co/545VzTF
-// https://ibb.co/1m7gzbt
-// https://ibb.co/X2p28Z4
-// https://ibb.co/Fgkw6F0
 const ContentSkills = () => {
-
-  const skills = [
-
-    {
-      name: 'CSS',
-      url: 'https://i.ibb.co/B3gR7LN/css.png',
-      level: 'Advanced',
-    },
-    {
-      name: 'HTML',
-      url: 'https://i.ibb.co/DRzJrLH/html.png',
-      level: 'Advanced',
-    },
-    {
-      name: 'JavaScript',
-      url: 'https://i.ibb.co/2g0tqTs/js.png',
-      level: 'Intermediate',
-    },
-    {
-      name: 'Java',
-      url: 'https://i.ibb.co/HFYFdD2/java.png',
-      level: 'Basic',
-    },
-  ]
+  const skillsData = useSelector(state => state.skills.skills)
 
   const ContentSkillsContainer = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -94,7 +67,7 @@ const ContentSkills = () => {
         <TittleSkills>Skills</TittleSkills>
         <ContentCardSkills>
           {
-            skills.map((skill, index) => (
+            skillsData.map((skill, index) => (
 
               <CardSkills key={index} name={skill.name} url={skill.url} level={skill.level} ></CardSkills>
             ))

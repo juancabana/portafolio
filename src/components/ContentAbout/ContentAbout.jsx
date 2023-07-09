@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux/es/hooks/useSelector";
+
 
 const ContentAbout = () => {
+  const aboutData = useSelector(state => state.about.about)
 
   const WrapperContentAboutContainer = styled('div')(({ theme }) => ({
     width: '100%',
@@ -36,14 +39,12 @@ const ContentAbout = () => {
     [theme.breakpoints.down('md')]: {
       width: 'auto',
     },
-    // marginTop: '0px',
     '&::after': {
       content: 'close-quote',
       width: '100%',
       height: '100%',
       marginLeft: '20px',
       backgroundColor: '#ccd6f6',
-      // background-color: lightgray;
     },
 
   }))
@@ -132,32 +133,11 @@ const ContentAbout = () => {
         <ContentAbout>
           <ParagraphAbout>
             <TextAbout>
-              Frontend and backend web developer, I am a happy, friendly,
-              altruistic person, I like teamwork, good camaraderie, responsible,
-              always willing and eager to learn new technologies and deepen the
-              ones I already know.
-              The technologies I handle are HTML, CSS, Javascript and its
-              versions of ECMAScript (ES6+), Node.js and its NPM package and
-              dependency management system, React.js, typescript, relational
-              database fundamentals with MySQL, Express. js, Passport.js, JSON
-              Web Token (JWT), and I've mostly used Git and Github for version
-              control, although I have some familiarity with Microsoft Azure.
-              I have worked under agile development methodologies such as scrum
-              and canva. <br /> <br />
+              {aboutData.about} <br /> <br />
               <Strong>Experience</Strong> <br />
-              Currently I am in charge of the design, layout and development
-              of the new EdSoft platform, I have implemented the front-end of
-              the page in React, using several of its libraries for routing
-              and page styles, I am in charge of making requests to the API
-              which is built in GraphQL, I was in charge of the configuration
-              of the front-end architecture of the project. <br /> <br />
+              {aboutData.experience}<br /> <br />
               <Strong>Education</Strong> <br />I graduated
-              from high school in 2019, where I graduated as the best high
-              school graduate, because of that I got a scholarship for a year
-              at the Adventist University of Colombia (UNAC), where I am
-              currently studying 5th semester of engineering in systems.
-              engineering. At the beginning of 2020 I met web development and
-              I became passionate about it. passionate about it.
+              {aboutData.education}
             </TextAbout>
         <LinkContact to="/contact">CONTACT</LinkContact>
           </ParagraphAbout>
