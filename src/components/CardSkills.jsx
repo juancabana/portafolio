@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "@emotion/styled";
 import { useSelector } from "react-redux/es/hooks/useSelector";
+import { Button, Collapse, List, ListItem, ListItemText } from '@mui/material';
+
 
 
 
@@ -60,6 +62,18 @@ const CardSkills = ({name, url, level}) => {
         fontWeight: '300'
     }))
 
+
+
+
+
+
+
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleClick = () => {
+      setOpen(!open);
+    };
     return (
         <WrapperCard>
             <ImageCard>
@@ -71,6 +85,26 @@ const CardSkills = ({name, url, level}) => {
                 <TittleLevel>{language === 'english' ? 'Level: ' : 'Nivel: '}{level}</TittleLevel>
                 <Paragraph>I have basic knowledge in java, due to the object-oriented programming subjects I received at the University.</Paragraph>
             </WrapperContent>
+
+
+
+
+
+
+            <Button onClick={handleClick}>Abrir menú</Button>
+      <Collapse in={open}>
+        <List component="div" disablePadding>
+          <ListItem button>
+            <ListItemText primary="Opción 1" />
+          </ListItem>
+          <ListItem button>
+            <ListItemText primary="Opción 2" />
+          </ListItem>
+          <ListItem button>
+            <ListItemText primary="Opción 3" />
+          </ListItem>
+        </List>
+      </Collapse>
         </WrapperCard>
     );
 }
