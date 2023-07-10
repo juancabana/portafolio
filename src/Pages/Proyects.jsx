@@ -1,7 +1,7 @@
 import React from "react";
-import Header from './../../components/Header/Header';
-import ContentProyects from './../../components/ContentProyects/ContentProyects';
-import Footer from "../../components/Footer/Footer";
+import Header from './../components/Header';
+import ContentProyects from './../components/ContentProyects';
+import Footer from "./../components/Footer";
 
 const Proyects = () => {
     return (

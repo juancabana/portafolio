@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./../../components/Header/Header";
-import ContentSkills from "../../components/ContentSkills/ContentSkills";
-import Footer from "../../components/Footer/Footer";
+import Header from "../components/Header";
+import ContentSkills from "../components/ContentSkills";
+import Footer from "../components/Footer";
 
 const Skills = () => {
 

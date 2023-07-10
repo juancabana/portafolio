@@ -1,7 +1,7 @@
 import React from "react";
-import Header from './../../components/Header/Header';
-import ContentContact from './../../components/ContentContact/ContentContact';
-import Footer from './../../components/Footer/Footer';
+import Header from './../components/Header';
+import ContentContact from './../components/ContentContact';
+import Footer from './../components/Footer';
 import styled from '@emotion/styled'
 
 const Contact = () => {

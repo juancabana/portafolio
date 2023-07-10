@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import CardProjects from "../CardProjects/CardProjects";
+import CardProjects from "./CardProjects";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
 

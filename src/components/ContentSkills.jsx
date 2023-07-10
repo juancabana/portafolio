@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import CardSkills from "../CardSkills/CardSkills";
+import CardSkills from "./CardSkills";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const ContentSkills = () => {

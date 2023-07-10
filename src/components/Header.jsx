@@ -16,15 +16,15 @@ import TranslateOutlinedIcon from '@mui/icons-material/TranslateOutlined';
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 // Switch 
-import SwitchTheme from '../Switch/Switch';
+import SwitchTheme from './Switch';
 
 // Redux
 import { useDispatch } from "react-redux";
 // Store 
 import { useSelector } from "react-redux/es/hooks/useSelector";
-import { setEnglish } from '../../store/slices/language';
-import { setSpanish } from '../../store/slices/language';
-import { setHeaderItem } from '../../store/slices/header';
+import { setEnglish } from '../store/slices/language';
+import { setSpanish } from '../store/slices/language';
+import { setHeaderItem } from '../store/slices/header';
 // Theme 
 import { useTheme } from '@emotion/react';
 

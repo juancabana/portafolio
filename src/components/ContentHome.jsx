@@ -68,7 +68,7 @@ const ContentHome = () => {
     marginBottom: '50px',
     width: '240px',
     height: '240px',
-    backgroundImage: `url(${require('./../../assets/img/perfil.jpg')})`,
+    backgroundImage: `url(${require('./../assets/img/perfil.jpg')})`,
     borderRadius: '50%',
     backgroundSize: '200px 250px',
     backgroundPosition: `center calc(50% - 3px)`,

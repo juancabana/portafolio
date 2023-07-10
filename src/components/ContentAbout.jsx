@@ -91,7 +91,7 @@ const ContentAbout = () => {
     width: '450px',
     height: '450px',
     borderRadius: '10px',
-    backgroundImage: `url(${require('./../../assets/img/verticalImage.jpg')})`,
+    backgroundImage: `url(${require('./../assets/img/verticalImage.jpg')})`,
     backgroundSize: 'cover',
     backgroundPosition: `right 30%`,
     [theme.breakpoints.down('lg')]: {
