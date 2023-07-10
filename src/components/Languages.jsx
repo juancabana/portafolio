@@ -59,7 +59,7 @@ const Languages = () => {
                 onClose={handleCloseLanguagesMenu}
             >
                 {languages.map((language) => (
-                    <MenuItem key={language} onClick={() => handleCloseLanguagesMenu(language)}>
+                    <MenuItem key={language} onClick={() => handleCloseLanguagesMenu(language)} style={{backgroundColor: theme.palette.background, color: theme.palette.colorContrast}}>
                         {/* Se le pone la primera letra en mayuscula */}
                         {language.charAt(0).toUpperCase() + language.slice(1)}
                     </MenuItem>
