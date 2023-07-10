@@ -15,26 +15,29 @@ import ApiOutlinedIcon from '@mui/icons-material/ApiOutlined';
 import TranslateOutlinedIcon from '@mui/icons-material/TranslateOutlined';
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
+// Switch 
+import SwitchTheme from '../Switch/Switch';
+
 // Redux
 import { useDispatch } from "react-redux";
 // Store 
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { setEnglish } from '../../store/slices/language';
 import { setSpanish } from '../../store/slices/language';
+import { setHeaderItem } from '../../store/slices/header';
 // Theme 
 import { useTheme } from '@emotion/react';
-import { UseSelector } from 'react-redux/es/hooks/useSelector';
-
-
 
 
 const languages = ['spanish', 'english'];
 
 
 function Header() {
-  const actualTheme = useSelector(state => state.theme.theme);
   const theme = useTheme();
   // Theme 
+  const actualTheme = useSelector(state => state.theme.theme);
+  // Item 
+  const actualItem = useSelector(state => state.header.header);
   // Language 
   const language = useSelector(state => state.language.language)
   // Dispatcher 
@@ -42,7 +45,7 @@ function Header() {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
-  const [activeIndex, setActiveIndex] = useState(null);
+
 
 
 
@@ -83,6 +86,8 @@ function Header() {
     height: '67px',
     borderBottom: theme
   }));
+
+
 
 
 
@@ -174,8 +179,8 @@ function Header() {
               <ButtonActive
                 key={page.page}
                 to={`/${page.route}`}
-                onClick={() => { setActiveIndex(index) }}
-                className={activeIndex === index ? actualTheme === 'dark' ? 'darkActive' : 'lightActive' : ''}
+                onClick={() => { dispatch(setHeaderItem(page.page)) }}
+                className={actualItem === page.page ? actualTheme === 'dark' ? 'darkActive' : 'lightActive' : ''}
               >
                 <Button sx={{ color: theme.palette.colorItemHeader, display: 'block', width: '100%', height: '100%' }} >
                   {page.page}
@@ -183,7 +188,7 @@ function Header() {
               </ButtonActive>
             ))}
           </Box>
-
+          <SwitchTheme />
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title={language === 'english' ? "Change language" : 'Cambiar idioma'}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

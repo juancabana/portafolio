@@ -17,13 +17,8 @@ export const {setThemeData} = themeSlice.actions;
 
 export default themeSlice.reducer;
 
-export const fetchThemeEnglish = () => {
+export const setTheme = (theme) => {
     return (dispatch) => {
-       dispatch(setThemeData(jsonData.english.theme)) 
-    }
-}
-export const fetchThemeSpanish = () => {
-    return (dispatch) => {
-       dispatch(setThemeData(jsonData.spanish.theme)) 
+       dispatch(setThemeData(theme)) 
     }
 }
