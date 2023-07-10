@@ -16,8 +16,11 @@ code {
     monospace;
 }
 
-.active {
+.darkActive {
   border-bottom: 2px solid aquamarine;
+}
+.lightActive {
+  border-bottom: 2px solid #0b786f;
 }
 /* Estilos personalizados para el scrollbar */
 /* El ancho y el color del scrollbar */

@@ -46,18 +46,16 @@ const ContentSkills = () => {
     height: '1px',
     position: 'relative',
     fontFamily: ' monospace',
-    color: '#ccd6f6',
+    color: theme.palette.colorTittle,
     fontSize: '35px',
     display: 'flex',
     alignItems: 'center',
-    // marginTop: '0px',
     '&::after': {
       content: 'close-quote',
       width: '100%',
       height: '100%',
       marginLeft: '20px',
-      backgroundColor: '#ccd6f6',
-      // background-color: lightgray;
+      backgroundColor: theme.palette.colorTittle,
     },
 
   }))

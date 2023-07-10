@@ -26,13 +26,13 @@ const ContentAbout = () => {
     padding: '1rem',
     
   }))
-  const TittleAbout = styled('h2')(({theme}) => ({
+  const TittleAbout = styled('h1')(({theme}) => ({
     maxWidth: '1000px',
     width: '56%',
     height: '1px',
     position: 'relative',
     fontFamily: ' monospace',
-    color: '#ccd6f6',
+    color: theme.palette.colorTittle,
     fontSize: '35px',
     display: 'flex',
     alignItems: 'center',
@@ -46,7 +46,7 @@ const ContentAbout = () => {
       width: '100%',
       height: '100%',
       marginLeft: '20px',
-      backgroundColor: '#ccd6f6',
+      backgroundColor: theme.palette.colorTittle,
     },
 
   }))
@@ -73,7 +73,7 @@ const ContentAbout = () => {
     },
   }))
   const TextAbout = styled('p')(({theme}) => ({
-    color: '#8892b0',
+    color: theme.palette.colorContent,
     fontFamily: '"Montserrat", sans-serif',
     lineHeight: '1.5',
   }))
@@ -111,8 +111,8 @@ const ContentAbout = () => {
     textDecoration: 'none',
     borderRadius: '5px',
     fontFamily: ' monospace',
-    border: '1px solid aquamarine',
-    color: 'aquamarine',
+    border: `1px solid ${theme.palette.colorContrast}`,
+    color: theme.palette.colorContrast,
     height: '60px',
     width: '140px',
     ':hover': {
@@ -124,7 +124,7 @@ const ContentAbout = () => {
   const Strong = styled('strong')(({theme}) => ({
     fontSize: '20px',
     fontWeight: '400',
-    color: 'aquamarine',
+    color: theme.palette.colorContrast,
   }))
 
 
@@ -136,9 +136,9 @@ const ContentAbout = () => {
           <ParagraphAbout>
             <TextAbout>
               {aboutData.about} <br /> <br />
-              <Strong>Experience</Strong> <br />
+              <Strong>{language === 'english' ? 'Experience': 'Experiencia'}</Strong> <br />
               {aboutData.experience}<br /> <br />
-              <Strong>Education</Strong> <br />
+              <Strong>{language === 'english' ? 'Education' : 'Educación'}</Strong> <br />
               {aboutData.education}
             </TextAbout>
         <LinkContact to="/contact">{language === 'english' ? 'CONTACT' : 'CONTÁCTAME'}</LinkContact>

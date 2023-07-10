@@ -21,6 +21,10 @@ import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { setEnglish } from '../../store/slices/language';
 import { setSpanish } from '../../store/slices/language';
+// Theme 
+import { useTheme } from '@emotion/react';
+import { UseSelector } from 'react-redux/es/hooks/useSelector';
+
 
 
 
@@ -28,12 +32,18 @@ const languages = ['spanish', 'english'];
 
 
 function Header() {
+  const actualTheme = useSelector(state => state.theme.theme);
+  const theme = useTheme();
+  // Theme 
+  // Language 
   const language = useSelector(state => state.language.language)
+  // Dispatcher 
+  const dispatch = useDispatch();
+
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const dispatch = useDispatch();
 
 
   const pageHome = language === 'english' ? 'home' : 'inicio';
@@ -48,6 +58,7 @@ function Header() {
     { page: pageSkills, route: 'skills' },
     { page: pageProjects, route: 'projects' },
     { page: pageContact, route: 'contact' }];
+
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -61,27 +72,26 @@ function Header() {
 
   const handleCloseLanguagesMenu = (language) => {
     setAnchorElUser(null);
-    language === 'spanish' ? dispatch(setSpanish()): dispatch(setEnglish());
-    // setSpanish();
-    // setEnglish()
+    language === 'spanish' ? dispatch(setSpanish()) : dispatch(setEnglish());
   };
 
-  const ButtonActive = styled(NavLink)(({ theme, isActive }) => ({
+  const ButtonActive = styled(NavLink)(({ theme }) => ({
     textDecoration: 'none',
-    color: 'white',
+    color: theme.palette.colorItemHeader,
     display: 'block',
     width: 'auto',
     height: '67px',
+    borderBottom: theme
   }));
 
 
 
   return (
-    <AppBar position="absolute" style={{ backgroundColor: '#0a192f', top: '0px' }}>
+    <AppBar position="absolute" style={{ backgroundColor: theme.palette.background, top: '0px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Icono  */}
-          <ApiOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} style={{ color: 'aquamarine' }} />
+          <ApiOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} style={{ color: theme.palette.colorContrast }} />
           {/* Cabana  */}
           <Typography
             variant="h6"
@@ -94,7 +104,7 @@ function Header() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'white',
+              color: theme.palette.colorItemHeader,
               textDecoration: 'none',
             }}
           >
@@ -129,7 +139,7 @@ function Header() {
               onClose={handleCloseNavMenu}
             >
               {pages.map((page) => (
-                <NavLink key={page.page} to={`/${page.route}`} style={{ textDecoration: 'none', color: '#0a192f' }}>
+                <NavLink key={page.page} to={`/${page.route}`} style={{ textDecoration: 'none', color: theme.palette.background }}>
                   <MenuItem>
                     {page.page}
                   </MenuItem>
@@ -152,7 +162,7 @@ function Header() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'white',
+              color: theme.palette.colorItemHeader,
               textDecoration: 'none',
             }}
           >
@@ -164,10 +174,10 @@ function Header() {
               <ButtonActive
                 key={page.page}
                 to={`/${page.route}`}
-                className={activeIndex === index ? 'active' : ''}
                 onClick={() => { setActiveIndex(index) }}
+                className={activeIndex === index ? actualTheme === 'dark' ? 'darkActive' : 'lightActive' : ''}
               >
-                <Button sx={{ color: 'white', display: 'block', width: '100%', height: '100%' }} >
+                <Button sx={{ color: theme.palette.colorItemHeader, display: 'block', width: '100%', height: '100%' }} >
                   {page.page}
                 </Button>
               </ButtonActive>
@@ -177,7 +187,7 @@ function Header() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title={language === 'english' ? "Change language" : 'Cambiar idioma'}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <TranslateOutlinedIcon style={{ color: 'aquamarine' }} />
+                <TranslateOutlinedIcon style={{ color: theme.palette.colorContrast }} />
               </IconButton>
             </Tooltip>
             <Menu

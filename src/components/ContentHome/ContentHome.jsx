@@ -3,8 +3,11 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
+
 const ContentHome = () => {
+  // Data 
   const homeData = useSelector(state => state.home.home)
+  // Language 
   const language = useSelector(state => state.language.language)
 
   const ContentHomeContainer = styled('div')(({ theme }) => ({
@@ -13,7 +16,7 @@ const ContentHome = () => {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#0a192f',
+    backgroundColor: theme.palette.background,
     width: 'auto',
     height: 'calc(100vh - 50px)',
     padding: '0px 1rem'
@@ -22,7 +25,7 @@ const ContentHome = () => {
 
   const TextFirstLine = styled('h2')(({ theme }) => ({
     margin: '0%',
-    color: '#ccd6f6',
+    color: theme.palette.colorSubTittle,
     fontFamily: '"Quicksand", sans-serif',
     fontWeight: '500',
     fontSize: '25px',
@@ -37,7 +40,7 @@ const ContentHome = () => {
   }))
   const TextSecondLine = styled('h1')(({ theme }) => ({
     margin: '0%',
-    color: '#ccd6f6',
+    color: theme.palette.colorTittle,
     textAlign: 'center',
     fontFamily: ' monospace',
     fontWeight: '700',
@@ -49,7 +52,7 @@ const ContentHome = () => {
   }))
   const TextTrhirdLine = styled('h3')(({ theme }) => ({
     margin: '0%',
-    color: '#ccd6f6',
+    color: theme.palette.colorDescription,
     fontFamily: '"Quicksand", sans-serif',
     textAlign: 'center',
     fontWeight: '300',
@@ -96,7 +99,6 @@ const ContentHome = () => {
     height: '200px',
     borderRadius: '50%',
     backgroundSize: '200px 250px',
-    // backgroundColor: 'rgba(127,255,212, 0.5)',
   }))
   const EmailLink = styled('a')(({ theme }) => ({
     display: 'flex',
@@ -105,18 +107,17 @@ const ContentHome = () => {
     textDecoration: 'none',
     borderRadius: '5px',
     fontFamily: ' monospace',
-    border: '1px solid aquamarine',
-    color: 'aquamarine',
+    border: `1px solid ${theme.palette.colorContrast}`,
+    color: theme.palette.colorContrast,
     height: '60px',
     width: '140px',
     marginTop: '2rem',
     ':hover': {
-      backgroundColor: 'rgba(100,255,218,0.1)',
+      backgroundColor: theme.palette.colorHoverContrast,
       transition: 'all 0.3s',
     }
 
   }))
-
   return (
     <ContentHomeContainer>
       <TextFirstLine>{homeData.firstLine}</TextFirstLine>

@@ -29,7 +29,7 @@ const NotFoundPage = () => {
 
     }))
     const Link404 = styled(NavLink)(({ theme }) => ({
-        color: '#fff !important',
+        color: '#ffffff !important',
         padding: '10px 20px',
         background: '#39ac31',
         margin: '20px 0',

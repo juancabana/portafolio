@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 
 
 const CardProjects = ({ url, title, description, tecnologies }) => {
+
+    // Theme 
+
     const CardsProyects = styled(Link)(({ theme }) => ({
         height: '220px',
         width: '330px',
@@ -12,7 +15,7 @@ const CardProjects = ({ url, title, description, tecnologies }) => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#112240',
+        backgroundColor: theme.palette.colorCardBackground,
         cursor: 'pointer',
         padding: '25px',
         paddingTop: '30px',
@@ -34,12 +37,12 @@ const CardProjects = ({ url, title, description, tecnologies }) => {
         fontFamily: '"Montserrat", sans-serif',
         fontSize: '18px',
         fontWeight: '700',
-        color: '#ccd6f6',
+        color: theme.palette.colorSubTittle,
         margin: '0px',
     }))
     const PCard = styled('p')(({ theme }) => ({
         fontFamily: '"Montserrat", sans-serif',
-        color: '#ccd6f6',
+        color: theme.palette.colorContent,
         fontSize: '14px',
         fontWeight: '400',
         lineHeight: '1.5',
@@ -49,11 +52,11 @@ const CardProjects = ({ url, title, description, tecnologies }) => {
         width: '100%',
         display: 'flex',
         justifyContent: 'space-evenly',
-        color: '#ccd6f6',
+        color: theme.palette.colorDescription,
         fontSize: '12px',
     }))
     const FolderImg = styled('svg')(({ theme }) => ({
-        fill: 'aquamarine',
+        fill: theme.palette.colorContrast,
     }))
     return (
         <CardsProyects href={url} target="_blank" rel="noopener noreferrer">

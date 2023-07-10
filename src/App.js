@@ -16,6 +16,9 @@ import {
 } from "./store/slices/projects";
 // Store
 import { useSelector } from "react-redux/es/hooks/useSelector";
+// Themes 
+import lightTheme from "./themes/lightTheme";
+import darkTheme from "./themes/darkTheme";
 
 const theme = createTheme({
   breakpoints: {
@@ -32,6 +35,11 @@ const theme = createTheme({
 const App = () => {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language.language);
+  const isDarkMode = useSelector((state) => state.theme.theme);
+
+  const theme = isDarkMode === 'dark' ? darkTheme : lightTheme;
+  // const theme = darkTheme;
+  // const theme = lightTheme;
 
   const englishMode = () => {
     dispatch(fetchHomeEnglish());
@@ -51,7 +59,7 @@ const App = () => {
   }, [language]);
 
   const AppContainer = styled("div")(({ theme }) => ({
-    backgroundColor: "#0a192f",
+    backgroundColor: theme.palette.background,
     margin: "0%",
   }));
 

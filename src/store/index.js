@@ -5,6 +5,7 @@ import about from "./slices/about";
 import skills from "./slices/skills";
 import projects from './slices/projects/index';
 import language from "./slices/language/index";
+import theme from "./slices/theme";
 
 export default configureStore({
     reducer: {
@@ -12,7 +13,8 @@ export default configureStore({
         about,
         skills,
         projects,
-        language
+        language,
+        theme
 
     }
 })

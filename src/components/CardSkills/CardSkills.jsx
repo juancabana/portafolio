@@ -15,20 +15,16 @@ const CardSkills = ({name, url, level}) => {
         alignItems: 'center',
         width: '100%',
         borderRadius: '10px',
-        border: '1px solid aquamarine',
-        // backgroundColor: 'rgba(100,255,218,0.1)',
-        // gap: '1rem',
+        border: `1px solid ${theme.palette.colorContrast}`,
+    
     }))
     const ImageCard = styled('div')(({ theme }) => ({
         height: '100px',
         maxHeight: '90px',
         width: '100px',
         minWidth: '90px',
-        // minHeight: '100px',
         borderRadius: '10px',
-        // border: '1px solid aquamarine',
         padding: '10px',
-        // backgroundColor: 'white',
     }))
     const Image = styled('div')(({ theme }) => ({
         boxSizing: 'content-box',
@@ -41,18 +37,16 @@ const CardSkills = ({name, url, level}) => {
     const WrapperContent = styled('div')(({ theme }) => ({
         width: '100%',
         height: '100%',
-        // backgroundColor: 'red',
         marginLeft: '1rem'
     }))
     const TittleSkill = styled('h2')(({ theme }) => ({
-        color: '#ffffff',
+        color: theme.palette.colorItemHeader,
         fontFamily: 'monospace',
         margin: '0px',
         fontSize: '25px',
     }))
     const TittleLevel = styled('h4')(({ theme }) => ({
-        color: 'aquamarine',
-        // backgroundColor: 'red',
+        color: theme.palette.colorContrast,
         fontFamily: 'monospace',
         marginTop: '5px',
         marginBottom: '10px',
@@ -60,10 +54,8 @@ const CardSkills = ({name, url, level}) => {
         fontWeight: '200'
     }))
     const Paragraph = styled('p')(({ theme }) => ({
-        color: '#ccd6f6',
-        // backgroundColor: 'red',
+        color: theme.palette.colorContent,
         fontFamily: 'monospace',
-        // marginTop: '5px',
         fontSize: '15px',
         fontWeight: '300'
     }))

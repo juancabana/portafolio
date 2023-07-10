@@ -3,8 +3,11 @@ import React from "react";
 import CardProjects from "../CardProjects/CardProjects";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
+
 const ContentProyects = () => {
+  // Data 
   const projectsData = useSelector(state => state.projects.projects)
+  // Language 
   const language = useSelector(state => state.language.language)
 
 
@@ -38,12 +41,11 @@ const ContentProyects = () => {
 
   }))
   const TittleProjects = styled('div')(({ theme }) => ({
-    // maxWidth: '1000px',
     width: '100%',
     height: '1px',
     position: 'relative',
     fontFamily: ' monospace',
-    color: '#ccd6f6',
+    color: theme.palette.colorTittle,
     fontSize: '35px',
     display: 'flex',
     alignItems: 'center',
@@ -53,16 +55,14 @@ const ContentProyects = () => {
       width: '100%',
       height: '100%',
       marginLeft: '20px',
-      backgroundColor: '#ccd6f6',
-      // background-color: lightgray;
+      backgroundColor: theme.palette.colorTittle
     },
     '&::before': {
       content: 'close-quote',
       width: '100%',
       height: '100%',
       marginRight: '20px',
-      backgroundColor: '#ccd6f6',
-      // background-color: lightgray;
+      backgroundColor: theme.palette.colorTittle
     },
   }))
   const ContentCardsProyects = styled('div')(({ theme }) => ({
@@ -81,10 +81,8 @@ const ContentProyects = () => {
         <ContentCardsProyects>
           <TittleProjects>{language === 'english' ? 'Projects' : 'Proyectos'}</TittleProjects>
           {projectsData.map((project, index) => (
-            <CardProjects url={project.url} title={project.title} description={project.description} tecnologies={project.tecnologies} />
+            <CardProjects key={index} url={project.url} title={project.title} description={project.description} tecnologies={project.tecnologies} />
           ))}
-
-
         </ContentCardsProyects>
       </WrapperContent>
     </ContentProyects>

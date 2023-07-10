@@ -8,8 +8,7 @@ const Footer = () => {
     const language = useSelector(state => state.language.language)
 
     const Footer = styled('div')(({ theme }) => ({
-        // position: 'absolute',
-        // bottom: '0px',
+       
         height: '50px',
         width: '100%',
         display: 'flex',
@@ -20,7 +19,7 @@ const Footer = () => {
     const ContentFooter = styled('h5')(({ theme }) => ({
         fontFamily: 'monospace',
         fontweight: '300',
-        color: '#ccd6f6',
+        color: theme.palette.colorTittle,
         margin: '0px',
     }))
 

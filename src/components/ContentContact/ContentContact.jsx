@@ -31,17 +31,17 @@ const ContentContact = () => {
     fontSize: '16px',
     fontWeight: '400',
     fontFamily: ' monospace',
-    color: 'aquamarine',
+    color: theme.palette.colorContrast,
   }))
   const H1Contact = styled('h1')(({ theme }) => ({
     fontSize: '50px',
     fontFamily: '"Montserrat", sans-serif',
-    color: '#ccd6f6',
+    color: theme.palette.colorTittle,
     marginBottom: '0%',
   }))
   const PContact = styled('p')(({ theme }) => ({
     fontFamily: '"Montserrat", sans-serif',
-    color: '#ccd6f6',
+    color: theme.palette.colorContent,
     textAlign: 'center',
     marginBottom: '50px',
   }))
@@ -53,12 +53,12 @@ const ContentContact = () => {
     textDecoration: 'none',
     borderRadius: '5px',
     fontFamily: ' monospace',
-    border: '1px solid aquamarine',
-    color: 'aquamarine',
+    border: `1px solid ${theme.palette.colorContrast}`,
+    color: theme.palette.colorContrast,
     height: '60px',
     width: '140px',
     ':hover': {
-      backgroundColor: 'rgba(100,255,218,0.1)',
+      backgroundColor: theme.palette.colorHoverContrast,
       transition: 'all 0.3s',
     }
 
