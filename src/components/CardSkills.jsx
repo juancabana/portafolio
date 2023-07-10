@@ -16,7 +16,6 @@ const CardSkills = ({name, url, level}) => {
         width: '100%',
         borderRadius: '10px',
         backgroundColor: theme.palette.colorCardBackground
-        // border: `1px solid ${theme.palette.colorContrast}`,
     
     }))
     const ImageCard = styled('div')(({ theme }) => ({

@@ -31,7 +31,7 @@ const ResponsiveMenu = ({ pages }) => {
                 onClick={handleOpenNavMenu}
                 color="inherit"
             >
-                <MenuIcon />
+                <MenuIcon style={{color: theme.palette.colorTittle}} />
             </IconButton>
             <Menu
                 sx={{ mt: '45px' }}
@@ -51,7 +51,7 @@ const ResponsiveMenu = ({ pages }) => {
             >
                 {pages.map((page) => (
                     <NavLink key={page.page} to={`/${page.route}`} style={{ textDecoration: 'none', color: theme.palette.background }}>
-                        <MenuItem>
+                        <MenuItem style={{backgroundColor: theme.palette.background, color: theme.palette.colorContrast}}>
                             {page.page}
                         </MenuItem>
                     </NavLink>

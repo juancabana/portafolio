@@ -76,12 +76,10 @@ const SwitchTheme = () => {
               control={
                 <MaterialUISwitch
                   sx={{ m: 1 }}
-                //   defaultChecked
                   checked={checked}
-                  onChange={() => {handleStateCheck() }} // Utiliza el evento onChange
+                  onChange={() => {handleStateCheck() }} 
                 />
               }
-            // label="MUI switch"
             />
           </FormGroup>
   );

@@ -38,8 +38,6 @@ const App = () => {
   const isDarkMode = useSelector((state) => state.theme.theme);
 
   const theme = isDarkMode === 'dark' ? darkTheme : lightTheme;
-  // const theme = darkTheme;
-  // const theme = lightTheme;
 
   const englishMode = () => {
     dispatch(fetchHomeEnglish());

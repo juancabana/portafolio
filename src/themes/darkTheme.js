@@ -3,7 +3,6 @@ import { createTheme } from "@mui/material";
 const darkTheme = createTheme({
   palette: {
     type: "dark",
-    // Personaliza los colores de tu tema dark aquí
     background: '#0A192F',
     colorTittle: '#ccd6f6',
     colorSubTittle: '#ccd6f6',
