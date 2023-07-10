@@ -50,40 +50,101 @@
     ],
     "projects": [
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "description": "Solución del parcial de la materia Programación en la Web",
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
+      },
+      {
+        "title": "Proyecto del parcial",
+        "description": "Solución del parcial de la materia Programación en la Web",
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       }
     ]
   },

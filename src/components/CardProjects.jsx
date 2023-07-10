@@ -3,43 +3,42 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 
 
-const CardProjects = ({ url, title, description, tecnologies }) => {
+const CardProjects = ({ links, title, description, tecnologies }) => {
 
     // Theme 
 
-    const CardsProyects = styled(Link)(({ theme }) => ({
-        height: '220px',
+    const CardsProyects = styled('div')(({ theme }) => ({
+        minHeight: '220px',
         width: '330px',
-        borderRadius: '10px',
-        display: 'flex',
+        borderRadius: '5px',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: theme.palette.colorCardBackground,
-        cursor: 'pointer',
-        padding: '25px',
-        paddingTop: '30px',
-
+        // backgroundColor: theme.palette.colorCardBackground,
+        // padding: '25px',
+        paddingTop: '10px 0px',
+        border: `1px solid ${theme.palette.colorTittle}`,
         textDecoration: 'none',
-        '&:hover': {
-            transform: 'translateY(-7px)',
-            transition: 'all 0.25s',
-        }
+
     }))
     const ImgProject = styled('div')(({ theme }) => ({
         display: 'flex',
         alignItems: 'center',
-        height: '80px',
-        width: '100%',
+    }))
+    const WrapperTittleCard = styled('div')(({ theme }) => ({
+        display: 'flex',
+        alignItems: 'center',
+
     }))
     const SubtittleCard = styled('h3')(({ theme }) => ({
         width: '100%',
         fontFamily: '"Montserrat", sans-serif',
         fontSize: '18px',
         fontWeight: '700',
-        color: theme.palette.colorSubTittle,
+        color: theme.palette.colorItemHeader,
         margin: '0px',
     }))
+
     const PCard = styled('p')(({ theme }) => ({
         fontFamily: '"Montserrat", sans-serif',
         color: theme.palette.colorContent,
@@ -47,35 +46,82 @@ const CardProjects = ({ url, title, description, tecnologies }) => {
         fontWeight: '400',
         lineHeight: '1.5',
     }))
-    const DescriptionCard = styled('div')(({ theme }) => ({
+    const TecnologiesCard = styled('div')(({ theme }) => ({
         fontFamily: '"Montserrat", sans-serif',
         width: '100%',
         display: 'flex',
-        justifyContent: 'space-evenly',
+        justifyContent: 'left',
         color: theme.palette.colorDescription,
         fontSize: '12px',
+        margin: '10px',
+        gap: '10px'
+
     }))
     const FolderImg = styled('svg')(({ theme }) => ({
         fill: theme.palette.colorContrast,
     }))
+    const WrapperContentCard = styled('div')(({ theme }) => ({
+        padding: '1rem',
+        paddingTop: '0px'
+    }))
+    const Hr = styled('hr')(({ theme }) => ({
+        color: theme.palette.colorTittle
+    }))
+    const WrapperLinks = styled('div')(({ theme }) => ({
+        display: 'flex',
+        gap: '1rem'
+    }))
+    const Projectink = styled('a')(({ theme }) => ({
+        padding: '0%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textDecoration: 'none',
+        borderRadius: '0px',
+        fontFamily: ' monospace',
+        border: `1px solid ${theme.palette.colorContrast}`,
+        color: theme.palette.colorContrast,
+        padding: '5px',
+        // height: '60px',
+        // width: '140px',
+        ':hover': {
+            backgroundColor: theme.palette.colorHoverContrast,
+            transition: 'all 0.3s',
+            transform: 'translateY(-4px)',
+            transition: 'all 0.25s',
+        }
+
+    }))
     return (
-        <CardsProyects href={url} target="_blank" rel="noopener noreferrer">
-            <ImgProject>
-                <FolderImg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="60"
-                    width="60"
-                >
-                    <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
-                </FolderImg>
-            </ImgProject>
-            <SubtittleCard>{title}</SubtittleCard>
-            <PCard>
-                {description}
-            </PCard>
-            <DescriptionCard>
-                {tecnologies.map((tecnology, index) => <h4 key={index}>{tecnology}</h4>)}
-            </DescriptionCard>
+        <CardsProyects href={links} target="_blank" rel="noopener noreferrer">
+            <TecnologiesCard>
+                {tecnologies.map((tecnology, index) => <h4 key={index} style={{ margin: '0px' }}>{tecnology}</h4>)}
+            </TecnologiesCard>
+            <Hr />
+            <WrapperContentCard>
+
+                <WrapperTittleCard>
+                    <ImgProject>
+                        <FolderImg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="50"
+                            width="50"
+                        >
+                            <path d="M7.05 40Q5.85 40 4.95 39.075Q4.05 38.15 4.05 37V11Q4.05 9.85 4.95 8.925Q5.85 8 7.05 8H21.05L24.05 11H41.05Q42.2 11 43.125 11.925Q44.05 12.85 44.05 14V37Q44.05 38.15 43.125 39.075Q42.2 40 41.05 40ZM7.05 11V37Q7.05 37 7.05 37Q7.05 37 7.05 37H41.05Q41.05 37 41.05 37Q41.05 37 41.05 37V14Q41.05 14 41.05 14Q41.05 14 41.05 14H22.8L19.8 11H7.05Q7.05 11 7.05 11Q7.05 11 7.05 11ZM7.05 11Q7.05 11 7.05 11Q7.05 11 7.05 11V14Q7.05 14 7.05 14Q7.05 14 7.05 14V37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Q7.05 37 7.05 37Z" />
+                        </FolderImg>
+                    </ImgProject>
+                    <SubtittleCard>{title}</SubtittleCard>
+                </WrapperTittleCard>
+                <PCard>
+                    {description}
+                </PCard>
+                <WrapperLinks>
+                    {links.map((link) =>
+                        <Projectink href={link.url}>{link.page}</Projectink>
+                    )}
+                </WrapperLinks>
+
+            </WrapperContentCard>
         </CardsProyects>
     );
 }
