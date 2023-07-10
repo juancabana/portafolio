@@ -15,37 +15,119 @@
       {
         "name": "JavaScript",
         "url": "https://i.ibb.co/2g0tqTs/js.png",
-        "level": "Intermediate"
+        "level": "Intermediate",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "React",
         "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
-        "level": "Basic"
+        "level": "Basic",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "Typescript",
         "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
-        "level": "Basic"
+        "level": "Basic",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "Git & Github",
         "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
-        "level": "Intermediate"
+        "level": "Intermediate",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "Express.js",
         "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
-        "level": "Basic"
+        "level": "Basic",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "CSS",
         "url": "https://i.ibb.co/B3gR7LN/css.png",
-        "level": "Advanced"
+        "level": "Advanced",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "HTML",
         "url": "https://i.ibb.co/DRzJrLH/html.png",
-        "level": "Advanced"
+        "level": "Advanced",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       }
     ],
     "projects": [
@@ -164,37 +246,121 @@
       {
         "name": "JavaScript",
         "url": "https://i.ibb.co/2g0tqTs/js.png",
-        "level": "Intermedio"
+        "level": "Intermedio",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "React",
         "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
-        "level": "Basico"
+        "level": "Basico",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "Typescript",
         "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
-        "level": "Basico"
+        "level": "Basico",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "Git & Github",
         "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
-        "level": "Intermedio"
+        "level": "Intermedio",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "Express.js",
         "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
-        "level": "Basico"
+        "level": "Basico",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "CSS",
         "url": "https://i.ibb.co/B3gR7LN/css.png",
-        "level": "Avanzado"
+        "level": "Avanzado",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "name": "HTML",
         "url": "https://i.ibb.co/DRzJrLH/html.png",
-        "level": "Avanzado"
+        "level": "Avanzado",
+        "certificates": [
+          {
+            "tittleEnglish": "Github",
+            "tittleSpanish": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "tittleEnglish": "Live",
+            "tittleSpanish": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       }
     ],
     "projects": [
