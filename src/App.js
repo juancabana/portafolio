@@ -6,11 +6,16 @@ import { createTheme } from "@mui/material/styles";
 // Redux
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-// Fetch info 
-import { fetchHomeEnglish } from "./store/slices/home";
-import { fetchAboutEnglish } from "./store/slices/about";
-import { fetchSkillsEnglish } from "./store/slices/skills";
-import { fetchProjectsEnglish } from "./store/slices/projects";
+// Fetch info
+import { fetchHomeEnglish, fetchHomeSpanish } from "./store/slices/home";
+import { fetchAboutEnglish, fetchAboutSpanish } from "./store/slices/about";
+import { fetchSkillsEnglish, fetchSkillsSpanish } from "./store/slices/skills";
+import {
+  fetchProjectsEnglish,
+  fetchProjectsSpanish,
+} from "./store/slices/projects";
+// Store
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const theme = createTheme({
   breakpoints: {
@@ -26,15 +31,24 @@ const theme = createTheme({
 
 const App = () => {
   const dispatch = useDispatch();
+  const language = useSelector((state) => state.language.language);
 
-
-  
-  useEffect(() => {
+  const englishMode = () => {
     dispatch(fetchHomeEnglish());
     dispatch(fetchAboutEnglish());
     dispatch(fetchSkillsEnglish());
     dispatch(fetchProjectsEnglish());
-  }, [])
+  };
+  const spanishhMode = () => {
+    dispatch(fetchHomeSpanish());
+    dispatch(fetchAboutSpanish());
+    dispatch(fetchSkillsSpanish());
+    dispatch(fetchProjectsSpanish());
+  };
+
+  useEffect(() => {
+    language === "spanish" ? spanishhMode() : englishMode();
+  }, [language]);
 
   const AppContainer = styled("div")(({ theme }) => ({
     backgroundColor: "#0a192f",
@@ -42,13 +56,12 @@ const App = () => {
   }));
 
   return (
-      <ThemeProvider theme={theme}>
-        <AppContainer>
-          <AppRouter />
-        </AppContainer>
-      </ThemeProvider>
-    
+    <ThemeProvider theme={theme}>
+      <AppContainer>
+        <AppRouter />
+      </AppContainer>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

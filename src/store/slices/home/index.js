@@ -22,3 +22,8 @@ export const fetchHomeEnglish = () => {
        dispatch(setHomeData(jsonData.english.home)) 
     }
 }
+export const fetchHomeSpanish = () => {
+    return (dispatch) => {
+       dispatch(setHomeData(jsonData.spanish.home)) 
+    }
+}

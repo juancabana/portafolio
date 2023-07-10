@@ -22,3 +22,8 @@ export const fetchSkillsEnglish = () => {
        dispatch(setSkillsData(jsonData.english.skills)) 
     }
 }
+export const fetchSkillsSpanish = () => {
+    return (dispatch) => {
+       dispatch(setSkillsData(jsonData.spanish.skills)) 
+    }
+}

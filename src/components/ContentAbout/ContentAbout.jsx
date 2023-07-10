@@ -136,7 +136,7 @@ const ContentAbout = () => {
               {aboutData.about} <br /> <br />
               <Strong>Experience</Strong> <br />
               {aboutData.experience}<br /> <br />
-              <Strong>Education</Strong> <br />I graduated
+              <Strong>Education</Strong> <br />
               {aboutData.education}
             </TextAbout>
         <LinkContact to="/contact">CONTACT</LinkContact>

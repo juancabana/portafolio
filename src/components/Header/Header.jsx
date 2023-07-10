@@ -15,6 +15,12 @@ import ApiOutlinedIcon from '@mui/icons-material/ApiOutlined';
 import TranslateOutlinedIcon from '@mui/icons-material/TranslateOutlined';
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
+// Redux
+import { useDispatch } from "react-redux";
+// Store 
+import { useSelector } from "react-redux/es/hooks/useSelector";
+import { setEnglish } from '../../store/slices/language';
+import { setSpanish } from '../../store/slices/language';
 
 
 const pages = [
@@ -23,13 +29,15 @@ const pages = [
   { page: 'skills', route: 'skills' },
   { page: 'projects', route: 'projects' },
   { page: 'contact', route: 'contact' }];
-const languages = ['Spanish', 'English'];
+const languages = ['spanish', 'english'];
 
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [activeIndex, setActiveIndex] = useState(null);
+
+  const dispatch = useDispatch();
 
 
   const handleOpenNavMenu = (event) => {
@@ -43,8 +51,11 @@ function Header() {
     setAnchorElNav(null);
   };
 
-  const handleCloseLanguagesMenu = () => {
+  const handleCloseLanguagesMenu = (language) => {
     setAnchorElUser(null);
+    language === 'spanish' ? dispatch(setSpanish()): dispatch(setEnglish());
+    // setSpanish();
+    // setEnglish()
   };
 
   const ButtonActive = styled(NavLink)(({ theme, isActive }) => ({
@@ -178,8 +189,9 @@ function Header() {
               onClose={handleCloseLanguagesMenu}
             >
               {languages.map((language) => (
-                <MenuItem key={language} onClick={handleCloseLanguagesMenu}>
-                  {language}
+                <MenuItem key={language} onClick={() => handleCloseLanguagesMenu(language)}>
+                  {/* Se le pone la primera letra en mayuscula */}
+                  {language.charAt(0).toUpperCase() + language.slice(1)}
                 </MenuItem>
               ))}
             </Menu>

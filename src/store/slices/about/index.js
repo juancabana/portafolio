@@ -22,3 +22,8 @@ export const fetchAboutEnglish = () => {
        dispatch(setAboutData(jsonData.english.about)) 
     }
 }
+export const fetchAboutSpanish = () => {
+    return (dispatch) => {
+       dispatch(setAboutData(jsonData.spanish.about)) 
+    }
+}

@@ -103,37 +103,37 @@
       {
         "name": "JavaScript",
         "url": "https://i.ibb.co/2g0tqTs/js.png",
-        "level": "Intermediate"
+        "level": "Intermedio"
       },
       {
         "name": "React",
         "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
-        "level": "Basic"
+        "level": "Basico"
       },
       {
         "name": "Typescript",
         "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
-        "level": "Basic"
+        "level": "Basico"
       },
       {
         "name": "Git & Github",
         "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
-        "level": "Intermediate"
+        "level": "Intermedio"
       },
       {
         "name": "Express.js",
         "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
-        "level": "Basic"
+        "level": "Basico"
       },
       {
         "name": "CSS",
         "url": "https://i.ibb.co/B3gR7LN/css.png",
-        "level": "Advanced"
+        "level": "Avanzado"
       },
       {
         "name": "HTML",
         "url": "https://i.ibb.co/DRzJrLH/html.png",
-        "level": "Advanced"
+        "level": "Avanzado"
       }
     ],
     "projects": [

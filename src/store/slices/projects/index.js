@@ -22,3 +22,8 @@ export const fetchProjectsEnglish = () => {
        dispatch(setProjectsData(jsonData.english.projects)) 
     }
 }
+export const fetchProjectsSpanish = () => {
+    return (dispatch) => {
+       dispatch(setProjectsData(jsonData.spanish.projects)) 
+    }
+}
