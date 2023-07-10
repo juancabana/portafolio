@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { useSelector } from "react-redux/es/hooks/useSelector";
+
 
 const Footer = () => {
+
+    const language = useSelector(state => state.language.language)
 
     const Footer = styled('div')(({ theme }) => ({
         // position: 'absolute',
@@ -22,7 +26,7 @@ const Footer = () => {
 
     return (
         <Footer>
-            <ContentFooter>Designed & built by Juan Cabana.</ContentFooter>
+            <ContentFooter>{language === 'english' ? 'Designed & developed by Juan Cabana.' : 'Diseñado y desarrollado por Juan Cabana' }</ContentFooter>
         </Footer>
     );
 

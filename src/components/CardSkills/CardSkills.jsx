@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from "@emotion/styled";
-// import javaImage from './../../assets/img/java.png';
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
 
 
 const CardSkills = ({name, url, level}) => {
+
+    const language = useSelector(state => state.language.language)
 
     const WrapperCard = styled('div')(({ theme }) => ({
         boxSizing: 'border-box',
@@ -74,7 +76,7 @@ const CardSkills = ({name, url, level}) => {
             </ImageCard>
             <WrapperContent>
                 <TittleSkill>{name}</TittleSkill>
-                <TittleLevel>Level: {level}</TittleLevel>
+                <TittleLevel>{language === 'english' ? 'Level: ' : 'Nivel: '}{level}</TittleLevel>
                 <Paragraph>I have basic knowledge in java, due to the object-oriented programming subjects I received at the University.</Paragraph>
             </WrapperContent>
         </WrapperCard>

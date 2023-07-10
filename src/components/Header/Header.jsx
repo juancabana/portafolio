@@ -23,16 +23,12 @@ import { setEnglish } from '../../store/slices/language';
 import { setSpanish } from '../../store/slices/language';
 
 
-const pages = [
-  { page: 'home', route: '' },
-  { page: 'about', route: 'about' },
-  { page: 'skills', route: 'skills' },
-  { page: 'projects', route: 'projects' },
-  { page: 'contact', route: 'contact' }];
+
 const languages = ['spanish', 'english'];
 
 
 function Header() {
+  const language = useSelector(state => state.language.language)
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [activeIndex, setActiveIndex] = useState(null);
@@ -40,6 +36,18 @@ function Header() {
   const dispatch = useDispatch();
 
 
+  const pageHome = language === 'english' ? 'home' : 'inicio';
+  const pageAbout = language === 'english' ? 'about' : 'sobre mi';
+  const pageSkills = language === 'english' ? 'skills' : 'habilidades';
+  const pageProjects = language === 'english' ? 'projects' : 'proyectos';
+  const pageContact = language === 'english' ? 'contact' : 'contacto';
+
+  const pages = [
+    { page: pageHome, route: '' },
+    { page: pageAbout, route: 'about' },
+    { page: pageSkills, route: 'skills' },
+    { page: pageProjects, route: 'projects' },
+    { page: pageContact, route: 'contact' }];
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -167,7 +175,7 @@ function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Change language">
+            <Tooltip title={language === 'english' ? "Change language" : 'Cambiar idioma'}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <TranslateOutlinedIcon style={{ color: 'aquamarine' }} />
               </IconButton>

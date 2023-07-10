@@ -5,6 +5,7 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const ContentHome = () => {
   const homeData = useSelector(state => state.home.home)
+  const language = useSelector(state => state.language.language)
 
   const ContentHomeContainer = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -87,7 +88,7 @@ const ContentHome = () => {
       width: '210px',
       height: '210px',
     },
-    
+
   }))
   const Canva = styled('div')(({ theme }) => ({
     position: 'absolute',
@@ -125,7 +126,7 @@ const ContentHome = () => {
         <Canva></Canva>
       </ContentPerfil>
       <TextTrhirdLine>{homeData.fourthLine}</TextTrhirdLine>
-      <EmailLink href="./../../assets/cv/CV Juan Cabana.pdf" download={true}>Download CV</EmailLink>
+      <EmailLink href="./../../assets/cv/CV Juan Cabana.pdf" download={true}>{language === 'english' ? 'Download CV' : 'Descargar CV'}</EmailLink>
 
     </ContentHomeContainer>
   );

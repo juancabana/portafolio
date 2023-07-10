@@ -4,8 +4,10 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
 
+
 const ContentAbout = () => {
   const aboutData = useSelector(state => state.about.about)
+  const language = useSelector(state => state.language.language)
 
   const WrapperContentAboutContainer = styled('div')(({ theme }) => ({
     width: '100%',
@@ -129,7 +131,7 @@ const ContentAbout = () => {
   return (
     <WrapperContentAboutContainer>
       <ContainerContentAbout>
-        <TittleAbout>About me</TittleAbout  >
+        <TittleAbout>{language === 'english' ? 'About me' : 'Sobre mi'}</TittleAbout  >
         <ContentAbout>
           <ParagraphAbout>
             <TextAbout>
@@ -139,7 +141,7 @@ const ContentAbout = () => {
               <Strong>Education</Strong> <br />
               {aboutData.education}
             </TextAbout>
-        <LinkContact to="/contact">CONTACT</LinkContact>
+        <LinkContact to="/contact">{language === 'english' ? 'CONTACT' : 'CONTÁCTAME'}</LinkContact>
           </ParagraphAbout>
           <ImageAboutContainer>
             <ImageAbout></ImageAbout>

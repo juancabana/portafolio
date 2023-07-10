@@ -1,7 +1,10 @@
 import styled from "@emotion/styled";
 import React from "react";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const ContentContact = () => {
+
+  const language = useSelector(state => state.language.language)
 
   const ContentContactContainer = styled('div')(({ theme }) => ({
     width: '100%',
@@ -20,8 +23,8 @@ const ContentContact = () => {
     height: '100%',
     width: '35%',
     [theme.breakpoints.down('sm')]: {
-      width: '100%',  
-      padding: '0px 2rem'  
+      width: '100%',
+      padding: '0px 2rem'
     },
   }))
   const SubtitleContact = styled('h3')(({ theme }) => ({
@@ -65,11 +68,10 @@ const ContentContact = () => {
   return (
     <ContentContactContainer>
       <WrapperContact>
-        <SubtitleContact>Contact me</SubtitleContact>
-        <H1Contact>Get in touch</H1Contact>
+        <SubtitleContact>{language === 'english' ? 'Contact me' : 'Contáctame'}</SubtitleContact>
+        <H1Contact>{language === 'english' ? 'Get in touch' : 'Contactar'}</H1Contact>
         <PContact>
-          Here you can contact me, I am looking for a job as a front-end web
-          developer, but I really like to learn any technology
+          {language === 'english' ? 'Here you can contact me, I am looking for a job as a front-end web developer, but I really like to learn any technology' : 'Aquí puedes contactar conmigo, estoy buscando trabajo como desarrollador web front-end, aunque me encantaría ampliar mis conocimientos.'}
         </PContact>
         <EmailLink
           className="email-link"
@@ -77,7 +79,7 @@ const ContentContact = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          Send email
+          {language === 'english' ? 'Send email' : 'Enviar email'}
         </EmailLink>
       </WrapperContact>
     </ContentContactContainer>

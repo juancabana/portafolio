@@ -5,6 +5,7 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const ContentProyects = () => {
   const projectsData = useSelector(state => state.projects.projects)
+  const language = useSelector(state => state.language.language)
 
 
   const ContentProyects = styled('div')(({ theme }) => ({
@@ -78,7 +79,7 @@ const ContentProyects = () => {
     <ContentProyects>
       <WrapperContent>
         <ContentCardsProyects>
-          <TittleProjects>Proyects</TittleProjects>
+          <TittleProjects>{language === 'english' ? 'Projects' : 'Proyectos'}</TittleProjects>
           {projectsData.map((project, index) => (
             <CardProjects url={project.url} title={project.title} description={project.description} tecnologies={project.tecnologies} />
           ))}

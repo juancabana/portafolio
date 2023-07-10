@@ -5,6 +5,8 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const ContentSkills = () => {
   const skillsData = useSelector(state => state.skills.skills)
+  const language = useSelector(state => state.language.language)
+
 
   const ContentSkillsContainer = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -64,7 +66,7 @@ const ContentSkills = () => {
   return (
     <ContentSkillsContainer>
       <WrapperContent>
-        <TittleSkills>Skills</TittleSkills>
+        <TittleSkills>{language === 'english' ? 'Skills' : 'Habilidades'}</TittleSkills>
         <ContentCardSkills>
           {
             skillsData.map((skill, index) => (
