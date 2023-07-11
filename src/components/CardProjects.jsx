@@ -116,8 +116,8 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
                     {description}
                 </PCard>
                 <WrapperLinks>
-                    {links.map((link) =>
-                        <Projectink href={link.url}>{link.page}</Projectink>
+                    {links.map((link, index) =>
+                        <Projectink key={index} target='_blank' href={link.url}>{link.page}</Projectink>
                     )}
                 </WrapperLinks>
 

@@ -132,99 +132,94 @@
     ],
     "projects": [
       {
-        "title": "Proyecto del parcial",
-        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "title": "Portfolio",
+        "description": "Presentation of who I am, I talk a little about my work experience and my skills, this is also a small demonstration of what I can do.",
+        "tecnologies": ["React", "Redux", "MaterialUI"],
         "links": [
           {
             "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          },
+            "url": "https://github.com/juancabana/portafolio"
+          }
+        ]
+      },
+      {
+        "title": "Pokedex Frontend",
+        "description": "The front-end was made in React, because updates are often costly and time-consuming, but with React we decreased these problems, due to its easy maintenance and excellent reusability.  ",
+        "tecnologies": ["React", "Redux", "MaterialUI"],
+        "links": [
           {
             "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          }
-        ]
-      },
-      {
-        "title": "Proyecto del parcial",
-        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
-        "links": [
-          {
-            "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://pokedex-cabana-juan.onrender.com/"
           },
           {
-            "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "page": "Github",
+            "url": "https://github.com/juancabana/frontend-pokedex"
           }
         ]
       },
       {
-        "title": "Proyecto del parcial",
-        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "title": "Pokedex Backend",
+        "description": "The back-end was done in Node.js, with the Express.js framework, because thanks to the functionalities offered by Node.js we will have a high scalability, and we can add modules or new features in an easy way thanks to its default package manager (NPM). package manager (NPM).",
+        "tecnologies": ["JavaScript", "Express.js", "Sequelize"],
         "links": [
           {
             "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          },
-          {
-            "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://github.com/juancabana/backend-pokedex"
           }
         ]
       },
       {
-        "title": "Proyecto del parcial",
-        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
+        "title": "Layout Technical Test",
+        "description": "Layout with responsive design of the mockups received, in this case a simulation of a Coomudelsa page.",
         "tecnologies": ["HTML", "CSS", "JavaScript"],
         "links": [
-          {
-            "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          },
           {
             "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://keen-cobbler-ed479a.netlify.app/"
           }
         ]
       },
       {
-        "title": "Proyecto del parcial",
-        "description": "Solución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la WebSolución del parcial de la materia Programación en la Web",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "title": "Backend COSCO",
+        "description": "Backend of social network that communicates crop sellers with buyers, the idea of this was that anyone can sell their crops through this platform, without generating any waste.",
+        "tecnologies": ["JavaScript", "Express.js", "Sequelize"],
         "links": [
           {
             "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          },
-          {
-            "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://github.com/juancabana/Backend-proy-int-3"
           }
         ]
       },
       {
-        "title": "Proyecto del parcial",
-        "description": "Solución del parcial de la materia Programación en la Web",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "title": "Backend Tecno-Crop",
+        "description": "Simple backend of social network that communicates waste sellers with buyers, the idea of this was that any person or company can sell their waste through this platform, so as not to generate so many greenhouse gases.",
+        "tecnologies": ["Typescript", "Nest"],
         "links": [
           {
             "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://github.com/juancabana/Backend-proy-int-3"
           }
         ]
       },
       {
-        "title": "Proyecto del parcial",
-        "description": "Solución del parcial de la materia Programación en la Web",
+        "title": "Vitagest frontend",
+        "description": "Application for the administration of the company Vitarrico, this project was an integrative project of the university that I did in 5th semester, whose objective was to measure and strengthen our knowledge.",
+        "tecnologies": ["React", "Bootstrap", "GraphQL"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/vitagest_frontend"
+          }
+        ]
+      },
+      {
+        "title": "Integrating proyect",
+        "description": "It was my first integrative project, I did it in 3rd semester, it is an application for teaching stacks and queues, made purely in CSS, HTML and JavaScript.",
         "tecnologies": ["HTML", "CSS", "JavaScript"],
         "links": [
           {
             "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://github.com/juancabana/ProyectoIntegrador"
           }
         ]
       }
@@ -368,37 +363,97 @@
         "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
         "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
         "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
         "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
         "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
         "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       },
       {
         "url": "https://github.com/juancabana/ParcialProgWeb",
         "title": "Proyecto del parcial",
         "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"]
+        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          },
+          {
+            "page": "Live",
+            "url": "https://github.com/juancabana/ParcialProgWeb"
+          }
+        ]
       }
     ]
   }

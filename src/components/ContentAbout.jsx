@@ -15,7 +15,7 @@ const ContentAbout = () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('lg')]: {
       marginTop: '50px',    
     },
   }))
