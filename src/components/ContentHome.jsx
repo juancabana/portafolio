@@ -106,6 +106,7 @@ const ContentHome = () => {
     alignItems: 'center',
     justifyContent: 'center',
     textDecoration: 'none',
+    textAlign: 'center',
     borderRadius: '5px',
     fontFamily: ' monospace',
     border: `1px solid ${theme.palette.colorContrast}`,
