@@ -7,7 +7,7 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { useTheme } from '@emotion/react';
 
 
-const CardSkills = ({ name, url, level, certificates }) => {
+const CardSkills = ({ name, url, level, certificates, description }) => {
   const theme = useTheme();
 
   const language = useSelector(state => state.language.language)
@@ -69,6 +69,7 @@ const CardSkills = ({ name, url, level, certificates }) => {
   }))
   const WrapperContentCard = styled('div')(({ theme }) => ({
     display: 'flex',
+    alignItems: 'center',
     width: '100%'
   }))
 
@@ -116,7 +117,7 @@ const CardSkills = ({ name, url, level, certificates }) => {
         <WrapperContent>
           <TittleSkill>{name}</TittleSkill>
           <TittleLevel>{language === 'english' ? 'Level: ' : 'Nivel: '}{level}</TittleLevel>
-          <Paragraph>I have basic knowledge in java, due to the object-oriented programming subjects I received at the University.</Paragraph>
+          <Paragraph>{description}</Paragraph>
         </WrapperContent>
       </WrapperContentCard>
 
@@ -134,7 +135,7 @@ const CardSkills = ({ name, url, level, certificates }) => {
       <Collapse in={open} style={{width: '100%'} }>
         <List component="div" disablePadding style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem'}} >
           {certificates.map((certificate, index) => <Projectink key={index} target='_blank' href={certificate.url}>
-            { language === 'english' ?  certificate.tittleEnglish : certificate.tittleSpanish}
+              {certificate.tittle}
             </Projectink>)}
         </List>
       </Collapse>

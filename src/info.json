@@ -15,117 +15,179 @@
       {
         "name": "JavaScript",
         "url": "https://i.ibb.co/2g0tqTs/js.png",
+        "description": "I have a good level in JavaScript, I know the basics, so I have a very good base in this language, which allows me to learn new features of this language much faster.",
         "level": "Intermediate",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Full stack developer with JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Frontend developer course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          },
+          {
+            "tittle": "Basic JavaScript course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1814-basico-javascript/diploma/detalle/"
+          },
+          {
+            "tittle": "Basic object-oriented programming course with JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2332-javascript-poo/diploma/detalle/"
+          },
+          {
+            "tittle": "Practical course on REST API consumption with JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2986-api-practico/diploma/detalle/"
+          },
+          {
+            "tittle": "Course on REST API consumption with JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2985-api/diploma/detalle/"
+          },
+          {
+            "tittle": "ECMAScript course: History and versions of JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3504-ecmascript-6/diploma/detalle/"
+          },
+          {
+            "tittle": "Practical JavaScript course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3271-javascript-practico/diploma/detalle/"
           }
         ]
       },
       {
         "name": "React",
         "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
-        "level": "Basic",
+        "description": "I have a good level in React, I know the basics and I also have work experience in this, I love working with React and every time I learn new things about this great framework.",  
+        "level": "Intermediate",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Introduction to React Native course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2556-react-native/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Frontend developer course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "NodeJS",
+        "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
+        "description": "I learned the basics of Node, I have worked with this runtime environment on a day-to-day basis and I understand important things to speed up my learning.",
+        "level": "Intermediate",
+        "certificates": [
+          {
+            "tittle": "NodeJS Fundamentals",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
+          },
+          {
+            "tittle": "NPM Course: Package and Dependency Management in JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
+          },
+          {
+            "tittle": "Frontend developer course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
       },
       {
         "name": "Typescript",
         "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
+        "description": "I have basic knowledge of this super language and have used it in both back-end and front-end projects.",
         "level": "Basic",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "TypeScript fundamentals course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2878-typescript/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "TypeScript course: Advanced types and functions",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2879-typescript-tipos-avanzados/diploma/detalle/"
+          },
+          {
+            "tittle": "NestJS backend course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2272-nestjs/diploma/detalle/"
           }
+     
         ]
       },
       {
         "name": "Git & Github",
         "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
-        "level": "Intermediate",
+        "description": "Fortunately I have learned it quite well, I am clear about how both work, and I use it daily, thanks to it, my development process has been streamlined.",
+        "level": "Advanced",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Git and GitHub Professional Course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1557-git-github/diploma/detalle/"
+          }
+
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "url": "https://i.ibb.co/qY1V4Wf/file-type-mongo-icon-130383.png",
+        "description": "I have learned the basics of MongoDB and its query language, I love it and am looking forward to using it in more projects.",
+        "level": "Basic",
+        "certificates": [
+          {
+            "tittle": "MongoDB introductory course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/4987-mongodb/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "MongoDB Data Modeling Course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/5356-mongodb-modelado/diploma/detalle/"
           }
+
         ]
       },
       {
         "name": "Express.js",
         "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
+        "description": "This was my first backend framework that I learned, I used it in most of my backend projects.",
         "level": "Basic",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "NodeJS backend course: REST API with ExpressJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2485-backend-nodejs/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Backend course with NodeJS: Databases with PostgreSQL",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2507-backend-nodejs-postgres/diploma/detalle/"
+          },
+          {
+            "tittle": "NodeJS backend course: Authentication with PassportJS and JWT",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
           }
         ]
       },
       {
         "name": "CSS",
         "url": "https://i.ibb.co/B3gR7LN/css.png",
+        "description": "With this I started to walk in the world of web development, I have solid knowledge in everything that refers to the layout of web applications.",
         "level": "Advanced",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Full stack developer with JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Frontend developer course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
       },
       {
         "name": "HTML",
         "url": "https://i.ibb.co/DRzJrLH/html.png",
+        "description": "With this I started to walk in the world of web development, I have solid knowledge in everything that refers to the layout of web applications.",
         "level": "Advanced",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Full stack developer with JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Frontend developer course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
       }
@@ -241,217 +303,270 @@
       {
         "name": "JavaScript",
         "url": "https://i.ibb.co/2g0tqTs/js.png",
+        "description": "Tengo un buen nivel en JavaScript, conozco los conceptos básicos, por lo que tengo una base sólida en este lenguaje, lo que me permite aprender nuevas características de forma más rápida.",
         "level": "Intermedio",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Desarrollador Full Stack con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso Básico de JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1814-basico-javascript/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso Básico de Programación Orientada a Objetos con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2332-javascript-poo/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso Práctico de Consumo de APIs REST con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2986-api-practico/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de Consumo de APIs REST con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2985-api/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de ECMAScript: Historia y versiones de JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3504-ecmascript-6/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso Práctico de JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3271-javascript-practico/diploma/detalle/"
           }
         ]
       },
       {
         "name": "React",
         "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
-        "level": "Basico",
+        "description": "Tengo un buen nivel en React, conozco los conceptos básicos y también tengo experiencia laboral en esto. Me encanta trabajar con React y cada vez aprendo nuevas cosas sobre este gran framework.",
+        "level": "Intermedio",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Introducción a React Native",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2556-react-native/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "NodeJS",
+        "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
+        "description": "Aprendí los conceptos básicos de Node, he trabajado con este entorno de ejecución a diario y entiendo cosas importantes para acelerar mi aprendizaje.",
+        "level": "Intermedio",
+        "certificates": [
+          {
+            "tittle": "Fundamentos de NodeJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de NPM: Gestión de paquetes y dependencias en JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
       },
       {
         "name": "Typescript",
         "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
-        "level": "Basico",
+        "description": "Tengo conocimientos básicos de este súper lenguaje y lo he utilizado tanto en proyectos backend como frontend.",
+        "level": "Básico",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso Fundamentos de TypeScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2878-typescript/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso de TypeScript: Tipos y funciones avanzadas",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2879-typescript-tipos-avanzados/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de backend con NestJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2272-nestjs/diploma/detalle/"
           }
         ]
       },
       {
         "name": "Git & Github",
         "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
-        "level": "Intermedio",
+        "description": "Afortunadamente, lo he aprendido bastante bien, tengo claro cómo funcionan ambos y lo uso a diario. Gracias a esto, mi proceso de desarrollo se ha agilizado.",
+        "level": "Avanzado",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso Profesional de Git y GitHub",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1557-git-github/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "url": "https://i.ibb.co/qY1V4Wf/file-type-mongo-icon-130383.png",
+        "description": "Aprendí los conceptos básicos de MongoDB y su lenguaje de consultas. Me encanta y tengo ganas de usarlo en más proyectos.",
+        "level": "Básico",
+        "certificates": [
+          {
+            "tittle": "Curso introductorio de MongoDB",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/4987-mongodb/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso de Modelado de Datos en MongoDB",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/5356-mongodb-modelado/diploma/detalle/"
           }
         ]
       },
       {
         "name": "Express.js",
         "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
-        "level": "Basico",
+        "description": "Este fue el primer framework backend que aprendí, lo utilicé en la mayoría de mis proyectos backend.",
+        "level": "Básico",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso de backend con NodeJS: REST API con ExpressJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2485-backend-nodejs/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso de backend con NodeJS: Bases de datos con PostgreSQL",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2507-backend-nodejs-postgres/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de backend con NodeJS: Autenticación con PassportJS y JWT",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
           }
         ]
       },
       {
         "name": "CSS",
         "url": "https://i.ibb.co/B3gR7LN/css.png",
+        "description": "Con esto empecé en el mundo del desarrollo web. Tengo conocimientos sólidos en todo lo que se refiere al diseño de aplicaciones web.",
         "level": "Avanzado",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Desarrollador Full Stack con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
       },
       {
         "name": "HTML",
         "url": "https://i.ibb.co/DRzJrLH/html.png",
+        "description": "Con esto empecé en el mundo del desarrollo web. Tengo conocimientos sólidos en todo lo que se refiere al diseño de aplicaciones web.",
         "level": "Avanzado",
         "certificates": [
           {
-            "tittleEnglish": "Github",
-            "tittleSpanish": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Desarrollador Full Stack con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
           },
           {
-            "tittleEnglish": "Live",
-            "tittleSpanish": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
       }
     ],
     "projects": [
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
-        "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "title": "Portafolio",
+        "description": "Presentación de quién soy, hablo un poco sobre mi experiencia laboral y mis habilidades. También es una pequeña demostración de lo que puedo hacer.",
+        "tecnologies": ["React", "Redux", "MaterialUI"],
         "links": [
           {
             "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          },
-          {
-            "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://github.com/juancabana/portafolio"
           }
         ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
-        "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "title": "Pokedex Frontend",
+        "description": "El front-end fue hecho en React, ya que las actualizaciones a menudo son costosas y requieren mucho tiempo, pero con React disminuimos estos problemas gracias a su fácil mantenimiento y excelente reutilización.",
+        "tecnologies": ["React", "Redux", "MaterialUI"],
         "links": [
           {
-            "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "page": "En vivo",
+            "url": "https://pokedex-cabana-juan.onrender.com/"
           },
           {
-            "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "page": "Github",
+            "url": "https://github.com/juancabana/frontend-pokedex"
           }
         ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
-        "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "title": "Pokedex Backend",
+        "description": "El back-end se hizo en Node.js, con el framework Express.js, porque gracias a las funcionalidades que ofrece Node.js, tendremos una alta escalabilidad y podremos agregar módulos o nuevas características de manera fácil gracias a su gestor de paquetes por defecto (NPM).",
+        "tecnologies": ["JavaScript", "Express.js", "Sequelize"],
         "links": [
           {
             "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          },
-          {
-            "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://github.com/juancabana/backend-pokedex"
           }
         ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
-        "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
+        "title": "Prueba Técnica de Diseño",
+        "description": "Diseño con diseño adaptable de las maquetas recibidas, en este caso una simulación de una página de Coomudelsa.",
         "tecnologies": ["HTML", "CSS", "JavaScript"],
         "links": [
           {
-            "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          },
-          {
-            "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "page": "En vivo",
+            "url": "https://keen-cobbler-ed479a.netlify.app/"
           }
         ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
-        "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
+        "title": "Backend COSCO",
+        "description": "Backend de una red social que comunica a vendedores de cultivos con compradores. La idea de esto era que cualquier persona pueda vender sus cultivos a través de esta plataforma, sin generar ningún desperdicio.",
+        "tecnologies": ["JavaScript", "Express.js", "Sequelize"],
         "links": [
           {
             "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          },
-          {
-            "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://github.com/juancabana/Backend-proy-int-3"
           }
         ]
       },
       {
-        "url": "https://github.com/juancabana/ParcialProgWeb",
-        "title": "Proyecto del parcial",
-        "description": "En este link, puedes aceder al proyecto que corresponde a el examen parcial de la materia Programación en la Web, materia dictada por el profeser Denny Villalobos.",
+        "title": "Backend Tecno-Crop",
+        "description": "Backend sencillo de una red social que comunica a vendedores de residuos con compradores. La idea de esto era que cualquier persona o empresa pueda vender sus residuos a través de esta plataforma, para no generar tantos gases de efecto invernadero.",
+        "tecnologies": ["Typescript", "Nest"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/Backend-proy-int-3"
+          }
+        ]
+      },
+      {
+        "title": "Vitagest frontend",
+        "description": "Aplicación para la administración de la empresa Vitarrico. Este proyecto fue un proyecto integrador de la universidad que realicé en el quinto semestre, cuyo objetivo era medir y fortalecer nuestros conocimientos.",
+        "tecnologies": ["React", "Bootstrap", "GraphQL"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/vitagest_frontend"
+          }
+        ]
+      },
+      {
+        "title": "Proyecto Integrador",
+        "description": "Fue mi primer proyecto integrador, lo hice en el tercer semestre. Es una aplicación para enseñar pilas y colas, hecha completamente en CSS, HTML y JavaScript.",
         "tecnologies": ["HTML", "CSS", "JavaScript"],
         "links": [
           {
             "page": "Github",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
-          },
-          {
-            "page": "Live",
-            "url": "https://github.com/juancabana/ParcialProgWeb"
+            "url": "https://github.com/juancabana/ProyectoIntegrador"
           }
         ]
       }

@@ -79,7 +79,7 @@ const ContentProyects = () => {
     <ContentProyects>
       <WrapperContent>
         <ContentCardsProyects>
-          <TittleProjects>{language === 'english' ? 'Personal projects' : 'Proyectos ersonales'}</TittleProjects>
+          <TittleProjects>{language === 'english' ? 'Personal projects' : 'Proyectos personales'}</TittleProjects>
           {projectsData.map((project, index) => (
             <CardProjects key={index} links={project.links} title={project.title} description={project.description} tecnologies={project.tecnologies} />
           ))}
