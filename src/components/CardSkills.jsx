@@ -133,7 +133,7 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
 
       </WrapperButton>
       <Collapse in={open} style={{width: '100%'} }>
-        <List component="div" disablePadding style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem'}} >
+        <List component="div" disablePadding style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', textAlign: 'center'}} >
           {certificates.map((certificate, index) => <Projectink key={index} target='_blank' href={certificate.url}>
               {certificate.tittle}
             </Projectink>)}
