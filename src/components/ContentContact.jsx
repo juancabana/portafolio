@@ -8,11 +8,13 @@ const ContentContact = () => {
 
   const ContentContactContainer = styled('div')(({ theme }) => ({
     width: '100%',
-    height: 'calc(100vh - 50px)',
+    minHeight: 'calc(100vh - 50px)',
     display: 'flex',
     textAlign: 'center',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: '7rem',
+    boxSizing: 'border-box'
   }))
 
   const WrapperContact = styled('div')(({ theme }) => ({

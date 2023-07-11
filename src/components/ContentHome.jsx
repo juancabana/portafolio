@@ -18,9 +18,10 @@ const ContentHome = () => {
     alignItems: 'center',
     backgroundColor: theme.palette.background,
     width: 'auto',
-    height: 'calc(100vh - 50px)',
-    padding: '0px 1rem'
-
+    minHeight: 'calc(100vh - 50px)',
+    padding: '0px 1rem',
+    paddingTop: '7rem',
+    boxSizing: 'border-box'
   }))
 
   const TextFirstLine = styled('h2')(({ theme }) => ({
@@ -94,9 +95,9 @@ const ContentHome = () => {
 
   }))
   const Canva = styled('div')(({ theme }) => ({
-    position: 'absolute',
-    width: '200px',
-    height: '200px',
+    // position: 'absolute',
+    // width: '200px',
+    // height: '200px',
     borderRadius: '50%',
     backgroundSize: '200px 250px',
   }))

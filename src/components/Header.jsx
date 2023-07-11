@@ -36,7 +36,9 @@ function Header() {
     { page: pageContact, route: 'contact' }];
 
   return (
-    <AppBar position="absolute" style={{ backgroundColor: theme.palette.background, top: '0px' }}>
+    <AppBar 
+    // position="absolute" 
+    style={{ backgroundColor: theme.palette.background, top: '0px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Icono  */}

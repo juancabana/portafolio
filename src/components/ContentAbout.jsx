@@ -15,6 +15,8 @@ const ContentAbout = () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    paddingTop: '7rem',
+    boxSizing: 'border-box',
     [theme.breakpoints.down('lg')]: {
       marginTop: '50px',    
     },
