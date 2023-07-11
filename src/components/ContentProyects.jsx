@@ -50,6 +50,7 @@ const ContentProyects = () => {
     display: 'flex',
     alignItems: 'center',
     marginBottom: '3rem',
+    textAlign: 'center',
     '&::after': {
       content: 'close-quote',
       width: '100%',

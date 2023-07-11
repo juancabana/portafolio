@@ -128,7 +128,7 @@ const ContentHome = () => {
         <Canva></Canva>
       </ContentPerfil>
       <TextTrhirdLine>{homeData.fourthLine}</TextTrhirdLine>
-      <EmailLink href="./../../assets/cv/CV Juan Cabana.pdf" download={true}>{language === 'english' ? 'Download CV' : 'Descargar CV'}</EmailLink>
+      <EmailLink href="./../../assets/cv/CV-Juan-Cabana.pdf" download={true}>{language === 'english' ? 'Download CV' : 'Descargar CV'}</EmailLink>
 
     </ContentHomeContainer>
   );
