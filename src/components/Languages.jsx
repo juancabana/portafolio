@@ -42,7 +42,7 @@ const Languages = () => {
                 </IconButton>
             </Tooltip>
             <Menu
-                sx={{ mt: '45px' }}
+                sx={{ mt: '45px', padding: '0px'}}
                 id="menu-appbar"
                 anchorEl={anchorElUser}
                 anchorOrigin={{
@@ -56,9 +56,10 @@ const Languages = () => {
                 }}
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseLanguagesMenu}
+                className='llllllllllllllllllllllllllllllllllllllllllllllllllllllll'
             >
                 {languages.map((language) => (
-                    <MenuItem key={language} onClick={() => handleCloseLanguagesMenu(language)} style={{backgroundColor: theme.palette.background, color: theme.palette.colorContrast}}>
+                    <MenuItem key={language} onClick={() => handleCloseLanguagesMenu(language)} style={{backgroundColor: theme.palette.colorCardBackground, color: theme.palette.colorItemHeader}}>
                         {/* Se le pone la primera letra en mayuscula */}
                         {language.charAt(0).toUpperCase() + language.slice(1)}
                     </MenuItem>

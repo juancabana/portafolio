@@ -51,8 +51,8 @@ const ResponsiveMenu = ({ pages }) => {
             >
                 {pages.map((page) => (
                     <NavLink key={page.page} to={`/${page.route}`} style={{ textDecoration: 'none', color: theme.palette.background }}>
-                        <MenuItem style={{backgroundColor: theme.palette.background, color: theme.palette.colorContrast}}>
-                            {page.page}
+                        <MenuItem style={{backgroundColor: theme.palette.colorCardBackground, color: theme.palette.colorItemHeader}}>
+                            { page.page.toUpperCase() }
                         </MenuItem>
                     </NavLink>
                 ))}
