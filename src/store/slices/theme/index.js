@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import jsonData from '../../../info.json';
 
 export const themeSlice = createSlice({
     name: 'theme',

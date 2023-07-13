@@ -19,18 +19,7 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 // Themes 
 import lightTheme from "./themes/lightTheme";
 import darkTheme from "./themes/darkTheme";
-
-const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 980,
-      lg: 1200,
-      xl: 1536,
-    },
-  },
-});
+import { getDataEnglish, getDataSpanish } from "./services/index.services";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -39,21 +28,42 @@ const App = () => {
 
   const theme = isDarkMode === 'dark' ? darkTheme : lightTheme;
 
-  const englishMode = () => {
-    dispatch(fetchHomeEnglish());
-    dispatch(fetchAboutEnglish());
-    dispatch(fetchSkillsEnglish());
-    dispatch(fetchProjectsEnglish());
-  };
-  const spanishhMode = () => {
-    dispatch(fetchHomeSpanish());
-    dispatch(fetchAboutSpanish());
-    dispatch(fetchSkillsSpanish());
-    dispatch(fetchProjectsSpanish());
+  const setInfoEnglish = (data) => {
+    dispatch(fetchHomeEnglish(data.home));
+    dispatch(fetchAboutEnglish(data.about));
+    dispatch(fetchSkillsEnglish(data.skills));
+    dispatch(fetchProjectsEnglish(data.projects));
+  }
+  const setInfoSpanish = (data) => {
+    dispatch(fetchHomeSpanish(data.home));
+    dispatch(fetchAboutSpanish(data.about));
+    dispatch(fetchSkillsSpanish(data.skills));
+    dispatch(fetchProjectsSpanish(data.projects));
+  }
+
+  const englishMode = async () => {
+    const dataString = localStorage.getItem("dataEnglish");
+    const data = JSON.parse(dataString);
+    if (dataString) {
+      setInfoEnglish(data);
+    } else {
+      await getDataEnglish();
+      englishMode();
+    }  };
+
+  const spanishMode = async () => {
+    const dataString = localStorage.getItem("dataSpanish");
+    const data = JSON.parse(dataString);
+    if (dataString) {
+      setInfoSpanish(data);
+    } else {
+      await getDataSpanish();
+      spanishMode();
+    }
   };
 
   useEffect(() => {
-    language === "spanish" ? spanishhMode() : englishMode();
+    language === "spanish" ? spanishMode() : englishMode();
   }, [language]);
 
   const AppContainer = styled("div")(({ theme }) => ({

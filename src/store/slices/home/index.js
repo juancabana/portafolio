@@ -1,29 +1,30 @@
 import { createSlice } from "@reduxjs/toolkit";
-import jsonData from './../../../info.json';
 
 export const homeSlice = createSlice({
-    name: 'home',
-    initialState: {
-        home: []
+  name: "home",
+  initialState: {
+    home: [],
+  },
+  reducers: {
+    setHomeData: (state, action) => {
+      state.home = action.payload;
     },
-    reducers: {
-        setHomeData: (state, action) => {
-            state.home = action.payload;
-        }
-    }
+  },
 });
 
-export const {setHomeData} = homeSlice.actions;
+export const { setHomeData } = homeSlice.actions;
 
 export default homeSlice.reducer;
 
-export const fetchHomeEnglish = () => {
-    return (dispatch) => {
-       dispatch(setHomeData(jsonData.english.home)) 
-    }
-}
-export const fetchHomeSpanish = () => {
-    return (dispatch) => {
-       dispatch(setHomeData(jsonData.spanish.home)) 
-    }
-}
+export const fetchHomeEnglish = (data) => {
+  return (dispatch) => {
+    // const dataString = localStorage.getItem("dataEnglish");
+    // const data = JSON.parse(dataString);
+    dispatch(setHomeData(data));
+  };
+};
+export const fetchHomeSpanish = (data) => {
+  return (dispatch) => {
+    dispatch(setHomeData(data));
+  };
+};

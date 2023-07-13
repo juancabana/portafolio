@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import jsonData from '../../../info.json';
 
 export const skillsSlice = createSlice({
     name: 'skills',
@@ -17,13 +16,13 @@ export const {setSkillsData} = skillsSlice.actions;
 
 export default skillsSlice.reducer;
 
-export const fetchSkillsEnglish = () => {
+export const fetchSkillsEnglish = (data) => {
     return (dispatch) => {
-       dispatch(setSkillsData(jsonData.english.skills)) 
+       dispatch(setSkillsData(data)) 
     }
 }
-export const fetchSkillsSpanish = () => {
+export const fetchSkillsSpanish = (data) => {
     return (dispatch) => {
-       dispatch(setSkillsData(jsonData.spanish.skills)) 
+       dispatch(setSkillsData(data)) 
     }
 }

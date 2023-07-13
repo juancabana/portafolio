@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import jsonData from '../../../info.json';
 
 export const projectsSlice = createSlice({
     name: 'projects',
@@ -17,13 +16,13 @@ export const {setProjectsData} = projectsSlice.actions;
 
 export default projectsSlice.reducer;
 
-export const fetchProjectsEnglish = () => {
+export const fetchProjectsEnglish = (data) => {
     return (dispatch) => {
-       dispatch(setProjectsData(jsonData.english.projects)) 
+       dispatch(setProjectsData(data)) 
     }
 }
-export const fetchProjectsSpanish = () => {
+export const fetchProjectsSpanish = (data) => {
     return (dispatch) => {
-       dispatch(setProjectsData(jsonData.spanish.projects)) 
+       dispatch(setProjectsData(data)) 
     }
 }
