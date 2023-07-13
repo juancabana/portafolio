@@ -2,7 +2,6 @@ import AppRouter from "./routes/AppRoutes";
 import { styled } from "@mui/material/styles";
 import "./index.css";
 import { ThemeProvider } from "@mui/material/styles";
-import { createTheme } from "@mui/material/styles";
 // Redux
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -16,7 +15,7 @@ import {
 } from "./store/slices/projects";
 // Store
 import { useSelector } from "react-redux/es/hooks/useSelector";
-// Themes 
+// Themes
 import lightTheme from "./themes/lightTheme";
 import darkTheme from "./themes/darkTheme";
 import { getDataEnglish, getDataSpanish } from "./services/index.services";
@@ -26,20 +25,20 @@ const App = () => {
   const language = useSelector((state) => state.language.language);
   const isDarkMode = useSelector((state) => state.theme.theme);
 
-  const theme = isDarkMode === 'dark' ? darkTheme : lightTheme;
+  const theme = isDarkMode === "dark" ? darkTheme : lightTheme;
 
   const setInfoEnglish = (data) => {
     dispatch(fetchHomeEnglish(data.home));
     dispatch(fetchAboutEnglish(data.about));
     dispatch(fetchSkillsEnglish(data.skills));
     dispatch(fetchProjectsEnglish(data.projects));
-  }
+  };
   const setInfoSpanish = (data) => {
     dispatch(fetchHomeSpanish(data.home));
     dispatch(fetchAboutSpanish(data.about));
     dispatch(fetchSkillsSpanish(data.skills));
     dispatch(fetchProjectsSpanish(data.projects));
-  }
+  };
 
   const englishMode = async () => {
     const dataString = localStorage.getItem("dataEnglish");
@@ -49,7 +48,8 @@ const App = () => {
     } else {
       await getDataEnglish();
       englishMode();
-    }  };
+    }
+  };
 
   const spanishMode = async () => {
     const dataString = localStorage.getItem("dataSpanish");

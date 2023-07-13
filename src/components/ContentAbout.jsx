@@ -3,9 +3,8 @@ import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
-
-
 const ContentAbout = () => {
+
   const aboutData = useSelector(state => state.about.about)
   const language = useSelector(state => state.language.language)
 
@@ -21,7 +20,6 @@ const ContentAbout = () => {
       marginTop: '50px',    
     },
   }))
-
   const ContainerContentAbout = styled('div')(({theme}) => ({
     maxWidth: '1400px',
     height: '90%',
@@ -52,7 +50,6 @@ const ContentAbout = () => {
     },
 
   }))
-
   const ParagraphAbout = styled('div')(({theme}) => ({
     paddingLeft: '50px',
     paddingRight: '20px',
@@ -63,7 +60,6 @@ const ContentAbout = () => {
       paddingLeft: '20px',    
     },
   }))
-
   const ContentAbout = styled('div')(({theme}) => ({
     display: 'grid',
     gridTemplateColumns: '1.2fr 0.8fr',
@@ -87,7 +83,6 @@ const ContentAbout = () => {
     [theme.breakpoints.down('md')]: {
       paddingRight: '0px',
     },
-    
   }))
   const ImageAbout = styled('div')(({theme}) => ({
     width: '450px',
@@ -121,14 +116,12 @@ const ContentAbout = () => {
       backgroundColor: 'rgba(100,255,218,0.1)',
       transition: 'all 0.3s',
     }
-
   }))
   const Strong = styled('strong')(({theme}) => ({
     fontSize: '20px',
     fontWeight: '400',
     color: theme.palette.colorContrast,
   }))
-
 
   return (
     <WrapperContentAboutContainer>

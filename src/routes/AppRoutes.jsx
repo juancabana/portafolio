@@ -18,7 +18,6 @@ export default function AppRouter() {
                 <Route path="/projects" element={<Proyects />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFoundPage />} />
-
             </Routes>
         </BrowserRouter>
 

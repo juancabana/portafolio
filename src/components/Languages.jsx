@@ -14,8 +14,6 @@ import { setSpanish } from '../store/slices/language';
 // Theme 
 import { useTheme } from '@emotion/react';
 
-
-
 const Languages = () => {
 
     const theme = useTheme();
@@ -25,11 +23,9 @@ const Languages = () => {
     const dispatch = useDispatch();
     // Language 
     const language = useSelector(state => state.language.language)
-
     const handleOpenUserMenu = (event) => {
         setAnchorElUser(event.currentTarget);
     };
-
     const handleCloseLanguagesMenu = (language) => {
         setAnchorElUser(null);
         language === 'spanish' ? dispatch(setSpanish()) : dispatch(setEnglish());
@@ -42,7 +38,7 @@ const Languages = () => {
                 </IconButton>
             </Tooltip>
             <Menu
-                sx={{ mt: '45px', padding: '0px'}}
+                sx={{ mt: '45px', padding: '0px' }}
                 id="menu-appbar"
                 anchorEl={anchorElUser}
                 anchorOrigin={{
@@ -56,10 +52,9 @@ const Languages = () => {
                 }}
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseLanguagesMenu}
-                className='llllllllllllllllllllllllllllllllllllllllllllllllllllllll'
             >
                 {languages.map((language) => (
-                    <MenuItem key={language} onClick={() => handleCloseLanguagesMenu(language)} style={{backgroundColor: theme.palette.colorCardBackground, color: theme.palette.colorItemHeader}}>
+                    <MenuItem key={language} onClick={() => handleCloseLanguagesMenu(language)} style={{ backgroundColor: theme.palette.colorCardBackground, color: theme.palette.colorItemHeader }}>
                         {/* Se le pone la primera letra en mayuscula */}
                         {language.charAt(0).toUpperCase() + language.slice(1)}
                     </MenuItem>

@@ -7,7 +7,6 @@ const ContentSkills = () => {
   const skillsData = useSelector(state => state.skills.skills)
   const language = useSelector(state => state.language.language)
 
-
   const ContentSkillsContainer = styled('div')(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
@@ -15,7 +14,6 @@ const ContentSkills = () => {
     justifyContent: 'center',
     width: '100%',
     minHeight: 'calc(100vh - 50px)',
-
   }))
   const WrapperContent = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -37,9 +35,7 @@ const ContentSkills = () => {
     minHeight: '200px',
     paddingTop: '3rem',
     gap: '1rem',
-
   }))
-
   const TittleSkills = styled('div')(({ theme }) => ({
     maxWidth: '1000px',
     width: '100%',
@@ -57,9 +53,7 @@ const ContentSkills = () => {
       marginLeft: '20px',
       backgroundColor: theme.palette.colorTittle,
     },
-
   }))
-
 
   return (
     <ContentSkillsContainer>
@@ -68,7 +62,6 @@ const ContentSkills = () => {
         <ContentCardSkills>
           {
             skillsData.map((skill, index) => (
-
               <CardSkills key={index} name={skill.name} url={skill.url} level={skill.level} certificates={skill.certificates} description={skill.description} ></CardSkills>
             ))
           }

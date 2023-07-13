@@ -12,14 +12,13 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useTheme } from '@emotion/react';
 
 const MenuHeader = ({ pages }) => {
+  // Theme 
   const theme = useTheme();
   const dispatch = useDispatch();
-
   // Item 
   const actualItem = useSelector(state => state.header.header);
   // Theme 
   const actualTheme = useSelector(state => state.theme.theme);
-
 
   const ButtonActive = styled(NavLink)(({ theme }) => ({
     textDecoration: 'none',
@@ -29,7 +28,6 @@ const MenuHeader = ({ pages }) => {
     height: '67px',
     borderBottom: theme
   }));
-
   return (
     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, rowGap: '3px' }} >
       {pages.map((page, index) => (

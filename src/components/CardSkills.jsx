@@ -9,7 +9,6 @@ import { useTheme } from '@emotion/react';
 
 const CardSkills = ({ name, url, level, certificates, description }) => {
   const theme = useTheme();
-
   const language = useSelector(state => state.language.language)
 
   const WrapperCard = styled('div')(({ theme }) => ({
@@ -21,7 +20,6 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     width: '100%',
     borderRadius: '10px',
     border: `1px solid ${theme.palette.colorTittle}`,
-    // backgroundColor: theme.palette.colorCardBackground
 
   }))
   const ImageCard = styled('div')(({ theme }) => ({
@@ -80,7 +78,6 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     width: '100%'
   }))
   const Projectink = styled('a')(({ theme }) => ({
-    padding: '0%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -90,17 +87,13 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     border: `1px solid ${theme.palette.colorContrast}`,
     color: theme.palette.colorContrast,
     padding: '5px',
-    // height: '60px',
-    // width: '140px',
     ':hover': {
       backgroundColor: theme.palette.colorHoverContrast,
-      transition: 'all 0.3s',
       transform: 'translateY(-4px)',
       transition: 'all 0.25s',
     }
 
   }))
-
 
   const [open, setOpen] = React.useState(false);
 
@@ -121,22 +114,17 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
         </WrapperContent>
       </WrapperContentCard>
 
-
-
-
-      {/* <Hr /> */}
-
       <WrapperButton>
 
         <Button style={{ padding: '10px', fontFamily: 'monospace', color: theme.palette.colorSubTittle }} onClick={handleClick}>{language === 'english' ? 'Certificates' : 'Certificados'} {!open ? <KeyboardArrowDownIcon style={{ color: theme.palette.colorSubTittle }} /> : <KeyboardArrowUpIcon style={{ color: theme.palette.colorSubTittle }} />}</Button>
 
 
       </WrapperButton>
-      <Collapse in={open} style={{width: '100%'} }>
-        <List component="div" disablePadding style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', textAlign: 'center'}} >
+      <Collapse in={open} style={{ width: '100%' }}>
+        <List component="div" disablePadding style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', textAlign: 'center' }} >
           {certificates.map((certificate, index) => <Projectink key={index} target='_blank' href={certificate.url}>
-              {certificate.tittle}
-            </Projectink>)}
+            {certificate.tittle}
+          </Projectink>)}
         </List>
       </Collapse>
     </WrapperCard>

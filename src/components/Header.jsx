@@ -18,6 +18,7 @@ import { useTheme } from '@emotion/react';
 
 function Header() {
 
+  // Theme 
   const theme = useTheme();
   // Language 
   const language = useSelector(state => state.language.language)

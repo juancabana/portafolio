@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
-
 const ContentHome = () => {
   // Data 
   const homeData = useSelector(state => state.home.home)
@@ -23,7 +22,6 @@ const ContentHome = () => {
     paddingTop: '7rem',
     boxSizing: 'border-box'
   }))
-
   const TextFirstLine = styled('h2')(({ theme }) => ({
     margin: '0%',
     color: theme.palette.colorSubTittle,
@@ -31,8 +29,6 @@ const ContentHome = () => {
     fontWeight: '500',
     fontSize: '25px',
     textAlign: 'center',
-
-
     [theme.breakpoints.down('sm')]: {
       marginTop: '2rem',
       fontSize: '20px',
@@ -92,12 +88,8 @@ const ContentHome = () => {
       width: '210px',
       height: '210px',
     },
-
   }))
   const Canva = styled('div')(({ theme }) => ({
-    // position: 'absolute',
-    // width: '200px',
-    // height: '200px',
     borderRadius: '50%',
     backgroundSize: '200px 250px',
   }))
@@ -118,7 +110,6 @@ const ContentHome = () => {
       backgroundColor: theme.palette.colorHoverContrast,
       transition: 'all 0.3s',
     }
-
   }))
   return (
     <ContentHomeContainer>
@@ -130,7 +121,6 @@ const ContentHome = () => {
       </ContentPerfil>
       <TextTrhirdLine>{homeData.fourthLine}</TextTrhirdLine>
       <EmailLink href={homeData.linkCV} download={true}>{language === 'english' ? 'Download CV' : 'Descargar CV'}</EmailLink>
-
     </ContentHomeContainer>
   );
 }

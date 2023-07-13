@@ -16,7 +16,6 @@ const ContentContact = () => {
     paddingTop: '7rem',
     boxSizing: 'border-box'
   }))
-
   const WrapperContact = styled('div')(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
@@ -63,9 +62,7 @@ const ContentContact = () => {
       backgroundColor: theme.palette.colorHoverContrast,
       transition: 'all 0.3s',
     }
-
   }))
-
 
   return (
     <ContentContactContainer>

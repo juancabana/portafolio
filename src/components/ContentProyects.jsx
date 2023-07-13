@@ -3,13 +3,11 @@ import React from "react";
 import CardProjects from "./CardProjects";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
-
 const ContentProyects = () => {
   // Data 
   const projectsData = useSelector(state => state.projects.projects)
   // Language 
   const language = useSelector(state => state.language.language)
-
 
   const ContentProyects = styled('div')(({ theme }) => ({
     width: '100%',
@@ -20,7 +18,6 @@ const ContentProyects = () => {
     alignItems: 'center',
     paddingTop: '7rem',
     boxSizing: 'border-box'
-
   }))
   const WrapperContent = styled('div')(({ theme }) => ({
     width: '100%',
@@ -38,7 +35,6 @@ const ContentProyects = () => {
     [theme.breakpoints.down('sm')]: {
       padding: '0px 2rem',
     },
-
   }))
   const TittleProjects = styled('div')(({ theme }) => ({
     width: '100%',
@@ -74,7 +70,6 @@ const ContentProyects = () => {
     gap: '1rem'
 
   }))
-
 
   return (
     <ContentProyects>

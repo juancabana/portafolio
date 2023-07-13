@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
-
 
 const CardProjects = ({ links, title, description, tecnologies }) => {
-
-    // Theme 
 
     const CardsProyects = styled('div')(({ theme }) => ({
         minHeight: '220px',
@@ -14,8 +10,6 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        // backgroundColor: theme.palette.colorCardBackground,
-        // padding: '25px',
         paddingTop: '10px 0px',
         border: `1px solid ${theme.palette.colorTittle}`,
         textDecoration: 'none',
@@ -38,7 +32,6 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
         color: theme.palette.colorItemHeader,
         margin: '0px',
     }))
-
     const PCard = styled('p')(({ theme }) => ({
         fontFamily: '"Montserrat", sans-serif',
         color: theme.palette.colorContent,
@@ -72,7 +65,6 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
         gap: '1rem'
     }))
     const Projectink = styled('a')(({ theme }) => ({
-        padding: '0%',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -82,15 +74,11 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
         border: `1px solid ${theme.palette.colorContrast}`,
         color: theme.palette.colorContrast,
         padding: '5px',
-        // height: '60px',
-        // width: '140px',
         ':hover': {
             backgroundColor: theme.palette.colorHoverContrast,
-            transition: 'all 0.3s',
             transform: 'translateY(-4px)',
             transition: 'all 0.25s',
         }
-
     }))
     return (
         <CardsProyects href={links} target="_blank" rel="noopener noreferrer">
@@ -99,7 +87,6 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
             </TecnologiesCard>
             <Hr />
             <WrapperContentCard>
-
                 <WrapperTittleCard>
                     <ImgProject>
                         <FolderImg
@@ -120,7 +107,6 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
                         <Projectink key={index} target='_blank' href={link.url}>{link.page}</Projectink>
                     )}
                 </WrapperLinks>
-
             </WrapperContentCard>
         </CardsProyects>
     );

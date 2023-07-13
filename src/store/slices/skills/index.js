@@ -1,28 +1,28 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const skillsSlice = createSlice({
-    name: 'skills',
-    initialState: {
-        skills: []
+  name: "skills",
+  initialState: {
+    skills: [],
+  },
+  reducers: {
+    setSkillsData: (state, action) => {
+      state.skills = action.payload;
     },
-    reducers: {
-        setSkillsData: (state, action) => {
-            state.skills = action.payload;
-        }
-    }
+  },
 });
 
-export const {setSkillsData} = skillsSlice.actions;
+export const { setSkillsData } = skillsSlice.actions;
 
 export default skillsSlice.reducer;
 
 export const fetchSkillsEnglish = (data) => {
-    return (dispatch) => {
-       dispatch(setSkillsData(data)) 
-    }
-}
+  return (dispatch) => {
+    dispatch(setSkillsData(data));
+  };
+};
 export const fetchSkillsSpanish = (data) => {
-    return (dispatch) => {
-       dispatch(setSkillsData(data)) 
-    }
-}
+  return (dispatch) => {
+    dispatch(setSkillsData(data));
+  };
+};
