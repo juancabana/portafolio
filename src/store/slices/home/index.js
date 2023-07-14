@@ -16,14 +16,14 @@ export const { setHomeData } = homeSlice.actions;
 
 export default homeSlice.reducer;
 
-export const fetchHomeEnglish = (data) => {
+export const setHomeEnglish = (data) => {
   return (dispatch) => {
     // const dataString = localStorage.getItem("dataEnglish");
     // const data = JSON.parse(dataString);
     dispatch(setHomeData(data));
   };
 };
-export const fetchHomeSpanish = (data) => {
+export const setHomeSpanish = (data) => {
   return (dispatch) => {
     dispatch(setHomeData(data));
   };

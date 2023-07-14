@@ -6,12 +6,12 @@ import { ThemeProvider } from "@mui/material/styles";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 // Fetch info
-import { fetchHomeEnglish, fetchHomeSpanish } from "./store/slices/home";
-import { fetchAboutEnglish, fetchAboutSpanish } from "./store/slices/about";
-import { fetchSkillsEnglish, fetchSkillsSpanish } from "./store/slices/skills";
+import { setHomeEnglish, setHomeSpanish } from "./store/slices/home";
+import { setAboutEnglish, setAboutSpanish } from "./store/slices/about";
+import { setSkillsEnglish, setSkillsSpanish } from "./store/slices/skills";
 import {
-  fetchProjectsEnglish,
-  fetchProjectsSpanish,
+  setProjectsEnglish,
+  setProjectsSpanish,
 } from "./store/slices/projects";
 // Store
 import { useSelector } from "react-redux/es/hooks/useSelector";
@@ -28,19 +28,20 @@ const App = () => {
   const theme = isDarkMode === "dark" ? darkTheme : lightTheme;
 
   const setInfoEnglish = (data) => {
-    dispatch(fetchHomeEnglish(data.home));
-    dispatch(fetchAboutEnglish(data.about));
-    dispatch(fetchSkillsEnglish(data.skills));
-    dispatch(fetchProjectsEnglish(data.projects));
+    dispatch(setHomeEnglish(data.home));
+    dispatch(setAboutEnglish(data.about));
+    dispatch(setSkillsEnglish(data.skills));
+    dispatch(setProjectsEnglish(data.projects));
   };
   const setInfoSpanish = (data) => {
-    dispatch(fetchHomeSpanish(data.home));
-    dispatch(fetchAboutSpanish(data.about));
-    dispatch(fetchSkillsSpanish(data.skills));
-    dispatch(fetchProjectsSpanish(data.projects));
+    dispatch(setHomeSpanish(data.home));
+    dispatch(setAboutSpanish(data.about));
+    dispatch(setSkillsSpanish(data.skills));
+    dispatch(setProjectsSpanish(data.projects));
   };
 
   const englishMode = async () => {
+    setInfoSpanish({ home: {}, about: {}, skills: [], projects: [] });
     const dataString = localStorage.getItem("dataEnglish");
     const data = JSON.parse(dataString);
     if (dataString) {
@@ -52,6 +53,7 @@ const App = () => {
   };
 
   const spanishMode = async () => {
+    setInfoEnglish({ home: {}, about: {}, skills: [], projects: [] });
     const dataString = localStorage.getItem("dataSpanish");
     const data = JSON.parse(dataString);
     if (dataString) {

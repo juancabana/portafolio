@@ -2,6 +2,9 @@ import React from "react";
 import styled from "@emotion/styled";
 import CardSkills from "./CardSkills";
 import { useSelector } from "react-redux/es/hooks/useSelector";
+import { Fragment } from "react";
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 const ContentSkills = () => {
   const skillsData = useSelector(state => state.skills.skills)
@@ -57,16 +60,19 @@ const ContentSkills = () => {
 
   return (
     <ContentSkillsContainer>
-      <WrapperContent>
-        <TittleSkills>{language === 'english' ? 'Skills' : 'Habilidades'}</TittleSkills>
-        <ContentCardSkills>
-          {
-            skillsData.map((skill, index) => (
-              <CardSkills key={index} name={skill.name} url={skill.url} level={skill.level} certificates={skill.certificates} description={skill.description} ></CardSkills>
-            ))
-          }
-        </ContentCardSkills>
-      </WrapperContent>
+      {skillsData[0] ? <Fragment>
+        <WrapperContent>
+          <TittleSkills>{language === 'english' ? 'Skills' : 'Habilidades'}</TittleSkills>
+          <ContentCardSkills>
+            {
+              skillsData.map((skill, index) => (
+                <CardSkills key={index} name={skill.name} url={skill.url} level={skill.level} certificates={skill.certificates} description={skill.description} ></CardSkills>
+              ))
+            }
+          </ContentCardSkills>
+        </WrapperContent>
+      </Fragment> : < CircularProgress />}
+
     </ContentSkillsContainer>
   );
 }

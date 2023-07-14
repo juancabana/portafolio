@@ -16,12 +16,12 @@ export const { setProjectsData } = projectsSlice.actions;
 
 export default projectsSlice.reducer;
 
-export const fetchProjectsEnglish = (data) => {
+export const setProjectsEnglish = (data) => {
   return (dispatch) => {
     dispatch(setProjectsData(data));
   };
 };
-export const fetchProjectsSpanish = (data) => {
+export const setProjectsSpanish = (data) => {
   return (dispatch) => {
     dispatch(setProjectsData(data));
   };

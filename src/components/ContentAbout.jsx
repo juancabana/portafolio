@@ -2,6 +2,8 @@ import React from "react";
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 const ContentAbout = () => {
 
@@ -17,16 +19,16 @@ const ContentAbout = () => {
     paddingTop: '7rem',
     boxSizing: 'border-box',
     [theme.breakpoints.down('lg')]: {
-      marginTop: '50px',    
+      marginTop: '50px',
     },
   }))
-  const ContainerContentAbout = styled('div')(({theme}) => ({
+  const ContainerContentAbout = styled('div')(({ theme }) => ({
     maxWidth: '1400px',
     height: '90%',
     padding: '1rem',
-    
+
   }))
-  const TittleAbout = styled('h1')(({theme}) => ({
+  const TittleAbout = styled('h1')(({ theme }) => ({
     maxWidth: '1000px',
     width: '56%',
     height: '1px',
@@ -39,6 +41,7 @@ const ContentAbout = () => {
     whiteSpace: 'nowrap',
     paddingLeft: '50px',
     [theme.breakpoints.down('md')]: {
+      paddingLeft: '20px',
       width: 'auto',
     },
     '&::after': {
@@ -50,17 +53,17 @@ const ContentAbout = () => {
     },
 
   }))
-  const ParagraphAbout = styled('div')(({theme}) => ({
+  const ParagraphAbout = styled('div')(({ theme }) => ({
     paddingLeft: '50px',
     paddingRight: '20px',
     [theme.breakpoints.down('md')]: {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      paddingLeft: '20px',    
+      paddingLeft: '20px',
     },
   }))
-  const ContentAbout = styled('div')(({theme}) => ({
+  const ContentAbout = styled('div')(({ theme }) => ({
     display: 'grid',
     gridTemplateColumns: '1.2fr 0.8fr',
     width: '100%',
@@ -70,12 +73,12 @@ const ContentAbout = () => {
       flexDirection: 'column-reverse',
     },
   }))
-  const TextAbout = styled('p')(({theme}) => ({
+  const TextAbout = styled('p')(({ theme }) => ({
     color: theme.palette.colorContent,
     fontFamily: '"Montserrat", sans-serif',
     lineHeight: '1.5',
   }))
-  const ImageAboutContainer = styled('p')(({theme}) => ({
+  const ImageAboutContainer = styled('p')(({ theme }) => ({
     marginTop: '15px',
     display: 'flex',
     justifyContent: 'center',
@@ -84,11 +87,11 @@ const ContentAbout = () => {
       paddingRight: '0px',
     },
   }))
-  const ImageAbout = styled('div')(({theme}) => ({
+  const ImageAbout = styled('div')(({ theme }) => ({
     width: '450px',
     height: '450px',
     borderRadius: '10px',
-    backgroundImage: `url(${require('./../assets/img/verticalImage.jpg')})`,
+    backgroundImage: `url(${aboutData.linkImage})`,
     backgroundSize: 'cover',
     backgroundPosition: `right 30%`,
     [theme.breakpoints.down('lg')]: {
@@ -117,7 +120,7 @@ const ContentAbout = () => {
       transition: 'all 0.3s',
     }
   }))
-  const Strong = styled('strong')(({theme}) => ({
+  const Strong = styled('strong')(({ theme }) => ({
     fontSize: '20px',
     fontWeight: '400',
     color: theme.palette.colorContrast,
@@ -125,24 +128,27 @@ const ContentAbout = () => {
 
   return (
     <WrapperContentAboutContainer>
-      <ContainerContentAbout>
-        <TittleAbout>{language === 'english' ? 'About me' : 'Sobre mi'}</TittleAbout  >
-        <ContentAbout>
-          <ParagraphAbout>
-            <TextAbout>
-              {aboutData.about} <br /> <br />
-              <Strong>{language === 'english' ? 'Experience': 'Experiencia'}</Strong> <br />
-              {aboutData.experience}<br /> <br />
-              <Strong>{language === 'english' ? 'Education' : 'Educación'}</Strong> <br />
-              {aboutData.education}
-            </TextAbout>
-        <LinkContact to="/contact">{language === 'english' ? 'CONTACT' : 'CONTÁCTAME'}</LinkContact>
-          </ParagraphAbout>
-          <ImageAboutContainer>
-            <ImageAbout></ImageAbout>
-          </ImageAboutContainer>
-        </ContentAbout>
-      </ContainerContentAbout>
+      {aboutData.about ? <>
+        <ContainerContentAbout>
+          <TittleAbout>{language === 'english' ? 'About me' : 'Sobre mi'}</TittleAbout  >
+          <ContentAbout>
+            <ParagraphAbout>
+              <TextAbout>
+                {aboutData.about} <br /> <br />
+                <Strong>{language === 'english' ? 'Experience' : 'Experiencia'}</Strong> <br />
+                {aboutData.experience}<br /> <br />
+                <Strong>{language === 'english' ? 'Education' : 'Educación'}</Strong> <br />
+                {aboutData.education}
+              </TextAbout>
+              <LinkContact to="/contact">{language === 'english' ? 'CONTACT' : 'CONTÁCTAME'}</LinkContact>
+            </ParagraphAbout>
+            <ImageAboutContainer>
+              <ImageAbout></ImageAbout>
+            </ImageAboutContainer>
+          </ContentAbout>
+        </ContainerContentAbout>
+      </> : <CircularProgress />}
+
     </WrapperContentAboutContainer>
   );
 }

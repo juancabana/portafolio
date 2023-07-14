@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 import React from "react";
 import CardProjects from "./CardProjects";
 import { useSelector } from "react-redux/es/hooks/useSelector";
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 const ContentProyects = () => {
   // Data 
@@ -73,14 +75,17 @@ const ContentProyects = () => {
 
   return (
     <ContentProyects>
-      <WrapperContent>
-        <ContentCardsProyects>
-          <TittleProjects>{language === 'english' ? 'Personal projects' : 'Proyectos personales'}</TittleProjects>
-          {projectsData.map((project, index) => (
-            <CardProjects key={index} links={project.links} title={project.title} description={project.description} tecnologies={project.tecnologies} />
-          ))}
-        </ContentCardsProyects>
-      </WrapperContent>
+      {projectsData[0] ? <>
+        <WrapperContent>
+          <ContentCardsProyects>
+            <TittleProjects>{language === 'english' ? 'Personal projects' : 'Proyectos personales'}</TittleProjects>
+            {projectsData.map((project, index) => (
+              <CardProjects key={index} links={project.links} title={project.title} description={project.description} tecnologies={project.tecnologies} />
+            ))}
+          </ContentCardsProyects>
+        </WrapperContent>
+      </> : <CircularProgress />}
+
     </ContentProyects>
   );
 }

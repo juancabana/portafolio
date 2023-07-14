@@ -2,6 +2,8 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 const ContentHome = () => {
   // Data 
@@ -65,7 +67,7 @@ const ContentHome = () => {
     marginBottom: '50px',
     width: '240px',
     height: '240px',
-    backgroundImage: `url(${require('./../assets/img/perfil.jpg')})`,
+    backgroundImage: `url(${homeData.urlImageHome})`,
     borderRadius: '50%',
     backgroundSize: '200px 250px',
     backgroundPosition: `center calc(50% - 3px)`,
@@ -113,15 +115,19 @@ const ContentHome = () => {
   }))
   return (
     <ContentHomeContainer>
-      <TextFirstLine>{homeData.firstLine}</TextFirstLine>
-      <TextSecondLine>{homeData.secondLine}</TextSecondLine>
-      <TextTrhirdLine>{homeData.thirdLine}</TextTrhirdLine>
-      <ContentPerfil to="/about">
-        <Canva></Canva>
-      </ContentPerfil>
-      <TextTrhirdLine>{homeData.fourthLine}</TextTrhirdLine>
-      <EmailLink href={homeData.linkCV} download={true}>{language === 'english' ? 'Download CV' : 'Descargar CV'}</EmailLink>
-    </ContentHomeContainer>
+      {homeData.firstLine ?
+        <>
+          < TextFirstLine > {homeData.firstLine}</ TextFirstLine>
+          <TextSecondLine>{homeData.secondLine}</TextSecondLine>
+          <TextTrhirdLine>{homeData.thirdLine}</TextTrhirdLine>
+          <ContentPerfil to="/about">
+            <Canva></Canva>
+          </ContentPerfil>
+          <TextTrhirdLine>{homeData.fourthLine}</TextTrhirdLine>
+          <EmailLink href={homeData.linkCV} download={true}>{language === 'english' ? 'Download CV' : 'Descargar CV'}</EmailLink>
+        </> : <CircularProgress />}
+
+    </ContentHomeContainer >
   );
 }
 

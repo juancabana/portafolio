@@ -16,12 +16,12 @@ export const { setSkillsData } = skillsSlice.actions;
 
 export default skillsSlice.reducer;
 
-export const fetchSkillsEnglish = (data) => {
+export const setSkillsEnglish = (data) => {
   return (dispatch) => {
     dispatch(setSkillsData(data));
   };
 };
-export const fetchSkillsSpanish = (data) => {
+export const setSkillsSpanish = (data) => {
   return (dispatch) => {
     dispatch(setSkillsData(data));
   };

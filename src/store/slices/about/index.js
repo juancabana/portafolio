@@ -16,12 +16,12 @@ export const { setAboutData } = aboutSlice.actions;
 
 export default aboutSlice.reducer;
 
-export const fetchAboutEnglish = (data) => {
+export const setAboutEnglish = (data) => {
   return (dispatch) => {
     dispatch(setAboutData(data));
   };
 };
-export const fetchAboutSpanish = (data) => {
+export const setAboutSpanish = (data) => {
   return (dispatch) => {
     dispatch(setAboutData(data));
   };
