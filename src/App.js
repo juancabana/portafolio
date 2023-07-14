@@ -65,6 +65,10 @@ const App = () => {
   };
 
   useEffect(() => {
+    localStorage.removeItem('dataEnglish');
+    localStorage.removeItem('dataSpanish');
+  }, []);
+  useEffect(() => {
     language === "spanish" ? spanishMode() : englishMode();
   }, [language]);
 
