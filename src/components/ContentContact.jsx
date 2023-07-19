@@ -77,7 +77,7 @@ const ContentContact = () => {
         </PContact>
         <EmailLink
           className="email-link"
-          href="mailto:juand.cabanat@unac.edu.co"
+          href="mailto:juand.cabanat@unac.edu.co?subject=Contacto con Juan Cabana"
           rel="noopener noreferrer"
           target="_blank"
         >

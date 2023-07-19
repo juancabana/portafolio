@@ -41,6 +41,7 @@ const ContentAbout = () => {
     whiteSpace: 'nowrap',
     paddingLeft: '50px',
     [theme.breakpoints.down('md')]: {
+      paddingLeft: '20px',
       width: 'auto',
     },
     '&::after': {
@@ -61,6 +62,7 @@ const ContentAbout = () => {
       flexDirection: 'column',
       alignItems: 'center',
       paddingLeft: '20px',    
+      textAlign: 'center'
     },
   }))
 
@@ -93,7 +95,7 @@ const ContentAbout = () => {
     width: '450px',
     height: '450px',
     borderRadius: '10px',
-    backgroundImage: `url(${require('./../assets/img/verticalImage.jpg')})`,
+    backgroundImage: `url(${aboutData.linkImage})`,
     backgroundSize: 'cover',
     backgroundPosition: `right 30%`,
     [theme.breakpoints.down('lg')]: {

@@ -69,7 +69,7 @@ const ContentHome = () => {
     marginBottom: '50px',
     width: '240px',
     height: '240px',
-    backgroundImage: `url(${require('./../assets/img/perfil.jpg')})`,
+    backgroundImage: `url(${homeData.urlImageHome})`,
     borderRadius: '50%',
     backgroundSize: '200px 250px',
     backgroundPosition: `center calc(50% - 3px)`,
@@ -129,7 +129,7 @@ const ContentHome = () => {
         <Canva></Canva>
       </ContentPerfil>
       <TextTrhirdLine>{homeData.fourthLine}</TextTrhirdLine>
-      <EmailLink href="./../../assets/cv/CV-Juan-Cabana.pdf" download={true}>{language === 'english' ? 'Download CV' : 'Descargar CV'}</EmailLink>
+      <EmailLink href={homeData.linkCV} download={true}>{language === 'english' ? 'Download CV' : 'Descargar CV'}</EmailLink>
 
     </ContentHomeContainer>
   );
