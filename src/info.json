@@ -220,6 +220,21 @@
         ]
       },
       {
+        "title": "Cabana Translate",
+        "description": "A manual translator, using the ChatGPT API.",
+        "tecnologies": ["React", "ChatGPT", "Redux", "MaterialUI"],
+        "links": [
+          {
+            "page": "Live",
+            "url": "https://cabanatranslate.onrender.com/"
+          },
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/CabanaTranslate"
+          }
+        ]
+      },
+      {
         "title": "Pokedex Backend",
         "description": "The back-end was done in Node.js, with the Express.js framework, because thanks to the functionalities offered by Node.js we will have a high scalability, and we can add modules or new features in an easy way thanks to its default package manager (NPM). package manager (NPM).",
         "tecnologies": ["JavaScript", "Express.js", "Sequelize"],
@@ -288,13 +303,13 @@
     "home": {
       "firstLine": "Hola, soy Juan David Cabana Trejos.",
       "secondLine": "Desarrollador web full-stack (Node - React).",
-      "thirdLine": "Me apasiona el desarrollo web, en especial el desarrollo frontend, aunque tengo conocimientos en el backend.",
+      "thirdLine": "Un apasionado por el desarrollo web front-end y backend",
       "fourthLine": "Estudiante de ingeniería de sistemas, 8º semestre.",
       "linkCV": "https://dl.dropboxusercontent.com/scl/fi/4jvj637mxovvlvn1pqxw3/CV-Juan-Cabana.pdf?rlkey=w7iq4ro9mhyio0icn58vguy9c",
       "urlImageHome": "https://i.ibb.co/BBMTJDT/foto.jpg"
     },
     "about": {
-      "about": "Desarrollador web frontend y backend, soy una persona alegre, amable, altruista, me gusta el trabajo en equipo, el buen compañerismo, responsable, siempre dispuesto y con ganas de aprender nuevas tecnologías y profundizar en las que ya conozco. Las tecnologías que manejo son HTML, CSS, Javascript y sus versiones de ECMAScript (ES6+), Node.js y su sistema de gestión de paquetes y dependencias NPM, React.js, un poco de typescript, fundamentos de bases de datos relacionales con MySQL, Express.js, Passport.js, JSON Web Token (JWT), y he utilizado principalmente Git y Github para el control de versiones, aunque tengo cierta familiaridad con Microsoft Azure. He trabajado bajo metodologías ágiles de desarrollo como scrum y canva.",
+      "about": "Desarrollador web full-stack, soy una persona alegre, amable, responsable, altruista, me gusta el trabajo en equipo, el compañerismo, siempre dispuesto y con ganas de aprender nuevas tecnologías y profundizar en las que ya conozco. Las principales tecnologías que manejo son: Javascript y sus versiones de ECMAScript (ES6+), Node.js y su sistema de gestión de paquetes y dependencias NPM, React.js, Redux, un poco de Typescript, MaterialUI, fundamentos de bases de datos relacionales con MySQL, y no relacionales (MongoDB), Express.js, un poco de Nest.js, y he utilizado principalmente Git y Github para el control de versiones, aunque tengo cierta familiaridad con Microsoft Azure. He trabajado bajo metodologías ágiles de desarrollo como SCRUM y CANVAS.",
       "experience": "He trabajado en dos empresas, ambas se dedican al ámbito educativo, desarrollan productos para que los colegios gestionen todos sus expedientes académicos, una se llama Siempre.net, en esta trabajé a tiempo completo, y actualmente estoy trabajando en modo freelance en EdSoft, que está realizando un nuevo producto, cuya finalidad es sustituir al ya existente. Me encargo del diseño, maquetación y desarrollo de la nueva plataforma de EdSoft, cuyo frontend está desarrollado principalmente en React.js, y para el consumo se usa GraphQL.",
       "education": "En el 2019, me gradué como el mejor bachiller en el colegio Adventista de Cartagena, gracias a eso obtuve una beca por un año en la Universidad Adventista de Colombia (UNAC), donde actualmente estudio 8vo semestre de ingeniería en sistemas. A principios del 2020 conocí el desarrollo web y fui adentrándome cada vez más en este mundo del desarrollo web, hasta apasionarme por este.",
       "linkImage": "https://i.ibb.co/VNGF1jb/vertical-Image.jpg"
@@ -501,6 +516,21 @@
           {
             "page": "Github",
             "url": "https://github.com/juancabana/frontend-pokedex"
+          }
+        ]
+      },
+      {
+        "title": "Cabana Translate",
+        "description": "Un traductor manual, que utiliza la API de ChatGPT para hacer sus consultas",
+        "tecnologies": ["React", "ChatGPT", "Redux", "MaterialUI"],
+        "links": [
+          {
+            "page": "Live",
+            "url": "https://cabanatranslate.onrender.com/"
+          },
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/CabanaTranslate"
           }
         ]
       },
