@@ -65,7 +65,7 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     marginTop: '5px',
     marginBottom: '0px',
     fontSize: '15px',
-    fontWeight: '200'
+    fontWeight: '400'
   }))
   const Paragraph = styled('p')(({ theme }) => ({
     color: theme.palette.colorContent,

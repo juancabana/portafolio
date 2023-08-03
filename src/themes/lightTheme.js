@@ -3,18 +3,18 @@ import { createTheme } from "@mui/material";
 const lightTheme = createTheme({
   palette: {
     type: "light",
-    background: "#f1feff",
-    colorTittle: "#0A192F",
+    background: '#F0F0F0',
+    colorTittle: '#333333',
     fontFamily: 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji',
-
-    colorSubTittle: "#0A192F",
-    colorDescription: "#0A192F",
-    colorContent: "#2E3A59",
-    colorContrast: "#0b786f",
-    colorHoverContrast: "#0b786f1a",
-    colorCardBackground: "#c7dad9",
-    colorItemHeader: "#0A192F",
-  },
+    colorSubTittle: '#333333',
+    colorDescription: '#333333',
+    colorContent: '#555555',
+    colorContrast: '#007f6eff',
+    colorHoverContrast: '#007f6e1a',
+    colorCardBackground: '#FFFFFF',
+    colorItemHeader: '#000000',
+    colorBorder: '#DDDDDD',
+  }
 });
 
 export default lightTheme;
