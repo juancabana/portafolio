@@ -17,7 +17,7 @@ const ResponsiveTittleHeader = () => {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: theme.palette.fontFamily,
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: theme.palette.colorItemHeader,

@@ -44,7 +44,7 @@ const ContentProyects = () => {
     width: '100%',
     height: '1px',
     position: 'relative',
-    fontFamily: ' monospace',
+    fontFamily: theme.palette.fontFamily,
     color: theme.palette.colorTittle,
     fontSize: '35px',
     display: 'flex',

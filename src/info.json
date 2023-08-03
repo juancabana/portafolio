@@ -318,7 +318,7 @@
       {
         "name": "JavaScript",
         "url": "https://i.ibb.co/2g0tqTs/js.png",
-        "description": "Tengo un buen nivel en JavaScript, conozco los conceptos básicos, por lo que tengo una base sólida en este lenguaje, lo que me permite aprender nuevas características de forma más rápida.",
+        "description": "Amplios conocimientos en JavaScript, tanto en el frontend como en el backend, con capacidad para desarrollar aplicaciones web completas y dinámicas.",
         "level": "Intermedio",
         "certificates": [
           {
@@ -358,7 +358,7 @@
       {
         "name": "React",
         "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
-        "description": "Tengo un buen nivel en React, conozco los conceptos básicos y también tengo experiencia laboral en esto. Me encanta trabajar con React y cada vez aprendo nuevas cosas sobre este gran framework.",
+        "description": "Tengo sólidos conocimientos en React, capaz de desarrollar aplicaciones web interactivas y escalables con una habilidad destacada en el manejo de componentes y estados.",
         "level": "Intermedio",
         "certificates": [
           {
@@ -374,7 +374,7 @@
       {
         "name": "NodeJS",
         "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
-        "description": "Aprendí los conceptos básicos de Node, he trabajado con este entorno de ejecución a diario y entiendo cosas importantes para acelerar mi aprendizaje.",
+        "description": "Hábil en JavaScript, con amplios conocimientos en el desarrollo frontend y backend utilizando Node.js para crear aplicaciones web completas y dinámicas.",
         "level": "Intermedio",
         "certificates": [
           {
@@ -394,7 +394,7 @@
       {
         "name": "Typescript",
         "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
-        "description": "Tengo conocimientos básicos de este súper lenguaje y lo he utilizado tanto en proyectos backend como frontend.",
+        "description": "Conocimientos básicos en TypeScript, experiencia en desarrollo web con Node.js, y uso de tipado estático en el código.",
         "level": "Básico",
         "certificates": [
           {
@@ -414,7 +414,7 @@
       {
         "name": "Git & Github",
         "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
-        "description": "Afortunadamente, lo he aprendido bastante bien, tengo claro cómo funcionan ambos y lo uso a diario. Gracias a esto, mi proceso de desarrollo se ha agilizado.",
+        "description": "Experto en Git y Github, con habilidades avanzadas en control de versiones, gestión de proyectos y colaboración efectiva en equipos mediante Github.",
         "level": "Avanzado",
         "certificates": [
           {
@@ -426,8 +426,8 @@
       {
         "name": "MongoDB",
         "url": "https://i.ibb.co/qY1V4Wf/file-type-mongo-icon-130383.png",
-        "description": "Aprendí los conceptos básicos de MongoDB y su lenguaje de consultas. Me encanta y tengo ganas de usarlo en más proyectos.",
-        "level": "Básico",
+        "description": "Conocimientos en MongoDB con habilidades en diseño de bases de datos, consultas eficientes y desarrollo de aplicaciones escalables, utilizando MongoDB como solución de almacenamiento.",
+        "level": "Intermedio",
         "certificates": [
           {
             "tittle": "Curso introductorio de MongoDB",
@@ -442,7 +442,7 @@
       {
         "name": "Express.js",
         "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
-        "description": "Este fue el primer framework backend que aprendí, lo utilicé en la mayoría de mis proyectos backend.",
+        "description": "Conocimientos básicos en Express.js, capaz de desarrollar aplicaciones web backend utilizando este framework de Node.js para crear rutas, manejar peticiones HTTP y construir APIs con autenticación.",
         "level": "Básico",
         "certificates": [
           {
@@ -462,7 +462,7 @@
       {
         "name": "CSS",
         "url": "https://i.ibb.co/B3gR7LN/css.png",
-        "description": "Con esto empecé en el mundo del desarrollo web. Tengo conocimientos sólidos en todo lo que se refiere al diseño de aplicaciones web.",
+        "description": "Habilidades avanzadas en CSS, capaz de crear interfaces web altamente estilizadas y responsivas mediante el uso de flexbox, grid, animaciones y estilos personalizados.",
         "level": "Avanzado",
         "certificates": [
           {

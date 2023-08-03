@@ -32,17 +32,17 @@ const ContentContact = () => {
   const SubtitleContact = styled('h3')(({ theme }) => ({
     fontSize: '16px',
     fontWeight: '400',
-    fontFamily: ' monospace',
+    fontFamily: theme.palette.fontFamily,
     color: theme.palette.colorContrast,
   }))
   const H1Contact = styled('h1')(({ theme }) => ({
     fontSize: '50px',
-    fontFamily: '"Montserrat", sans-serif',
+    fontFamily: theme.palette.fontFamily,
     color: theme.palette.colorTittle,
     marginBottom: '0%',
   }))
   const PContact = styled('p')(({ theme }) => ({
-    fontFamily: '"Montserrat", sans-serif',
+    fontFamily: theme.palette.fontFamily,
     color: theme.palette.colorContent,
     textAlign: 'center',
     marginBottom: '50px',
@@ -54,7 +54,7 @@ const ContentContact = () => {
     justifyContent: 'center',
     textDecoration: 'none',
     borderRadius: '5px',
-    fontFamily: ' monospace',
+    fontFamily: theme.palette.fontFamily,
     border: `1px solid ${theme.palette.colorContrast}`,
     color: theme.palette.colorContrast,
     height: '60px',

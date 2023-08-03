@@ -32,7 +32,7 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
     }))
     const SubtittleCard = styled('h3')(({ theme }) => ({
         width: '100%',
-        fontFamily: '"Montserrat", sans-serif',
+        fontFamily: theme.palette.fontFamily,
         fontSize: '18px',
         fontWeight: '700',
         color: theme.palette.colorItemHeader,
@@ -40,14 +40,14 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
     }))
 
     const PCard = styled('p')(({ theme }) => ({
-        fontFamily: '"Montserrat", sans-serif',
+        fontFamily: theme.palette.fontFamily,
         color: theme.palette.colorContent,
         fontSize: '14px',
         fontWeight: '400',
         lineHeight: '1.5',
     }))
     const TecnologiesCard = styled('div')(({ theme }) => ({
-        fontFamily: '"Montserrat", sans-serif',
+        fontFamily: theme.palette.fontFamily,
         width: '100%',
         display: 'flex',
         justifyContent: 'left',
@@ -78,7 +78,7 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
         justifyContent: 'center',
         textDecoration: 'none',
         borderRadius: '0px',
-        fontFamily: ' monospace',
+        fontFamily: theme.palette.fontFamily,
         border: `1px solid ${theme.palette.colorContrast}`,
         color: theme.palette.colorContrast,
         padding: '5px',

@@ -33,7 +33,7 @@ const ContentAbout = () => {
     width: '56%',
     height: '1px',
     position: 'relative',
-    fontFamily: ' monospace',
+    fontFamily: theme.palette.fontFamily,
     color: theme.palette.colorTittle,
     fontSize: '35px',
     display: 'flex',
@@ -78,7 +78,7 @@ const ContentAbout = () => {
   }))
   const TextAbout = styled('p')(({theme}) => ({
     color: theme.palette.colorContent,
-    fontFamily: '"Montserrat", sans-serif',
+    fontFamily: theme.palette.fontFamily,
     lineHeight: '1.5',
   }))
   const ImageAboutContainer = styled('p')(({theme}) => ({
@@ -114,7 +114,7 @@ const ContentAbout = () => {
     justifyContent: 'center',
     textDecoration: 'none',
     borderRadius: '5px',
-    fontFamily: ' monospace',
+    fontFamily: theme.palette.fontFamily,
     border: `1px solid ${theme.palette.colorContrast}`,
     color: theme.palette.colorContrast,
     height: '60px',

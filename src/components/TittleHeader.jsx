@@ -16,7 +16,7 @@ const TittleHeader = () => {
       sx={{
         mr: 2,
         display: { xs: 'none', md: 'flex' },
-        fontFamily: 'monospace',
+        fontFamily: theme.palette.fontFamily,
         fontWeight: 700,
         letterSpacing: '.3rem',
         color: theme.palette.colorItemHeader,

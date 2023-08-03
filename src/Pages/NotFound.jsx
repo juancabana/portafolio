@@ -7,7 +7,7 @@ const NotFoundPage = () => {
     const Page404 = styled('section')(({ theme }) => ({
         background: '#ffffff',
         height: '100vh',
-        fontFamily: 'monospace',
+        fontFamily: theme.palette.fontFamily,
     }))
     const Container = styled('section')(({ theme }) => ({
         width: '100%,',

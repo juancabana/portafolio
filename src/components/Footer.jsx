@@ -17,7 +17,7 @@ const Footer = () => {
     }))
 
     const ContentFooter = styled('h5')(({ theme }) => ({
-        fontFamily: 'monospace',
+        fontFamily: theme.palette.fontFamily,
         fontweight: '300',
         color: theme.palette.colorTittle,
         margin: '0px',
