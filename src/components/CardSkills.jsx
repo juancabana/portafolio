@@ -32,6 +32,7 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     borderRadius: '10px',
     padding: '5px',
     backgroundColor: '#322d4f',
+
   }))
   const Image = styled('div')(({ theme }) => ({
     width: '100%',
@@ -43,16 +44,19 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     borderRadius: '10px',
   }))
   const WrapperContent = styled('div')(({ theme }) => ({
+    display: 'flex',    
+    flexDirection: 'column',
     width: '100%',
     height: '100%',
-    marginLeft: '1rem'
+    marginLeft: '1rem',
+
   }))
   const TittleSkill = styled('h2')(({ theme }) => ({
     margin: '0px',
     color: theme.palette.colorItemHeader,
     fontFamily: theme.palette.fontFamily,
     fontSize: '25px',
-    fontWeight: '300'
+    fontWeight: '400'
 
   }))
   const TittleLevel = styled('h4')(({ theme }) => ({
@@ -68,12 +72,16 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     fontFamily: theme.palette.fontFamily,
     marginTop: '5px',
     fontSize: '15px',
-    fontWeight: '300'
+    fontWeight: '400'
   }))
   const WrapperContentCard = styled('div')(({ theme }) => ({
     display: 'flex',
     // alignItems: 'center',
-    width: '100%'
+    width: '100%',
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      // alignItems: 'center'
+    },
   }))
 
   const WrapperButton = styled('div')(({ theme }) => ({
@@ -121,25 +129,18 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
           <Paragraph>{description}</Paragraph>
         </WrapperContent>
       </WrapperContentCard>
-
-
-
-
-      {/* <Hr /> */}
-
-      <WrapperButton>
-
-        <Button style={{ padding: '0px', marginTop: '5px', fontFamily: theme.palette.fontFamily, color: theme.palette.colorSubTittle }} onClick={handleClick}>{language === 'english' ? 'Certificates' : 'Certificados'} {!open ? <KeyboardArrowDownIcon style={{ color: theme.palette.colorSubTittle }} /> : <KeyboardArrowUpIcon style={{ color: theme.palette.colorSubTittle }} />}</Button>
-
-
-      </WrapperButton>
+      {certificates &&
+        <WrapperButton>
+          <Button style={{ padding: '0px', marginTop: '5px', fontFamily: theme.palette.fontFamily, color: theme.palette.colorSubTittle }} onClick={handleClick}>{language === 'english' ? 'Certificates' : 'Certificados'} {!open ? <KeyboardArrowDownIcon style={{ color: theme.palette.colorSubTittle }} /> : <KeyboardArrowUpIcon style={{ color: theme.palette.colorSubTittle }} />}</Button>
+        </WrapperButton>}
+        {certificates &&
       <Collapse in={open} style={{ width: '100%' }}>
         <List component="div" disablePadding style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', textAlign: 'center', marginTop: '.5rem' }} >
           {certificates.map((certificate, index) => <Projectink key={index} target='_blank' href={certificate.url}>
             {certificate.tittle}
           </Projectink>)}
         </List>
-      </Collapse>
+      </Collapse>}
     </WrapperCard>
   );
 }
