@@ -35,7 +35,7 @@ const MenuHeader = ({ pages }) => {
       {pages.map((page, index) => (
         <ButtonActive
           key={page.page}
-          to={`#/${page.route}`}
+          to={`/${page.route}`}
           onClick={() => { dispatch(setHeaderItem(page.page)) }}
           className={actualItem === page.page ? actualTheme === 'dark' ? 'darkActive' : 'lightActive' : ''}
         >

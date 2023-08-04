@@ -144,7 +144,7 @@ const ContentAbout = () => {
               <Strong>{language === 'english' ? 'Education' : 'Educación'}</Strong> <br />
               {aboutData.education}
             </TextAbout>
-        <LinkContact to="#/contact">{language === 'english' ? 'CONTACT' : 'CONTÁCTAME'}</LinkContact>
+        <LinkContact to="/contact">{language === 'english' ? 'CONTACT' : 'CONTÁCTAME'}</LinkContact>
           </ParagraphAbout>
           <ImageAboutContainer>
             <ImageAbout></ImageAbout>
