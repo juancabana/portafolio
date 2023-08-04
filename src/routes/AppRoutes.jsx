@@ -12,11 +12,11 @@ export default function AppRouter() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path={"/"} element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/skills" element={<Skills />} />
-                <Route path="/projects" element={<Proyects />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route exact path={"/"} element={<Home />} />
+                <Route exact path="/about" element={<About />} />
+                <Route exact path="/skills" element={<Skills />} />
+                <Route exact path="/projects" element={<Proyects />} />
+                <Route exact path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFoundPage />} />
 
             </Routes>

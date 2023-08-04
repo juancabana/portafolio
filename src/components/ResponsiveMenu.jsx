@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Menu from '@mui/material/Menu';
 import IconButton from '@mui/material/IconButton';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@emotion/react';
@@ -50,11 +50,11 @@ const ResponsiveMenu = ({ pages }) => {
                 onClose={handleCloseNavMenu}
             >
                 {pages.map((page) => (
-                    <NavLink key={page.page} to={`/${page.route}`} style={{ textDecoration: 'none', color: theme.palette.background }}>
+                    <Link key={page.page} to={`/${page.route}`} style={{ textDecoration: 'none', color: theme.palette.background }}>
                         <MenuItem style={{backgroundColor: theme.palette.colorCardBackground, color: theme.palette.colorItemHeader}}>
                             { page.page.toUpperCase() }
                         </MenuItem>
-                    </NavLink>
+                    </Link>
                 ))}
             </Menu>
         </Box>

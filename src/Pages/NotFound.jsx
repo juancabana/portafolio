@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 const NotFoundPage = () => {
@@ -28,7 +28,7 @@ const NotFoundPage = () => {
         fontSize: '60px',
 
     }))
-    const Link404 = styled(NavLink)(({ theme }) => ({
+    const Link404 = styled(Link)(({ theme }) => ({
         color: '#ffffff !important',
         padding: '10px 20px',
         background: '#39ac31',

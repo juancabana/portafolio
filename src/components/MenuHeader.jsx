@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import styled from '@emotion/styled';
 import Button from '@mui/material/Button';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // Redux
 import { useDispatch } from "react-redux";
 import { setHeaderItem } from '../store/slices/header';
@@ -21,7 +21,7 @@ const MenuHeader = ({ pages }) => {
   const actualTheme = useSelector(state => state.theme.theme);
 
 
-  const ButtonActive = styled(NavLink)(({ theme }) => ({
+  const ButtonActive = styled(Link)(({ theme }) => ({
     textDecoration: 'none',
     color: theme.palette.colorItemHeader,
     display: 'block',

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
 
@@ -107,7 +107,7 @@ const ContentAbout = () => {
       borderRadius: '50%'
     },
   }))
-  const LinkContact = styled(NavLink)(({ theme }) => ({
+  const LinkContact = styled(Link)(({ theme }) => ({
     padding: '0%',
     display: 'flex',
     alignItems: 'center',
