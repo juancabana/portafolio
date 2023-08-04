@@ -21,7 +21,8 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     width: '100%',
     borderRadius: '10px',
     border: `1px solid ${theme.palette.colorBorder}`,
-    backgroundColor: theme.palette.colorCardBackground
+    backgroundColor: theme.palette.colorCardBackground,
+    boxShadow: theme.palette.boxShadow
 
   }))
   const ImageCard = styled('div')(({ theme }) => ({
@@ -31,7 +32,7 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     minWidth: '90px',
     borderRadius: '10px',
     padding: '5px',
-    backgroundColor: '#322d4f',
+    backgroundColor: '#142727',
 
   }))
   const Image = styled('div')(({ theme }) => ({
