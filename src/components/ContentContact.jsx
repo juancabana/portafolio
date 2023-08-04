@@ -73,7 +73,7 @@ const ContentContact = () => {
         <SubtitleContact>{language === 'english' ? 'Contact me' : 'Contáctame'}</SubtitleContact>
         <H1Contact>{language === 'english' ? 'Get in touch' : 'Contactar'}</H1Contact>
         <PContact>
-          {language === 'english' ? 'Here you can contact me, I am looking for a job as a front-end web developer, but I really like to learn any technology' : 'Aquí puedes contactar conmigo, estoy buscando trabajo como desarrollador web front-end, aunque me encantaría ampliar mis conocimientos.'}
+          {language === 'english' ? 'Here you can contact me, I am open to new opportunities in front-end, but always willing to learn.' : 'Aquí te puedes contactar comigo, estoy abierto a nuevas oportunidades en front-end, pero siempre dispuesto a aprender.'}
         </PContact>
         <EmailLink
           className="email-link"

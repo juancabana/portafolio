@@ -18,14 +18,14 @@ const Footer = () => {
 
     const ContentFooter = styled('h5')(({ theme }) => ({
         fontFamily: theme.palette.fontFamily,
-        fontweight: '300',
+        fontWeight: '400',
         color: theme.palette.colorTittle,
         margin: '0px',
     }))
 
     return (
         <Footer>
-            <ContentFooter>{language === 'english' ? 'Designed & developed by Juan Cabana.' : 'Diseñado y desarrollado por Juan Cabana' }</ContentFooter>
+            <ContentFooter>{language === 'english' ? 'Copyright © 2023 Juan Cabana | All rights reserved.' : 'Copyright © 2023 Juan Cabana | Todos los derechos reservados.' }</ContentFooter>
         </Footer>
     );
 
