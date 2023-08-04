@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@emotion/react';
 
 const TittleHeader = () => {
-  
   const theme = useTheme();
 
   return (

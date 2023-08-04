@@ -42,15 +42,15 @@ function Header() {
           {/* Icono  */}
           <ApiOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} style={{ color: theme.palette.colorContrast }} />
           {/* Cabana  */}
-          <TittleHeader/>
+          <TittleHeader />
           {/* Menú responsive */}
-          <ResponsiveMenu pages={pages}/>
+          <ResponsiveMenu pages={pages} />
           {/* Icono responsive  */}
           <ApiOutlinedIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           {/* Titulo Responsivo  */}
-          <ResponsiveTittleHeader/>
+          <ResponsiveTittleHeader />
           {/* Menú */}
-          <MenuHeader pages={pages} />          
+          <MenuHeader pages={pages} />
           {/* Set Theme  */}
           <SwitchTheme />
           {/* Set Language  */}

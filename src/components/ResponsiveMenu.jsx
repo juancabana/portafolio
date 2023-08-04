@@ -8,7 +8,6 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@emotion/react';
 
-
 const ResponsiveMenu = ({ pages }) => {
     const theme = useTheme();
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -31,7 +30,7 @@ const ResponsiveMenu = ({ pages }) => {
                 onClick={handleOpenNavMenu}
                 color="inherit"
             >
-                <MenuIcon style={{color: theme.palette.colorTittle}} />
+                <MenuIcon style={{ color: theme.palette.colorTittle }} />
             </IconButton>
             <Menu
                 sx={{ mt: '45px' }}
@@ -51,8 +50,8 @@ const ResponsiveMenu = ({ pages }) => {
             >
                 {pages.map((page) => (
                     <Link key={page.page} to={`/${page.route}`} style={{ textDecoration: 'none', color: theme.palette.background }}>
-                        <MenuItem style={{backgroundColor: theme.palette.colorCardBackground, color: theme.palette.colorItemHeader}}>
-                            { page.page.toUpperCase() }
+                        <MenuItem style={{ backgroundColor: theme.palette.colorCardBackground, color: theme.palette.colorItemHeader }}>
+                            {page.page.toUpperCase()}
                         </MenuItem>
                     </Link>
                 ))}

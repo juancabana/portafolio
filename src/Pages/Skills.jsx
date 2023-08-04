@@ -4,7 +4,6 @@ import ContentSkills from "../components/ContentSkills";
 import Footer from "../components/Footer";
 
 const Skills = () => {
-
     return (
         <div className="Skills">
             <Header />

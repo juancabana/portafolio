@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
     return (
-        <div style={{height: '100vh'}}>
+        <div style={{ height: '100vh' }}>
             <Header />
             <ContentHome />
             <Footer />
