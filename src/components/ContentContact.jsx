@@ -8,13 +8,18 @@ const ContentContact = () => {
 
   const ContentContactContainer = styled('div')(({ theme }) => ({
     width: '100%',
-    minHeight: 'calc(100vh - 50px)',
+    height: 'calc(100vh - 69px - 50px)',
     display: 'flex',
     textAlign: 'center',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: '7rem',
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    [theme.breakpoints.down('md')]: {
+      height: 'calc(100vh - 64px - 50px)',
+    },
+    [theme.breakpoints.down('sm')]: {
+      height: 'calc(100vh - 56px - 50px)',
+    },
   }))
 
   const WrapperContact = styled('div')(({ theme }) => ({

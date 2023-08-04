@@ -18,10 +18,15 @@ const ContentHome = () => {
     alignItems: 'center',
     backgroundColor: theme.palette.background,
     width: 'auto',
-    minHeight: 'calc(100vh - 50px)',
+    height: 'calc(100vh - 69px - 50px)',
     padding: '0px 1rem',
-    paddingTop: '7rem',
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    [theme.breakpoints.down('md')]: {
+      height: 'calc(100vh - 64px - 50px)',
+    },
+    [theme.breakpoints.down('sm')]: {
+      height: 'calc(100vh - 56px - 50px)',
+    },
   }))
 
   const TextFirstLine = styled('h2')(({ theme }) => ({

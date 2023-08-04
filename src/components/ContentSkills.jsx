@@ -25,7 +25,6 @@ const ContentSkills = () => {
     minHeight: 'calc(100vh - 50px)',
     width: '100%',
     padding: '0px 1rem',
-    paddingTop: '7rem',
 
   }))
   const ContentCardSkills = styled('div')(({ theme }) => ({
@@ -42,6 +41,7 @@ const ContentSkills = () => {
 
   const TittleSkills = styled('div')(({ theme }) => ({
     maxWidth: '1000px',
+    marginTop: '3rem',
     width: '100%',
     height: '1px',
     position: 'relative',

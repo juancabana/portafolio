@@ -7,7 +7,7 @@ import styled from '@emotion/styled'
 const Contact = () => {
 
     const ContactContainer = styled('div')(({ theme }) => ({
-        position: 'relative'
+        width: '100%',
     }))
 
     return (

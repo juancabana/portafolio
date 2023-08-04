@@ -18,7 +18,6 @@ const ContentProyects = () => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    paddingTop: '7rem',
     boxSizing: 'border-box'
 
   }))
@@ -49,6 +48,7 @@ const ContentProyects = () => {
     fontSize: '35px',
     display: 'flex',
     alignItems: 'center',
+    marginTop: '3rem',
     marginBottom: '3rem',
     textAlign: 'center',
     '&::after': {
@@ -80,7 +80,7 @@ const ContentProyects = () => {
     <ContentProyects>
       <WrapperContent>
         <ContentCardsProyects>
-          <TittleProjects>{language === 'english' ? 'Personal projects' : 'Proyectos personales'}</TittleProjects>
+          <TittleProjects>{language === 'english' ? 'Personal Projects' : 'Proyectos Personales'}</TittleProjects>
           {projectsData.map((project, index) => (
             <CardProjects key={index} links={project.links} title={project.title} description={project.description} tecnologies={project.tecnologies} />
           ))}

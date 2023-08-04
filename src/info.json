@@ -122,7 +122,7 @@
             "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2272-nestjs/diploma/detalle/"
           }
         ]
-      },     
+      },
       {
         "name": "MongoDB",
         "url": "https://i.ibb.co/qY1V4Wf/file-type-mongo-icon-130383.png",
@@ -197,37 +197,11 @@
           }
         ]
       }
-    ],    
+    ],
     "projects": [
       {
-        "title": "Portfolio",
-        "description": "Presentation of who I am, I talk a little about my work experience and my skills, this is also a small demonstration of what I can do.",
-        "tecnologies": ["React", "Redux", "MaterialUI"],
-        "links": [
-          {
-            "page": "Github",
-            "url": "https://github.com/juancabana/portafolio"
-          }
-        ]
-      },
-      {
-        "title": "Pokedex Frontend",
-        "description": "The front-end was made in React, because updates are often costly and time-consuming, but with React we decreased these problems, due to its easy maintenance and excellent reusability.  ",
-        "tecnologies": ["React", "Redux", "MaterialUI"],
-        "links": [
-          {
-            "page": "Live",
-            "url": "https://pokedex-cabana-juan.onrender.com/"
-          },
-          {
-            "page": "Github",
-            "url": "https://github.com/juancabana/frontend-pokedex"
-          }
-        ]
-      },
-      {
         "title": "Cabana Translate",
-        "description": "A manual translator, using the ChatGPT API.",
+        "description": "An innovative application I created to enable users to manually translate words and phrases into various languages, offering a versatile and practical solution for intercultural communication and expanding linguistic knowledge.",
         "tecnologies": ["React", "ChatGPT", "Redux", "MaterialUI"],
         "links": [
           {
@@ -241,8 +215,38 @@
         ]
       },
       {
+        "title": "Pokedex Frontend",
+        "description": "A user-friendly web application for a Pokedex, allowing users to explore and search detailed information about their favorite Pokémon, delivering an immersive and enjoyable experience for Pokémon enthusiasts.",
+        "tecnologies": ["React", "Redux", "MaterialUI"],
+        "links": [
+          {
+            "page": "Live",
+            "url": "https://pokedex-cabana-juan.onrender.com/"
+          },
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/frontend-pokedex"
+          }
+        ]
+      },
+      {
+        "title": "Portfolio",
+        "description": "An interactive and appealing website showcasing my projects and developer skills, providing visitors with a comprehensive view of my experience and achievements.",
+        "tecnologies": ["React", "Redux", "MaterialUI"],
+        "links": [
+          {
+            "page": "Live",
+            "url": "https://juan-cabana.onrender.com/"
+          },
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/portafolio"
+          }
+        ]
+      },
+      {
         "title": "Pokedex Backend",
-        "description": "The back-end was done in Node.js, with the Express.js framework, because thanks to the functionalities offered by Node.js we will have a high scalability, and we can add modules or new features in an easy way thanks to its default package manager (NPM). package manager (NPM).",
+        "description": "A robust and efficient backend supporting the Pokedex, providing API services delivering accurate and updated data about Pokémon. It offers high scalability and easy addition of modules or new features thanks to its default package manager (NPM).",
         "tecnologies": ["JavaScript", "Express.js", "Sequelize"],
         "links": [
           {
@@ -428,7 +432,7 @@
             "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2272-nestjs/diploma/detalle/"
           }
         ]
-      },     
+      },
       {
         "name": "MongoDB",
         "url": "https://i.ibb.co/qY1V4Wf/file-type-mongo-icon-130383.png",
@@ -506,34 +510,8 @@
     ],
     "projects": [
       {
-        "title": "Portafolio",
-        "description": "Presentación de quién soy, hablo un poco sobre mi experiencia laboral y mis habilidades. También es una pequeña demostración de lo que puedo hacer.",
-        "tecnologies": ["React", "Redux", "MaterialUI"],
-        "links": [
-          {
-            "page": "Github",
-            "url": "https://github.com/juancabana/portafolio"
-          }
-        ]
-      },
-      {
-        "title": "Pokedex Frontend",
-        "description": "El front-end fue hecho en React, ya que las actualizaciones a menudo son costosas y requieren mucho tiempo, pero con React disminuimos estos problemas gracias a su fácil mantenimiento y excelente reutilización.",
-        "tecnologies": ["React", "Redux", "MaterialUI"],
-        "links": [
-          {
-            "page": "En vivo",
-            "url": "https://pokedex-cabana-juan.onrender.com/"
-          },
-          {
-            "page": "Github",
-            "url": "https://github.com/juancabana/frontend-pokedex"
-          }
-        ]
-      },
-      {
         "title": "Cabana Translate",
-        "description": "Un traductor manual, que utiliza la API de ChatGPT para hacer sus consultas",
+        "description": "Una aplicación innovadora que creé para permitir a los usuarios traducir manualmente palabras y frases en varios idiomas, brindando una solución versátil y práctica para la comunicación intercultural y la ampliación del conocimiento lingüístico.",
         "tecnologies": ["React", "ChatGPT", "Redux", "MaterialUI"],
         "links": [
           {
@@ -547,8 +525,35 @@
         ]
       },
       {
+        "title": "Pokedex Frontend",
+        "description": "Aplicación web de Pokedex con una interfaz amigable y fácil de usar, que permite a los usuarios explorar y buscar información detallada sobre sus Pokémon favoritos, brindando una experiencia envolvente y divertida para los amantes de Pokémon.",
+        "tecnologies": ["React", "Redux", "MaterialUI"],
+        "links": [
+          {
+            "page": "En vivo",
+            "url": "https://pokedex-cabana-juan.onrender.com/"
+          },
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/frontend-pokedex"
+          }
+        ]
+      },
+      {
+        "title": "Portafolio",
+        "description": "Sitio web interactivo y atractivo que destaca mis proyectos y habilidades como desarrollador, ofreciendo a los visitantes una visión completa de mi experiencia y logros.",
+        "tecnologies": ["React", "Redux", "MaterialUI"],
+        "links": [
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/portafolio"
+          }
+        ]
+      },
+
+      {
         "title": "Pokedex Backend",
-        "description": "El back-end se hizo en Node.js, con el framework Express.js, porque gracias a las funcionalidades que ofrece Node.js, tendremos una alta escalabilidad y podremos agregar módulos o nuevas características de manera fácil gracias a su gestor de paquetes por defecto (NPM).",
+        "description": "Backend robusto y eficiente para respaldar la Pokedex, proporcionando servicios de API que entregan datos precisos y actualizados sobre los Pokémon, tendremos una alta escalabilidad y podremos agregar módulos o nuevas características de manera fácil gracias a su gestor de paquetes por defecto (NPM).",
         "tecnologies": ["JavaScript", "Express.js", "Sequelize"],
         "links": [
           {
