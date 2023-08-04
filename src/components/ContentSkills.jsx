@@ -10,7 +10,7 @@ const ContentSkillsContainer = styled('div')(({ theme }) => ({
   justifyContent: 'center',
   width: '100%',
   minHeight: 'calc(100vh - 50px)',
-
+marginBottom: '1rem',
 }))
 const WrapperContent = styled('div')(({ theme }) => ({
   display: 'flex',

@@ -16,6 +16,7 @@ const ContentFooter = styled('h5')(({ theme }) => ({
     fontWeight: '400',
     color: theme.palette.colorTittle,
     margin: '0px',
+    padding: '0px 2rem'
 }))
 
 const Footer = () => {
