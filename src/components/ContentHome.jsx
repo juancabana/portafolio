@@ -130,7 +130,7 @@ const ContentHome = () => {
       <TextFirstLine>{homeData.firstLine}</TextFirstLine>
       <TextSecondLine>{homeData.secondLine}</TextSecondLine>
       <TextTrhirdLine>{homeData.thirdLine}</TextTrhirdLine>
-      <ContentPerfil to="/about">
+      <ContentPerfil to="#/about">
         <Canva></Canva>
       </ContentPerfil>
       <TextTrhirdLine>{homeData.fourthLine}</TextTrhirdLine>

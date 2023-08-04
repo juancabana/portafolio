@@ -50,7 +50,7 @@ const ResponsiveMenu = ({ pages }) => {
                 onClose={handleCloseNavMenu}
             >
                 {pages.map((page) => (
-                    <Link key={page.page} to={`/${page.route}`} style={{ textDecoration: 'none', color: theme.palette.background }}>
+                    <Link key={page.page} to={`#/${page.route}`} style={{ textDecoration: 'none', color: theme.palette.background }}>
                         <MenuItem style={{backgroundColor: theme.palette.colorCardBackground, color: theme.palette.colorItemHeader}}>
                             { page.page.toUpperCase() }
                         </MenuItem>

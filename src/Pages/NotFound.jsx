@@ -46,7 +46,7 @@ const NotFoundPage = () => {
                 </FourZeroFourBg>
                 <Text>404 | Page not found</Text>
 
-                <Link404 to="/" >Go to Home</Link404>
+                <Link404 to="#/" >Go to Home</Link404>
             </Container>
         </Page404>
 

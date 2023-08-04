@@ -16,7 +16,7 @@ export default function AppRouter() {
                 <Route exact path="/about" element={<About />} />
                 <Route exact path="/skills" element={<Skills />} />
                 <Route exact path="/projects" element={<Proyects />} />
-                <Route exact path="/contact" element={<Contact />} />
+                <Route exact path="contact" element={<Contact />} />
                 <Route path="*" element={<NotFoundPage />} />
 
             </Routes>
