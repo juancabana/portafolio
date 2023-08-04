@@ -11,6 +11,7 @@ body {
 
 .darkActive {
   border-bottom: 2px solid aquamarine;
+  /* background-color: aliceblue; */
 }
 .lightActive {
   border-bottom: 2px solid #0b786f;
