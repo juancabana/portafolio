@@ -111,9 +111,9 @@ const Strong = styled('strong')(({ theme }) => ({
 
 const ContentAbout = () => {
 
-  const aboutData = useSelector(state => state.about.about)
+  const aboutData = useSelector(state => state.data.data.about)
   const language = useSelector(state => state.language.language)
-
+  
   const ImageAbout = styled('div')(({ theme }) => ({
     width: '450px',
     height: '450px',

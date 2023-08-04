@@ -119,7 +119,7 @@ const ContentHome = () => {
   }))
 
   // Data 
-  const homeData = useSelector(state => state.home.home)
+  const homeData = useSelector(state => state.data.data.home)
   // Language 
   const language = useSelector(state => state.language.language)
 

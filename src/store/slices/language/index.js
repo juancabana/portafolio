@@ -6,9 +6,9 @@ export const languageSlice = createSlice({
     language: "english",
   },
   reducers: {
-      setSpanishLanguage: (state, action) => {
-        state.language = action.payload;
-      },
+    setSpanishLanguage: (state, action) => {
+      state.language = action.payload;
+    },
     setEnglishLanguage: (state, action) => {
       state.language = action.payload;
     },
@@ -21,10 +21,10 @@ export const setEnglish = () => {
   };
 };
 export const setSpanish = () => {
-    return (dispatch) => {
-       dispatch(setSpanishLanguage('spanish'))
-    }
-}
+  return (dispatch) => {
+    dispatch(setSpanishLanguage("spanish"));
+  };
+};
 export const { setSpanishLanguage, setEnglishLanguage } = languageSlice.actions;
 
 export default languageSlice.reducer;

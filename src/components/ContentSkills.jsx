@@ -55,7 +55,7 @@ const TittleSkills = styled('div')(({ theme }) => ({
 }))
 
 const ContentSkills = () => {
-  const skillsData = useSelector(state => state.skills.skills)
+  const skillsData = useSelector(state => state.data.data.skills)
   const language = useSelector(state => state.language.language)
 
   return (

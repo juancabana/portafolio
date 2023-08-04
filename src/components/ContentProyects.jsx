@@ -69,7 +69,7 @@ const ContentCardsProyects = styled('div')(({ theme }) => ({
 
 const ContentProyects = () => {
   // Data 
-  const projectsData = useSelector(state => state.projects.projects)
+  const projectsData = useSelector(state => state.data.data.projects)
   // Language 
   const language = useSelector(state => state.language.language)
 
