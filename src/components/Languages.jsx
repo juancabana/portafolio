@@ -44,7 +44,6 @@ const Languages = () => {
             </Tooltip>
             <Menu
                 sx={{ mt: '45px', padding: '0px' }}
-                id="menu-appbar"
                 anchorEl={anchorElUser}
                 anchorOrigin={{
                     vertical: 'top',

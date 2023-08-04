@@ -34,7 +34,6 @@ const ResponsiveMenu = ({ pages }) => {
             </IconButton>
             <Menu
                 sx={{ mt: '45px' }}
-                id="menu-appbar"
                 anchorEl={anchorElNav}
                 anchorOrigin={{
                     vertical: 'top',
