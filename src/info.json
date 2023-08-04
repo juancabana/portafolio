@@ -84,6 +84,44 @@
         ]
       },
       {
+        "name": "Material UI",
+        "url": "https://i.ibb.co/MGJxbSv/logo.png",
+        "description": "Basic knowledge in Material UI, capable of designing web interfaces with pre-established components and pre-designed styles, optimizing frontend development.",
+        "level": "Basic"
+      },
+      {
+        "name": "HTML",
+        "url": "https://i.ibb.co/DRzJrLH/html.png",
+        "description": "Advanced skills in HTML, capable of creating well-structured and accessible web pages, using HTML5 to deliver robust user experiences.",
+        "level": "Advanced",
+        "certificates": [
+          {
+            "tittle": "Full Stack JavaScript Developer",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
+          },
+          {
+            "tittle": "Frontend Development Course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "CSS",
+        "url": "https://i.ibb.co/B3gR7LN/css.png",
+        "description": "Advanced skills in CSS, capable of creating highly stylized and responsive web interfaces using flexbox, grid, animations, and custom styles.",
+        "level": "Advanced",
+        "certificates": [
+          {
+            "tittle": "Full Stack JavaScript Developer",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
+          },
+          {
+            "tittle": "Frontend Development Course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
         "name": "NodeJS",
         "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
         "description": "Skilled in JavaScript, with extensive knowledge in frontend and backend development using Node.js to create complete and dynamic web applications.",
@@ -156,44 +194,6 @@
           {
             "tittle": "Backend Course with NodeJS: Authentication with PassportJS and JWT",
             "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "CSS",
-        "url": "https://i.ibb.co/B3gR7LN/css.png",
-        "description": "Advanced skills in CSS, capable of creating highly stylized and responsive web interfaces using flexbox, grid, animations, and custom styles.",
-        "level": "Advanced",
-        "certificates": [
-          {
-            "tittle": "Full Stack JavaScript Developer",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
-          },
-          {
-            "tittle": "Frontend Development Course",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "Material UI",
-        "url": "https://i.ibb.co/MGJxbSv/logo.png",
-        "description": "Basic knowledge in Material UI, capable of designing web interfaces with pre-established components and pre-designed styles, optimizing frontend development.",
-        "level": "Basic"
-      },
-      {
-        "name": "HTML",
-        "url": "https://i.ibb.co/DRzJrLH/html.png",
-        "description": "Advanced skills in HTML, capable of creating well-structured and accessible web pages, using HTML5 to deliver robust user experiences.",
-        "level": "Advanced",
-        "certificates": [
-          {
-            "tittle": "Full Stack JavaScript Developer",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
-          },
-          {
-            "tittle": "Frontend Development Course",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
       }
@@ -394,6 +394,44 @@
         ]
       },
       {
+        "name": "Material UI",
+        "url": "https://i.ibb.co/MGJxbSv/logo.png",
+        "description": "Conocimientos básicos en Material UI, capaz de diseñar interfaces web con componentes preestablecidos y estilos prediseñados, optimizando el desarrollo frontend.",
+        "level": "Basico"
+      },
+      {
+        "name": "HTML",
+        "url": "https://i.ibb.co/DRzJrLH/html.png",
+        "description": "Habilidades avanzadas en HTML, capaz de crear páginas web bien estructuradas y accesibles, utilizando HTML5 para ofrecer experiencias de usuario sólidas.",
+        "level": "Avanzado",
+        "certificates": [
+          {
+            "tittle": "Desarrollador Full Stack con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "CSS",
+        "url": "https://i.ibb.co/B3gR7LN/css.png",
+        "description": "Habilidades avanzadas en CSS, capaz de crear interfaces web altamente estilizadas y responsivas mediante el uso de flexbox, grid, animaciones y estilos personalizados.",
+        "level": "Avanzado",
+        "certificates": [
+          {
+            "tittle": "Desarrollador Full Stack con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
         "name": "NodeJS",
         "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
         "description": "Hábil en JavaScript, con amplios conocimientos en el desarrollo frontend y backend utilizando Node.js para crear aplicaciones web completas y dinámicas.",
@@ -466,44 +504,6 @@
           {
             "tittle": "Curso de backend con NodeJS: Autenticación con PassportJS y JWT",
             "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "CSS",
-        "url": "https://i.ibb.co/B3gR7LN/css.png",
-        "description": "Habilidades avanzadas en CSS, capaz de crear interfaces web altamente estilizadas y responsivas mediante el uso de flexbox, grid, animaciones y estilos personalizados.",
-        "level": "Avanzado",
-        "certificates": [
-          {
-            "tittle": "Desarrollador Full Stack con JavaScript",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de Desarrollo Frontend",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "Material UI",
-        "url": "https://i.ibb.co/MGJxbSv/logo.png",
-        "description": "Conocimientos básicos en Material UI, capaz de diseñar interfaces web con componentes preestablecidos y estilos prediseñados, optimizando el desarrollo frontend.",
-        "level": "Basico"
-      },
-      {
-        "name": "HTML",
-        "url": "https://i.ibb.co/DRzJrLH/html.png",
-        "description": "Habilidades avanzadas en HTML, capaz de crear páginas web bien estructuradas y accesibles, utilizando HTML5 para ofrecer experiencias de usuario sólidas.",
-        "level": "Avanzado",
-        "certificates": [
-          {
-            "tittle": "Desarrollador Full Stack con JavaScript",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de Desarrollo Frontend",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
       }
