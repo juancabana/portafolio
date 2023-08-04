@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Skills from "../Pages/Skills";
@@ -10,9 +10,9 @@ import NotFoundPage from "../Pages/NotFound";
 
 export default function AppRouter() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
-                <Route exact path={"/"} element={<Home />} />
+                <Route exact path="/" element={<Home />} />
                 <Route exact path="/about" element={<About />} />
                 <Route exact path="/skills" element={<Skills />} />
                 <Route exact path="/projects" element={<Proyects />} />
@@ -20,7 +20,7 @@ export default function AppRouter() {
                 <Route path="*" element={<NotFoundPage />} />
 
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
 
     );
 }
