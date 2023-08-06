@@ -25,7 +25,7 @@ const WrapperContent = styled('div')(({ theme }) => ({
 const ContentCardSkills = styled('div')(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
-  maxWidth: '1000px',
+  maxWidth: '800px',
   width: '100%',
   height: '100%',
   minHeight: '200px',
@@ -34,14 +34,15 @@ const ContentCardSkills = styled('div')(({ theme }) => ({
 
 }))
 const TittleSkills = styled('div')(({ theme }) => ({
-  maxWidth: '1000px',
+  maxWidth: '800px',
   marginTop: '3rem',
   width: '100%',
   height: '1px',
   position: 'relative',
   fontFamily: theme.palette.fontFamily,
   color: theme.palette.colorTittle,
-  fontSize: '35px',
+  fontSize: '30px',
+  fontWeight: '500',
   display: 'flex',
   alignItems: 'center',
   '&::after': {

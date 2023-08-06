@@ -31,8 +31,9 @@ const WrapperContent = styled('div')(({ theme }) => ({
   },
 
 }))
-const TittleProjects = styled('div')(({ theme }) => ({
+const TittleProjects = styled('h1')(({ theme }) => ({
   width: '100%',
+  justifyContent: 'center',
   height: '1px',
   position: 'relative',
   fontFamily: theme.palette.fontFamily,
@@ -43,20 +44,7 @@ const TittleProjects = styled('div')(({ theme }) => ({
   marginTop: '3rem',
   marginBottom: '3rem',
   textAlign: 'center',
-  '&::after': {
-    content: 'close-quote',
-    width: '100%',
-    height: '100%',
-    marginLeft: '20px',
-    backgroundColor: theme.palette.colorTittle
-  },
-  '&::before': {
-    content: 'close-quote',
-    width: '100%',
-    height: '100%',
-    marginRight: '20px',
-    backgroundColor: theme.palette.colorTittle
-  },
+  fontWeight: '500',
 }))
 const ContentCardsProyects = styled('div')(({ theme }) => ({
   padding: '15px 0px',

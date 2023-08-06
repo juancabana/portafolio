@@ -55,9 +55,13 @@ const TextAbout = styled('p')(({ theme }) => ({
   marginTop: '.5rem'
 }))
 const TittleAboutContainer = styled('div')(({ theme }) => ({
-  marginTop: '2rem',
+  marginTop: '5rem',
   display: 'flex',
   justifyContent: 'center',
+  [theme.breakpoints.down('md')]: {
+    marginTop: '2rem',
+    
+    },
 }))
 const LinkContact = styled(Link)(({ theme }) => ({
   padding: '0%',
@@ -119,7 +123,7 @@ const ContentAbout = () => {
             </WrapperDataExperience>
             <br />
             <Strong>{language === 'english' ? 'Education' : 'Educación'}</Strong> <br />
-            <TextAbout style={{ marginTop: '0px' }}>
+            <TextAbout>
               {aboutData.education}
             </TextAbout>
             <br />
