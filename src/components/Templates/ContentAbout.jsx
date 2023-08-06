@@ -25,7 +25,7 @@ const TittleAbout = styled('h1')(({ theme }) => ({
   fontFamily: theme.palette.fontFamily,
   color: theme.palette.colorTittle,
   display: 'flex',
-  fontWeight: '400',
+  fontWeight: '500',
   alignItems: 'center',
   paddingLeft: '10px',
   margin: '0px',

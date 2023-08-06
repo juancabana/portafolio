@@ -29,7 +29,7 @@
           "time": "MAY 2023 - PRESENT",
           "position": "Frontend Developer",
           "company": "EDSoft",
-          "description": "Frontend developer, in an educational application project, where we carry out the integration of React and Bootstrap to create an immersive and friendly user experience. A new version of this application is being made, to make it more efficient, and to have a better user experience.",
+          "description": "Frontend developer, in an educational application project, where we carry out the integration of React and Material UI to create an immersive and friendly user experience. A new version of this application is being made, to make it more efficient and have a better user experience.",
           "tecnologies": ["React", "JavaScript", "HTML", "CSS", "Bootstrap", "MaterialUI"]
         }
         
@@ -362,7 +362,7 @@
           "time": "MAYO 2023 - PRESENTE",
           "position": "Frontend Developer",
           "company": "EDSoft",
-          "description": "Frontend developer, en un proyecto de aplicación educativa, donde llevamos a cabo la integración de React y Bootstrap para crear una experiencia de usuario envolvente y amigable. Se está haciendo una nueva versión de esta aplicación, para que sea más eficiente, y que tenga mejor experiencia de usuario.",
+          "description": "Desarrollador frontend, en un proyecto de aplicación educativa, donde llevamos a cabo la integración de React y Material UI para crear una experiencia de usuario inmersiva y amigable. Se está realizando una nueva versión de esta aplicación, para hacerla más eficiente y tener una mejor experiencia de usuario.",
           "tecnologies": ["React", "JavaScript", "HTML", "CSS", "Bootstrap", "MaterialUI"]
         }
 

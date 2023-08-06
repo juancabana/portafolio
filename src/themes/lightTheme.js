@@ -4,7 +4,7 @@ const lightTheme = createTheme({
   palette: {
     type: "light",
     background: "#fff",
-    colorTittle: "#1c2331",
+    colorTittle: "rgba(13, 88, 85)",
     fontFamily:
       "ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
     colorSubTittle: "#6b7c93",
