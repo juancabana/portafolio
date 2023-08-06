@@ -10,13 +10,12 @@ const CardExperienceWrapper = styled('div')(({ theme }) => ({
     boxSizing: 'border-box',
     border: '2px solid #232f4d',
     borderRadius: '5px',
-    // ________________________________________________________
     color: theme.palette.colorContent,
     fontFamily: theme.palette.fontFamily,
     lineHeight: '1.5',
     [theme.breakpoints.down('md')]: {
         flexDirection: 'column'
-      },
+    },
 }))
 const TimeSubtitleWrapper = styled('div')(({ theme }) => ({
     width: '170px',
@@ -75,7 +74,6 @@ const Tecnology = styled('div')(({ theme }) => ({
     color: theme.palette.colorContrast,
     fontSize: '15px'
 }))
-
 
 const CardExperience = (props) => {
     const { time, position, company, description, tecnologies } = props.experience;

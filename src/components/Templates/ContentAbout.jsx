@@ -9,7 +9,6 @@ const WrapperContentAboutContainer = styled('div')(({ theme }) => ({
   minHeight: 'calc(100vh - 50px - 69px)',
   display: 'flex',
   justifyContent: 'center',
-  // alignItems: 'center',
   boxSizing: 'border-box',
 
 }))
@@ -21,7 +20,6 @@ const ContainerContentAbout = styled('div')(({ theme }) => ({
 
 }))
 const TittleAbout = styled('h1')(({ theme }) => ({
-  // maxWidth: '1000px',
   height: '1px',
   position: 'relative',
   fontFamily: theme.palette.fontFamily,
@@ -33,13 +31,6 @@ const TittleAbout = styled('h1')(({ theme }) => ({
   margin: '0px',
   marginBottom: '1.5rem',
 
-  // '&::after': {
-  //   content: 'close-quote',
-  //   width: '100%',
-  //   height: '100%',
-  //   marginLeft: '20px',
-  //   backgroundColor: theme.palette.colorTittle,
-  // },
 
 }))
 const ParagraphAbout = styled('div')(({ theme }) => ({
@@ -50,12 +41,10 @@ const ParagraphAbout = styled('div')(({ theme }) => ({
     flexDirection: 'column',
     alignItems: 'center',
     paddingLeft: '20px',
-    // textAlign: 'center'
   },
 }))
 const ContentAboutWrapper = styled('div')(({ theme }) => ({
   display: 'grid',
-  // gridTemplateColumns: '1.2fr 0.8fr',
   width: '100%',
   height: '70%',
 
@@ -102,11 +91,7 @@ const WrapperDataExperience = styled('div')(({ theme }) => ({
   flexDirection: 'column-reverse',
   gap: '1.5rem',
   marginTop: '1rem',
-  // paddingRight: '8rem',
   boxSizing: 'content-box',
-  // [theme.breakpoints.down('md')]: {
-  //   paddingRight: '0rem',
-  // },
 }))
 
 const ContentAbout = () => {
@@ -117,7 +102,6 @@ const ContentAbout = () => {
     <WrapperContentAboutContainer>
       <ContainerContentAbout>
         <TittleAboutContainer>
-          {/* <ImageAbout/> */}
           <TittleAbout>{language === 'english' ? 'About me' : 'Sobre mi'}</TittleAbout  >
         </TittleAboutContainer>
         <ContentAboutWrapper>
@@ -133,11 +117,9 @@ const ContentAbout = () => {
                 <CardExperience key={index} experience={experience} />
               ))}
             </WrapperDataExperience>
-
-
             <br />
             <Strong>{language === 'english' ? 'Education' : 'Educación'}</Strong> <br />
-            <TextAbout style={{marginTop: '0px'}}>
+            <TextAbout style={{ marginTop: '0px' }}>
               {aboutData.education}
             </TextAbout>
             <br />
