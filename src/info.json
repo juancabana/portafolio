@@ -10,7 +10,30 @@
     },
     "about": {
       "about": "Front-end and backend web developer, I am a cheerful, kind, responsible, altruistic person, I like teamwork, camaraderie, always willing and eager to learn new technologies and deepen the ones I already know. The main technologies I work with are: Javascript and its versions of ECMAScript (ES6+), Node.js and its NPM package and dependency management system, React.js, Redux, a bit of Typescript, MaterialUI, relational database fundamentals with MySQL, and non-relational (MongoDB), Express.js, a bit of Nest.js, and I've mostly used Git and Github for version control, although I'm somewhat familiar with Microsoft Azure. I have worked under agile development methodologies such as SCRUM and CANVAS.",
-      "experience": "I have worked in two companies, both are dedicated to the educational field, they develop products for schools to manage all their academic records, one is called Siempre.net, in this I worked full time, and I am currently working in freelance mode in EdSoft, which is making a new product, whose purpose is to replace the existing one. I'm in charge of the design, layout and development of the new EdSoft platform, whose frontend is mainly developed in React.js, and GraphQL is used for consumption.",
+      "experience": [
+        {
+          "time": "MARCH - MAY 2022",
+          "position": "Frontend Developer",
+          "company": "EDSoft",
+          "description": "Front-End Developer on an exciting student app project, where we use React to create a dynamic and friendly user experience. The idea of ​​this page is to offer students a modern platform to access educational resources and enhance their academic experience.",
+          "tecnologies": ["React", "JavaScript", "HTML", "CSS", "GraphQL"]
+        },
+        {
+          "time": "JUL - SEPT 2022",
+          "position": "Frontend Developer",
+          "company": "Siempre .NET",
+          "description": "Frontend developer, in an educational application project, where we carry out the integration of React and Bootstrap to create an immersive and friendly user experience. My role was to take advantage of these technologies to develop a visually appealing and interactive educational platform. The combination of React and Bootstrap will make it possible to offer users a fluid and modern educational experience, significantly improving access to learning materials and interaction with educational content.",
+          "tecnologies": ["React", "JavaScript", "HTML", "CSS", "Bootstrap"]
+        },
+        {
+          "time": "MAY 2023 - PRESENT",
+          "position": "Frontend Developer",
+          "company": "EDSoft",
+          "description": "Frontend developer, in an educational application project, where we carry out the integration of React and Bootstrap to create an immersive and friendly user experience. My role will be to take advantage of these technologies to develop a visually appealing and interactive educational platform. The combination of React and Bootstrap will offer users a seamless and modern educational experience, significantly improving access to learning materials and interaction with educational content.",
+          "tecnologies": ["React", "JavaScript", "HTML", "CSS", "Bootstrap", "MaterialUI"]
+        }
+        
+      ],
       "education": "In 2019, I graduated as the best high school graduate in the Adventist school of Cartagena, thanks to that I got a scholarship for a year at the Adventist University of Colombia (UNAC), where I am currently studying 8th semester of systems engineering. At the beginning of 2020 I met the web development and I went deeper and deeper into this world of web development, until I became passionate about it.",
       "linkImage": "https://i.ibb.co/VNGF1jb/vertical-Image.jpg"
     },
@@ -320,7 +343,31 @@
     },
     "about": {
       "about": "Desarrollador web front-end y backend, soy una persona alegre, amable, responsable, altruista, me gusta el trabajo en equipo, el compañerismo, siempre dispuesto y con ganas de aprender nuevas tecnologías y profundizar en las que ya conozco. Las principales tecnologías que manejo son: Javascript y sus versiones de ECMAScript (ES6+), Node.js y su sistema de gestión de paquetes y dependencias NPM, React.js, Redux, un poco de Typescript, MaterialUI, fundamentos de bases de datos relacionales con MySQL, y no relacionales (MongoDB), Express.js, un poco de Nest.js, y he utilizado principalmente Git y Github para el control de versiones, aunque tengo cierta familiaridad con Microsoft Azure. He trabajado bajo metodologías ágiles de desarrollo como SCRUM y CANVAS.",
-      "experience": "He trabajado en dos empresas, ambas se dedican al ámbito educativo, desarrollan productos para que los colegios gestionen todos sus expedientes académicos, una se llama Siempre.net, en esta trabajé a tiempo completo, y actualmente estoy trabajando en modo freelance en EdSoft, que está realizando un nuevo producto, cuya finalidad es sustituir al ya existente. Me encargo del diseño, maquetación y desarrollo de la nueva plataforma de EdSoft, cuyo frontend está desarrollado principalmente en React.js, y para el consumo se usa GraphQL.",
+      "experience": [
+        {
+          "time": "MARZO - MAYO 2022",
+          "position": "Frontend Developer",
+          "company": "EDSoft",
+          "description": "Front-End Developer en un emocionante proyecto de aplicación estudiantil, donde empleamos React para crear una experiencia de usuario dinámica y amigable. La idea de esta página es ofrecer a los estudiantes una plataforma moderna para acceder a recursos educativos y mejorar su experiencia académica.",
+          "tecnologies": ["React", "JavaScript", "HTML", "CSS", "GraphQL"]
+        },
+        {
+          "time": "JUL - SEPT 2022",
+          "position": "Frontend Developer",
+          "company": "Siempre .NET",
+          "description": "Frontend developer, en un proyecto de aplicación educativa, donde llevamos a cabo la integración de React y Bootstrap para crear una experiencia de usuario envolvente y amigable. Mi rol consistió en aprovechar estas tecnologías para desarrollar una plataforma educativa interactiva y visualmente atractiva. La combinación de React y Bootstrap permitirá ofrecer a los usuarios una experiencia educativa fluida y moderna, mejorando significativamente el acceso a materiales de aprendizaje y la interacción con el contenido educativo.",
+          "tecnologies": ["React", "JavaScript", "HTML", "CSS", "Bootstrap"]
+        },
+        {
+          "time": "MAYO 2023 - PRESENTE",
+          "position": "Frontend Developer",
+          "company": "EDSoft",
+          "description": "Frontend developer, en un proyecto de aplicación educativa, donde llevamos a cabo la integración de React y Bootstrap para crear una experiencia de usuario envolvente y amigable. Mi rol consistió en aprovechar estas tecnologías para desarrollar una plataforma educativa interactiva y visualmente atractiva. La combinación de React y Bootstrap permitirá ofrecer a los usuarios una experiencia educativa fluida y moderna, mejorando significativamente el acceso a materiales de aprendizaje y la interacción con el contenido educativo.",
+          "tecnologies": ["React", "JavaScript", "HTML", "CSS", "Bootstrap", "MaterialUI"]
+        }
+
+        
+      ],
       "education": "En el 2019, me gradué como el mejor bachiller en el colegio Adventista de Cartagena, gracias a eso obtuve una beca por un año en la Universidad Adventista de Colombia (UNAC), donde actualmente estudio 8vo semestre de ingeniería en sistemas. A principios del 2020 conocí el desarrollo web y fui adentrándome cada vez más en este mundo del desarrollo web, hasta apasionarme por este.",
       "linkImage": "https://i.ibb.co/VNGF1jb/vertical-Image.jpg"
     },

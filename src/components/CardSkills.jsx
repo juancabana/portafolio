@@ -26,7 +26,7 @@ const ImageCard = styled('div')(({ theme }) => ({
   minWidth: '90px',
   borderRadius: '10px',
   padding: '5px',
-  backgroundColor: '#142727',
+  backgroundColor: '#1d3539',
 
 }))
 const WrapperContent = styled('div')(({ theme }) => ({
