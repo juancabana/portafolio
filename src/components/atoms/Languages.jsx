@@ -9,8 +9,8 @@ import TranslateOutlinedIcon from '@mui/icons-material/TranslateOutlined';
 import { useDispatch } from "react-redux";
 // Store 
 import { useSelector } from "react-redux/es/hooks/useSelector";
-import { setEnglish } from '../store/slices/language';
-import { setSpanish } from '../store/slices/language';
+import { setEnglish } from '../../store/slices/language';
+import { setSpanish } from '../../store/slices/language';
 // Theme 
 import { useTheme } from '@emotion/react';
 

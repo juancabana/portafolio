@@ -1,7 +1,7 @@
 import React from "react";
-import Header from './../components/Header';
-import ContentProyects from './../components/ContentProyects';
-import Footer from "./../components/Footer";
+import Header from './../organisms/Header';
+import ContentProyects from './../Templates/ContentProyects';
+import Footer from "./../organisms/Footer";
 
 const Proyects = () => {
     return (

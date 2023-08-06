@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
-import CardExperience from "./CardExperience";
+import CardExperience from "../molecules/CardExperience";
 
 const WrapperContentAboutContainer = styled('div')(({ theme }) => ({
   width: '100%',

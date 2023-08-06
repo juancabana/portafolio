@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
-import ContentHome from "../components/ContentHome";
-import Footer from "../components/Footer";
+import Header from "../organisms/Header";
+import ContentHome from "../Templates/ContentHome";
+import Footer from "../organisms/Footer";
 
 const Home = () => {
     return (

@@ -4,13 +4,13 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import ApiOutlinedIcon from '@mui/icons-material/ApiOutlined';
 // Components 
-import TittleHeader from './TittleHeader';
-import ResponsiveTittleHeader from './ResponsiveTittleHeader';
-import ResponsiveMenu from './ResponsiveMenu';
-import MenuHeader from './MenuHeader';
-import Languages from './Languages';
+import TittleHeader from '../atoms/TittleHeader';
+import ResponsiveTittleHeader from '../atoms/ResponsiveTittleHeader';
+import ResponsiveMenu from '../molecules/ResponsiveMenu';
+import MenuHeader from '../molecules/MenuHeader';
+import Languages from '../atoms/Languages';
 // Switch 
-import SwitchTheme from './Switch';
+import SwitchTheme from '../atoms/Switch';
 // Store 
 import { useSelector } from "react-redux/es/hooks/useSelector";
 // Theme 

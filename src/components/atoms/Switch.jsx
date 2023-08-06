@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { Switch } from '@mui/material';
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import { setTheme } from '../store/slices/theme';
+import { setTheme } from '../../store/slices/theme';
 import { useSelector } from 'react-redux';
 // Redux
 import { useDispatch } from "react-redux";

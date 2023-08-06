@@ -1,11 +1,11 @@
 import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Home from "../Pages/Home";
-import About from "../Pages/About";
-import Skills from "../Pages/Skills";
-import Proyects from "../Pages/Proyects";
-import Contact from "../Pages/Contact";
-import NotFoundPage from "../Pages/NotFound";
+import Home from "../components/Pages/Home";
+import About from "../components/Pages/About";
+import Skills from "../components/Pages/Skills";
+import Proyects from "../components/Pages/Proyects";
+import Contact from "../components/Pages/Contact";
+import NotFoundPage from "../components/Pages/NotFound";
 
 
 export default function AppRouter() {

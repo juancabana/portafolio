@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import CardSkills from "./CardSkills";
+import CardSkills from "../molecules/CardSkills";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const ContentSkillsContainer = styled('div')(({ theme }) => ({

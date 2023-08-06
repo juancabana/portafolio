@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
-import ContentAbout from "../components/ContentAbout";
-import Footer from "../components/Footer";
+import Header from "../organisms/Header";
+import ContentAbout from "../Templates/ContentAbout";
+import Footer from "../organisms/Footer";
 
 const About = () => {
     return (

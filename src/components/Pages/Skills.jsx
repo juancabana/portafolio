@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
-import ContentSkills from "../components/ContentSkills";
-import Footer from "../components/Footer";
+import Header from "../organisms/Header";
+import ContentSkills from "../Templates/ContentSkills";
+import Footer from "../organisms/Footer";
 
 const Skills = () => {
     return (

@@ -18,7 +18,7 @@ const Container = styled('section')(({ theme }) => ({
 const FourZeroFourBg = styled('div')(({ theme }) => ({
     width: '800px',
     height: '400px',
-    backgroundImage: `url(${require('./../assets/img/dribbble_1.gif')})`,
+    backgroundImage: `url(${require('./../../assets/img/dribbble_1.gif')})`,
     fontSize: 'cover',
     backgroundPosition: 'center',
 }))
