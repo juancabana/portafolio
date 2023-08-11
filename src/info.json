@@ -12,13 +12,6 @@
       "about": "Front-end and backend web developer, I am a cheerful, kind, responsible, altruistic person, I like teamwork, camaraderie, always willing and eager to learn new technologies and deepen the ones I already know. The main technologies I work with are: Javascript and its versions of ECMAScript (ES6+), Node.js and its NPM package and dependency management system, React.js, Redux, a bit of Typescript, MaterialUI, relational database fundamentals with MySQL, and non-relational (MongoDB), Express.js, a bit of Nest.js, and I've mostly used Git and Github for version control, although I'm somewhat familiar with Microsoft Azure. I have worked under agile development methodologies such as SCRUM and CANVAS.",
       "experience": [
         {
-          "time": "MARCH - MAY 2022",
-          "position": "Frontend Developer",
-          "company": "EDSoft",
-          "description": "Front-End Developer on an exciting student app project, where we use React to create a dynamic and friendly user experience. The idea of ​​this page is to offer students a modern platform to access educational resources and enhance their academic experience.",
-          "tecnologies": ["React", "JavaScript", "HTML", "CSS", "GraphQL"]
-        },
-        {
           "time": "JUL - SEPT 2022",
           "position": "Frontend Developer",
           "company": "Siempre .NET",
@@ -344,13 +337,6 @@
     "about": {
       "about": "Desarrollador web front-end y backend, soy una persona alegre, amable, responsable, altruista, me gusta el trabajo en equipo, el compañerismo, siempre dispuesto y con ganas de aprender nuevas tecnologías y profundizar en las que ya conozco. Las principales tecnologías que manejo son: Javascript y sus versiones de ECMAScript (ES6+), Node.js y su sistema de gestión de paquetes y dependencias NPM, React.js, Redux, un poco de Typescript, MaterialUI, fundamentos de bases de datos relacionales con MySQL, y no relacionales (MongoDB), Express.js, un poco de Nest.js, y he utilizado principalmente Git y Github para el control de versiones, aunque tengo cierta familiaridad con Microsoft Azure. He trabajado bajo metodologías ágiles de desarrollo como SCRUM y CANVAS.",
       "experience": [
-        {
-          "time": "MARZO - MAYO 2022",
-          "position": "Frontend Developer",
-          "company": "EDSoft",
-          "description": "Front-End Developer en un emocionante proyecto de aplicación estudiantil, donde empleamos React para crear una experiencia de usuario dinámica y amigable. La idea de esta página es ofrecer a los estudiantes una plataforma moderna para acceder a recursos educativos y mejorar su experiencia académica.",
-          "tecnologies": ["React", "JavaScript", "HTML", "CSS", "GraphQL"]
-        },
         {
           "time": "JUL - SEPT 2022",
           "position": "Frontend Developer",
