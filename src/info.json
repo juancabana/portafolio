@@ -1,10 +1,10 @@
 {
   "english": {
     "home": {
-      "firstLine": "Hi, I am Juan David Cabana Trejos.",
-      "secondLine": "Web full-stack developer (Node - React).",
+      "firstLine": "Hi, I am Juan David Cabana Trejos",
+      "secondLine": "Web full-stack developer (Node - React)",
       "thirdLine": "Passionate about front-end and backend web development",
-      "fourthLine": "Systems engineering student, 8th semester.",
+      "fourthLine": "Systems engineering student, 8th semester",
       "linkCV": "https://dl.dropboxusercontent.com/scl/fi/bu34751zknshofmxxxcn7/CV-Juan-Cabana.pdf?rlkey=ahqmuiy2bivxubhi7q0qtl76x&dl",
       "urlImageHome": "https://i.ibb.co/BBMTJDT/foto.jpg"
     },
@@ -327,10 +327,10 @@
   },
   "spanish": {
     "home": {
-      "firstLine": "Hola, soy Juan David Cabana Trejos.",
-      "secondLine": "Desarrollador web full-stack (Node - React).",
+      "firstLine": "Hola, soy Juan David Cabana Trejos",
+      "secondLine": "Desarrollador web full-stack (Node - React)",
       "thirdLine": "Un apasionado por el desarrollo web front-end y backend",
-      "fourthLine": "Estudiante de ingeniería de sistemas, 8º semestre.",
+      "fourthLine": "Estudiante de ingeniería de sistemas, 8º semestre",
       "linkCV": "https://dl.dropboxusercontent.com/scl/fi/bu34751zknshofmxxxcn7/CV-Juan-Cabana.pdf?rlkey=ahqmuiy2bivxubhi7q0qtl76x&dl",
       "urlImageHome": "https://i.ibb.co/BBMTJDT/foto.jpg"
     },

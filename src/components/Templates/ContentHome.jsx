@@ -57,7 +57,7 @@ const ContentHome = () => {
       <TextFirstLine className="m-0 font-medium text-2xl text-center">
         {homeData.firstLine}
       </TextFirstLine>
-      <TextSecondLine className="m-0 text-center font-bold mt-4 text-3xl  sm:text-5xl">
+      <TextSecondLine className="m-0 text-center font-bold mt-4 text-3xl sm:text-5xl">
         {homeData.secondLine}
       </TextSecondLine>
       <TextTrhirdLine className="m-0 text-center font-light text-xl mt-4">

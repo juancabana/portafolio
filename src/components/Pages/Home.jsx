@@ -5,7 +5,7 @@ import Footer from "../organisms/Footer";
 
 const Home = () => {
   return (
-    <div className="container mx-auto h-screen box-content flex flex-col">
+    <div className="h-screen box-content flex flex-col w-screen">
       <Header />
       <ContentHome />
       <Footer />
