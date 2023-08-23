@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppContainer className="w-screen">
+      <AppContainer>
         <AppRouter />
       </AppContainer>
     </ThemeProvider>

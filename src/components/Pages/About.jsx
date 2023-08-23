@@ -5,7 +5,7 @@ import Footer from "../organisms/Footer";
 
 const About = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <Header />
       <ContentAbout />
       <Footer />

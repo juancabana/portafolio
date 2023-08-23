@@ -64,7 +64,7 @@ const ContentHome = () => {
         {homeData.thirdLine}
       </TextTrhirdLine>
       <ContentPerfil
-        className="relative mt-12 mb-12 w-60 h-60 rounded-full bg-contain bg-center  bg-right bg-purple-900 hover:w-64 hover:h-64 hover:duration-75 duration-100"
+        className="relative mt-12 mb-12 w-60 h-60 rounded-full bg-contain bg-center bg-purple-900 hover:w-64 hover:h-64 hover:duration-75 duration-100"
         to="/about"
       ></ContentPerfil>
       <TextTrhirdLine className="m-0 text-center font-light text-xl mt-4">
@@ -74,6 +74,7 @@ const ContentHome = () => {
         className="flex items-center justify-center no-underline text-center rounded-md h-16 w-36 mt-8 duration-200 "
         href={homeData.linkCV}
         download={true}
+        title="CV"
       >
         {language === "english" ? "Download CV" : "Descargar CV"}
       </EmailLink>
