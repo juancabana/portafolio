@@ -88,6 +88,18 @@
         ]
       },
       {
+        "name": "Tailwind CSS",
+        "url": "https://i.ibb.co/P4wzqsq/icons8-tailwindcss-96.png",
+        "description": "Solid knowledge of Tailwind CSS, with adeptness in creating modern interfaces. Able to develop elegant and functional designs using its powerful features",
+        "level": "Intermediate",
+        "certificates": [
+          {
+            "tittle": "Tailwind CSS: The definitive course",
+            "url": "https://www.udemy.com/certificate/UC-33e96cbb-ec94-4851-ab6c-b6f1d63dadb3/"
+          }
+        ]
+      },
+      {
         "name": "Git & Github",
         "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
         "description": "Git and Github expert, with advanced skills in version control, project management, and effective collaboration in teams through Github.",
@@ -411,6 +423,18 @@
           {
             "tittle": "Curso de Desarrollo Frontend",
             "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://i.ibb.co/P4wzqsq/icons8-tailwindcss-96.png",
+        "description": "Sólidos conocimientos en Tailwind CSS, con destreza en la creación de interfaces modernas. Capaz de desarrollar diseños elegantes y funcionales utilizando sus poderosas características",
+        "level": "Intermedio",
+        "certificates": [
+          {
+            "tittle": "Tailwind CSS: El curso definitivo",
+            "url": "https://www.udemy.com/certificate/UC-33e96cbb-ec94-4851-ab6c-b6f1d63dadb3/"
           }
         ]
       },
