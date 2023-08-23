@@ -3,76 +3,55 @@ import React from "react";
 import CardProjects from "../molecules/CardProjects";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
-const ContentProyectsWrapper = styled('div')(({ theme }) => ({
-  width: '100%',
-  minHeight: 'calc(100vh - 50px)',
-  height: '100%',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  boxSizing: 'border-box'
-
-}))
-const WrapperContent = styled('div')(({ theme }) => ({
-  width: '100%',
-  maxWidth: '1200px',
-  boxSizing: 'border-box',
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100%',
-  [theme.breakpoints.down('lg')]: {
-    padding: '0px 6rem',
+const WrapperContent = styled("div")(({ theme }) => ({
+  [theme.breakpoints.down("lg")]: {
+    padding: "0px 6rem",
   },
-  [theme.breakpoints.down('md')]: {
-    padding: '0px 5rem',
+  [theme.breakpoints.down("md")]: {
+    padding: "0px 5rem",
   },
-  [theme.breakpoints.down('sm')]: {
-    padding: '0px 2rem',
+  [theme.breakpoints.down("sm")]: {
+    padding: "0px 2rem",
   },
-
-}))
-const TittleProjects = styled('h1')(({ theme }) => ({
-  width: '100%',
-  justifyContent: 'center',
-  height: '1px',
-  position: 'relative',
+}));
+const TittleProjects = styled("h1")(({ theme }) => ({
   fontFamily: theme.palette.fontFamily,
   color: theme.palette.colorTittle,
-  fontSize: '35px',
-  display: 'flex',
-  alignItems: 'center',
-  marginTop: '3rem',
-  marginBottom: '3rem',
-  textAlign: 'center',
-  fontWeight: '500',
-}))
-const ContentCardsProyects = styled('div')(({ theme }) => ({
-  padding: '15px 0px',
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'center',
-  gap: '1rem'
-
-}))
+}));
 
 const ContentProyects = () => {
-  // Data 
-  const projectsData = useSelector(state => state.data.data.projects)
-  // Language 
-  const language = useSelector(state => state.language.language)
+  // Data
+  const projectsData = useSelector((state) => state.data.data.projects);
+  // Language
+  const language = useSelector((state) => state.language.language);
 
   return (
-    <ContentProyectsWrapper>
-      <WrapperContent>
-        <ContentCardsProyects>
-          <TittleProjects>{language === 'english' ? 'Personal Projects' : 'Proyectos Personales'}</TittleProjects>
+    <div className="flex w-full h-full flex-col items-center box-border">
+      <WrapperContent className="flex flex-col w-full h-full max-w-6xl box-border">
+        <TittleProjects className="flex w-full justify-center text-4xl items-center mt-12  text-center font-medium">
+          {language === "english"
+            ? "Personal Projects"
+            : "Proyectos Personales"}
+        </TittleProjects>
+        <p className="w-full text-center mt-3 lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 mb-12">
+          {language === "english"
+            ? "Here you can see my most outstanding projects"
+            : "Aquí puedes ver mis proyectos más destacados"}
+        </p>
+        <div className="flex px-4 py-0 flex-wrap justify-center gap-4">
           {projectsData.map((project, index) => (
-            <CardProjects key={index} links={project.links} title={project.title} description={project.description} tecnologies={project.tecnologies} />
+            <CardProjects
+              key={index}
+              links={project.links}
+              title={project.title}
+              description={project.description}
+              tecnologies={project.tecnologies}
+            />
           ))}
-        </ContentCardsProyects>
+        </div>
       </WrapperContent>
-    </ContentProyectsWrapper>
+    </div>
   );
-}
+};
 
 export default ContentProyects;
