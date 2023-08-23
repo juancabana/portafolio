@@ -15,10 +15,10 @@ const ContentSkills = () => {
   return (
     <div className="flex items-center justify-center w-full mb-4 px-4">
       <div className="flex flex-col box-border items-center min-h-full w-full px-0 py-4">
-        <TittleSkills className="flex max-w-3xl mt-10 text-4xl font-medium">
+        <TittleSkills className="flex max-w-3xl mt-8 text-4xl font-medium">
           {language === "english" ? "Skills" : "Habilidades"}
         </TittleSkills>
-        <p className="text-center mt-3 lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
+        <p className="text-center mt-3 lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400">
           {language === "english"
             ? "Here you can see some of my featured skills"
             : "Aquí puedes ver algunas de mis habilidades destacadas"}

@@ -27,13 +27,13 @@ const ContentProyects = () => {
 
   return (
     <div className="flex w-full h-full flex-col items-center box-border">
-      <WrapperContent className="flex flex-col w-full h-full max-w-6xl box-border">
+      <WrapperContent className="flex flex-col w-full h-full max-w-6xl box-border mb-10">
         <TittleProjects className="flex w-full justify-center text-4xl items-center mt-12  text-center font-medium">
           {language === "english"
             ? "Personal Projects"
             : "Proyectos Personales"}
         </TittleProjects>
-        <p className="w-full text-center mt-3 lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 mb-12">
+        <p className="w-full text-center mt-3 lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 mb-12">
           {language === "english"
             ? "Here you can see my most outstanding projects"
             : "Aquí puedes ver mis proyectos más destacados"}

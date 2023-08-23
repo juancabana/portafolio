@@ -44,7 +44,7 @@ const ContentAbout = () => {
   return (
     <div className="flex justify-center">
       <div className="w-full max-w-4xl pl-12 pr-3">
-        <TittleAboutContainer className="flex mt-20 content-center">
+        <TittleAboutContainer className="flex mt-14 content-center">
           <TittleAbout className="w-full sm:text-4xl text-3xl mb-4 font-medium">
             {language === "english" ? "About me" : "Sobre mi"}
           </TittleAbout>
