@@ -4,13 +4,13 @@ import ContentAbout from "../Templates/ContentAbout";
 import Footer from "../organisms/Footer";
 
 const About = () => {
-    return (
-        <div>
-            <Header />
-            <ContentAbout />
-            <Footer />
-        </div>
-    );
-}
+  return (
+    <div className="flex flex-col">
+      <Header />
+      <ContentAbout />
+      <Footer />
+    </div>
+  );
+};
 
 export default About;

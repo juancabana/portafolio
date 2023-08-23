@@ -4,136 +4,76 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import CardExperience from "../molecules/CardExperience";
 
-const WrapperContentAboutContainer = styled('div')(({ theme }) => ({
-  width: '100%',
-  minHeight: 'calc(100vh - 50px - 69px)',
-  display: 'flex',
-  justifyContent: 'center',
-  boxSizing: 'border-box',
-
-}))
-const ContainerContentAbout = styled('div')(({ theme }) => ({
-  width: '100%',
-  maxWidth: '900px',
-  height: '90%',
-  boxSizing: 'content-box',
-
-}))
-const TittleAbout = styled('h1')(({ theme }) => ({
-  height: '1px',
-  position: 'relative',
+const TittleAbout = styled("h1")(({ theme }) => ({
   fontFamily: theme.palette.fontFamily,
   color: theme.palette.colorTittle,
-  display: 'flex',
-  fontWeight: '500',
-  alignItems: 'center',
-  paddingLeft: '10px',
-  margin: '0px',
-  marginBottom: '1.5rem',
-
-
-}))
-const ParagraphAbout = styled('div')(({ theme }) => ({
-  paddingLeft: '50px',
-  paddingRight: '20px',
-  [theme.breakpoints.down('md')]: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    paddingLeft: '20px',
-  },
-}))
-const ContentAboutWrapper = styled('div')(({ theme }) => ({
-  display: 'grid',
-  width: '100%',
-  height: '70%',
-
-}))
-const TextAbout = styled('p')(({ theme }) => ({
+}));
+const TextAbout = styled("p")(({ theme }) => ({
   color: theme.palette.colorContent,
   fontFamily: theme.palette.fontFamily,
-  marginTop: '.5rem'
-}))
-const TittleAboutContainer = styled('div')(({ theme }) => ({
-  marginTop: '5rem',
-  display: 'flex',
-  justifyContent: 'center',
-  [theme.breakpoints.down('md')]: {
-    marginTop: '2rem',
-    
-    },
-}))
+}));
+const TittleAboutContainer = styled("div")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    marginTop: "2rem",
+  },
+}));
 const LinkContact = styled(Link)(({ theme }) => ({
-  padding: '0%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  textDecoration: 'none',
-  borderRadius: '5px',
   fontFamily: theme.palette.fontFamily,
   border: `1px solid ${theme.palette.colorContrast}`,
   color: theme.palette.colorContrast,
-  height: '60px',
-  width: '140px',
-  marginBottom: '2rem',
-  ':hover': {
-    backgroundColor: 'rgba(100,255,218,0.1)',
-    transition: 'all 0.3s',
-  }
-
-}))
-const Strong = styled('strong')(({ theme }) => ({
-
+  ":hover": {
+    backgroundColor: "rgba(100,255,218,0.1)",
+  },
+}));
+const Strong = styled("strong")(({ theme }) => ({
   fontFamily: theme.palette.fontFamily,
-  fontSize: '25px',
-  fontWeight: '400',
   color: theme.palette.colorContrast,
-}))
-
-const WrapperDataExperience = styled('div')(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column-reverse',
-  gap: '1.5rem',
-  marginTop: '1rem',
-  boxSizing: 'content-box',
-}))
+}));
 
 const ContentAbout = () => {
-
-  const aboutData = useSelector(state => state.data.data.about)
-  const language = useSelector(state => state.language.language)
+  const aboutData = useSelector((state) => state.data.data.about);
+  const language = useSelector((state) => state.language.language);
   return (
-    <WrapperContentAboutContainer>
-      <ContainerContentAbout>
-        <TittleAboutContainer>
-          <TittleAbout>{language === 'english' ? 'About me' : 'Sobre mi'}</TittleAbout  >
+    <div className="flex justify-center">
+      <div className="w-full p-4" style={{ maxWidth: "800px" }}>
+        <TittleAboutContainer className="flex mt-14 content-center">
+          <TittleAbout className="w-full sm:text-4xl text-3xl mb-4 font-medium">
+            {language === "english" ? "About me" : "Sobre mi"}
+          </TittleAbout>
         </TittleAboutContainer>
-        <ContentAboutWrapper>
-          <ParagraphAbout>
-            <TextAbout>
+        <div className="w-full">
+          <div className="flex flex-col items-center">
+            <TextAbout className="mt-2 leading-snug">
               {aboutData.about}
-            </TextAbout>              <br />
-
-            <Strong>{language === 'english' ? 'Experience' : 'Experiencia'}</Strong> <br />
-            <WrapperDataExperience>
-
+            </TextAbout>{" "}
+            <br />
+            <Strong className="text-2xl font-normal">
+              {language === "english" ? "Experience" : "Experiencia"}
+            </Strong>{" "}
+            <br />
+            <div className="flex flex-col-reverse gap-6 mt-4 box-content">
               {aboutData.experience.map((experience, index) => (
                 <CardExperience key={index} experience={experience} />
               ))}
-            </WrapperDataExperience>
+            </div>
             <br />
-            <Strong>{language === 'english' ? 'Education' : 'Educación'}</Strong> <br />
-            <TextAbout>
-              {aboutData.education}
-            </TextAbout>
+            <Strong className="text-2xl font-normal">
+              {language === "english" ? "Education" : "Educación"}
+            </Strong>{" "}
             <br />
-            <LinkContact to="/contact">{language === 'english' ? 'CONTACT' : 'CONTÁCTAME'}</LinkContact>
-          </ParagraphAbout >
-
-        </ContentAboutWrapper>
-      </ContainerContentAbout>
-    </WrapperContentAboutContainer>
+            <TextAbout>{aboutData.education}</TextAbout>
+            <br />
+            <LinkContact
+              className="p-0 flex items-center justify-center no-underline rounded-md h-16 w-36 mb-8 duration-200 "
+              to="/contact"
+            >
+              {language === "english" ? "CONTACT" : "CONTÁCTAME"}
+            </LinkContact>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default ContentAbout;

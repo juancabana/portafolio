@@ -1,101 +1,52 @@
 import styled from "@emotion/styled";
 
-const CardExperienceWrapper = styled('div')(({ theme }) => ({
-    display: 'flex',
-    height: 'auto',
-    columnGap: '1rem',
-    width: '100%',
-    backgroundColor: theme.palette.colorCardBackground,
-    padding: '2rem',
-    boxSizing: 'border-box',
-    border: '2px solid #232f4d',
-    borderRadius: '5px',
-    color: theme.palette.colorContent,
-    fontFamily: theme.palette.fontFamily,
-    lineHeight: '1.5',
-    [theme.breakpoints.down('md')]: {
-        flexDirection: 'column'
-    },
-}))
-const TimeSubtitleWrapper = styled('div')(({ theme }) => ({
-    width: '170px',
+const CardExperienceWrapper = styled("div")(({ theme }) => ({
+  backgroundColor: theme.palette.colorCardBackground,
+  border: "2px solid #232f4d",
+  color: theme.palette.colorContent,
+  fontFamily: theme.palette.fontFamily,
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+  },
+}));
 
-}))
-const TimeSubtitle = styled('h5')(({ theme }) => ({
-    margin: '0px',
-    width: '100%',
-    fontSize: '.75rem',
-    lineHeight: '1rem',
-    fontWeight: '600',
-    marginBottom: '.5rem'
+const TittleCard = styled("h3")(({ theme }) => ({
+  color: theme.palette.colorTittle,
+  margin: "0px",
+}));
 
-
-}))
-const ContentCardWrapper = styled('div')(({ theme }) => ({
-    display: 'flex',
-    flexDirection: 'column',
-    height: 'auto',
-    width: '100%',
-}))
-const TittleCard = styled('h3')(({ theme }) => ({
-    color: theme.palette.colorTittle,
-    margin: '0px',
-    fontWeight: '500',
-    fontSize: '17px',
-    lineHeight: '1rem',
-
-
-}))
-const Description = styled('p')(({ theme }) => ({
-    margin: '0px',
-    paddingRight: '1rem',
-    lineHeight: '1.2rem',
-    marginTop: '.5rem'
-
-}))
-const List = styled('ul')(({ theme }) => ({
-    listStyle: 'none',
-    display: 'flex',
-    gap: '1rem',
-    flexWrap: 'wrap',
-    padding: '0px'
-
-
-}))
-const Tecnology = styled('div')(({ theme }) => ({
-    listStyle: 'none',
-    display: 'flex',
-    gap: '1rem',
-    flexWrap: 'wrap',
-    backgroundColor: theme.palette.colorHoverContrast,
-    lineHeight: '1.25rem',
-    padding: '0.25rem 0.75rem',
-    borderRadius: '25px',
-    color: theme.palette.colorContrast,
-    fontSize: '15px'
-}))
+const Tecnology = styled("div")(({ theme }) => ({
+  backgroundColor: theme.palette.colorHoverContrast,
+  color: theme.palette.colorContrast,
+}));
 
 const CardExperience = (props) => {
-    const { time, position, company, description, tecnologies } = props.experience;
+  const { time, position, company, description, tecnologies } =
+    props.experience;
 
-    return (
-        <CardExperienceWrapper>
-            <TimeSubtitleWrapper className="wrapper">
-                <TimeSubtitle>{time}</TimeSubtitle>
-            </TimeSubtitleWrapper>
-            <ContentCardWrapper>
-                <TittleCard>{position}. {company}</TittleCard>
-                <Description>
-                    {description}
-                </Description>
-                <List>
-                    {tecnologies.map((tec, index) => (
-                        <Tecnology key={index}>{tec}</Tecnology>
-                    ))}
-                </List>
-            </ContentCardWrapper>
-        </CardExperienceWrapper>
-    );
-}
+  return (
+    <CardExperienceWrapper className="flex h-auto gap-x-4 w-full p-8 box-border rounded-md leading-6">
+      <div className="w-40">
+        <h5 className="m-0 w-full text-xs font-semibold mb-2">{time}</h5>
+      </div>
+      <div className="flex flex-col h-auto w-full">
+        <TittleCard className="m-0 font-medium text-base text-clip">
+          {position}. {company}
+        </TittleCard>
+        <p className="m--0 pr-4 mt-2 leading-5">{description}</p>
+        <ul className="list-none flex gap-4 flex-wrap p-0 mt-4">
+          {tecnologies.map((tec, index) => (
+            <Tecnology
+              className="flex gap-4 flex-wrap  text-sm leading-5 py-1 px-3 rounded-3xl"
+              key={index}
+            >
+              {tec}
+            </Tecnology>
+          ))}
+        </ul>
+      </div>
+    </CardExperienceWrapper>
+  );
+};
 
 export default CardExperience;
