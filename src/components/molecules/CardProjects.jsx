@@ -17,7 +17,7 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
     <div
       className="font-medium rounded"
       style={{
-        minHeight: "220px",
+        height: "300px",
         width: "330px",
         border: `1px solid ${theme.palette.colorTittle}`,
       }}
@@ -26,7 +26,7 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
       rel="noopener noreferrer"
     >
       <div
-        className="flex w-full justify-start text-xs m-3 gap-3"
+        className="flex w-full justify-start text-xs p-3 gap-3"
         style={{
           fontFamily: theme.palette.fontFamily,
           color: theme.palette.colorDescription,
@@ -39,7 +39,7 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
         ))}
       </div>
       <hr style={{ color: theme.palette.colorTittle }} />
-      <div className="p-4 pt-1">
+      <div className="block p-4 pt-3  w-auto box-border">
         <div className="flex items-center">
           <div className="flex items-center">
             <svg
@@ -62,7 +62,7 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
           </h3>
         </div>
         <p
-          className="text-sm font-normal leading-5"
+          className="text-sm font-normal leading-5 mt-3"
           style={{
             fontFamily: theme.palette.fontFamily,
             color: theme.palette.colorContent,

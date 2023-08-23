@@ -4,14 +4,6 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import CardExperience from "../molecules/CardExperience";
 
-const ParagraphAbout = styled("div")(({ theme }) => ({
-  [theme.breakpoints.down("md")]: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    paddingLeft: "20px",
-  },
-}));
 const TittleAbout = styled("h1")(({ theme }) => ({
   fontFamily: theme.palette.fontFamily,
   color: theme.palette.colorTittle,
@@ -43,14 +35,14 @@ const ContentAbout = () => {
   const language = useSelector((state) => state.language.language);
   return (
     <div className="flex justify-center">
-      <div className="w-full max-w-4xl pl-12 pr-3">
+      <div className="w-full p-4" style={{ maxWidth: "800px" }}>
         <TittleAboutContainer className="flex mt-14 content-center">
           <TittleAbout className="w-full sm:text-4xl text-3xl mb-4 font-medium">
             {language === "english" ? "About me" : "Sobre mi"}
           </TittleAbout>
         </TittleAboutContainer>
         <div className="w-full">
-          <ParagraphAbout>
+          <div className="flex flex-col items-center">
             <TextAbout className="mt-2 leading-snug">
               {aboutData.about}
             </TextAbout>{" "}
@@ -77,7 +69,7 @@ const ContentAbout = () => {
             >
               {language === "english" ? "CONTACT" : "CONTÁCTAME"}
             </LinkContact>
-          </ParagraphAbout>
+          </div>
         </div>
       </div>
     </div>

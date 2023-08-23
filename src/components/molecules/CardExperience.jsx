@@ -25,7 +25,7 @@ const CardExperience = (props) => {
     props.experience;
 
   return (
-    <CardExperienceWrapper className="flex h-auto gap-x-4 w-11/12 p-8 box-border rounded-md leading-6">
+    <CardExperienceWrapper className="flex h-auto gap-x-4 w-full p-8 box-border rounded-md leading-6">
       <div className="w-40">
         <h5 className="m-0 w-full text-xs font-semibold mb-2">{time}</h5>
       </div>
