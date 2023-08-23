@@ -9,7 +9,7 @@
       "urlImageHome": "https://i.ibb.co/BBMTJDT/foto.jpg"
     },
     "about": {
-      "about": "Front-end and backend web developer, I am a cheerful, kind, responsible, altruistic person, I like teamwork, camaraderie, always willing and eager to learn new technologies and deepen the ones I already know. The main technologies I work with are: Javascript and its versions of ECMAScript (ES6+), Node.js and its NPM package and dependency management system, React.js, Redux, a bit of Typescript, MaterialUI, relational database fundamentals with MySQL, and non-relational (MongoDB), Express.js, a bit of Nest.js, and I've mostly used Git and Github for version control, although I'm somewhat familiar with Microsoft Azure. I have worked under agile development methodologies such as SCRUM and CANVAS.",
+      "about": "Front-end and backend web developer, I am a cheerful, kind, responsible, altruistic person, I like teamwork, camaraderie, always willing and eager to learn new technologies and deepen the ones I already know. The main technologies I work with are: Javascript and its versions of ECMAScript (ES6+), Node.js and its NPM package and dependency management system, React.js, Redux, a bit of Typescript, Tailwind CSS, MaterialUI, database fundamentals relational data with MySQL, and non-relational (MongoDB), Express.js, a bit of Nest.js, and I've mostly used Git and Github for version control, although I have some familiarity with Microsoft Azure. I have worked under agile development methodologies such as SCRUM and CANVAS.",
       "experience": [
         {
           "time": "JUL - SEPT 2022",
@@ -112,6 +112,46 @@
         ]
       },
       {
+        "name": "NodeJS",
+        "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
+        "description": "Skilled in JavaScript, with extensive knowledge in frontend and backend development using Node.js to create complete and dynamic web applications.",
+        "level": "Intermediate",
+        "certificates": [
+          {
+            "tittle": "NodeJS Fundamentals",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
+          },
+          {
+            "tittle": "NPM Course: Package and Dependency Management in JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
+          },
+          {
+            "tittle": "Frontend Development Course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "Express.js",
+        "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
+        "description": "Basic knowledge in Express.js, capable of developing backend web applications using this Node.js framework to create routes, handle HTTP requests, and build APIs with authentication.",
+        "level": "Basic",
+        "certificates": [
+          {
+            "tittle": "Backend Course with NodeJS: REST API with ExpressJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2485-backend-nodejs/diploma/detalle/"
+          },
+          {
+            "tittle": "Backend Course with NodeJS: Databases with PostgreSQL",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2507-backend-nodejs-postgres/diploma/detalle/"
+          },
+          {
+            "tittle": "Backend Course with NodeJS: Authentication with PassportJS and JWT",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
+          }
+        ]
+      },
+      {
         "name": "Material UI",
         "url": "https://i.ibb.co/MGJxbSv/logo.png",
         "description": "Basic knowledge in Material UI, capable of designing web interfaces with pre-established components and pre-designed styles, optimizing frontend development.",
@@ -149,26 +189,7 @@
           }
         ]
       },
-      {
-        "name": "NodeJS",
-        "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
-        "description": "Skilled in JavaScript, with extensive knowledge in frontend and backend development using Node.js to create complete and dynamic web applications.",
-        "level": "Intermediate",
-        "certificates": [
-          {
-            "tittle": "NodeJS Fundamentals",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
-          },
-          {
-            "tittle": "NPM Course: Package and Dependency Management in JavaScript",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
-          },
-          {
-            "tittle": "Frontend Development Course",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
-          }
-        ]
-      },
+
       {
         "name": "Typescript",
         "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
@@ -202,26 +223,6 @@
           {
             "tittle": "Data Modeling Course in MongoDB",
             "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/5356-mongodb-modelado/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "Express.js",
-        "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
-        "description": "Basic knowledge in Express.js, capable of developing backend web applications using this Node.js framework to create routes, handle HTTP requests, and build APIs with authentication.",
-        "level": "Basic",
-        "certificates": [
-          {
-            "tittle": "Backend Course with NodeJS: REST API with ExpressJS",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2485-backend-nodejs/diploma/detalle/"
-          },
-          {
-            "tittle": "Backend Course with NodeJS: Databases with PostgreSQL",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2507-backend-nodejs-postgres/diploma/detalle/"
-          },
-          {
-            "tittle": "Backend Course with NodeJS: Authentication with PassportJS and JWT",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
           }
         ]
       }
@@ -347,7 +348,7 @@
       "urlImageHome": "https://i.ibb.co/BBMTJDT/foto.jpg"
     },
     "about": {
-      "about": "Desarrollador web front-end y backend, soy una persona alegre, amable, responsable, altruista, me gusta el trabajo en equipo, el compañerismo, siempre dispuesto y con ganas de aprender nuevas tecnologías y profundizar en las que ya conozco. Las principales tecnologías que manejo son: Javascript y sus versiones de ECMAScript (ES6+), Node.js y su sistema de gestión de paquetes y dependencias NPM, React.js, Redux, un poco de Typescript, MaterialUI, fundamentos de bases de datos relacionales con MySQL, y no relacionales (MongoDB), Express.js, un poco de Nest.js, y he utilizado principalmente Git y Github para el control de versiones, aunque tengo cierta familiaridad con Microsoft Azure. He trabajado bajo metodologías ágiles de desarrollo como SCRUM y CANVAS.",
+      "about": "Desarrollador web front-end y backend, soy una persona alegre, amable, responsable, altruista, me gusta el trabajo en equipo, el compañerismo, siempre dispuesto y con ganas de aprender nuevas tecnologías y profundizar en las que ya conozco. Las principales tecnologías que manejo son: Javascript y sus versiones de ECMAScript (ES6+), Node.js y su sistema de gestión de paquetes y dependencias NPM, React.js, Redux, un poco de Typescript, Tailwind CSS, MaterialUI, fundamentos de bases de datos relacionales con MySQL, y no relacionales (MongoDB), Express.js, un poco de Nest.js, y he utilizado principalmente Git y Github para el control de versiones, aunque tengo cierta familiaridad con Microsoft Azure. He trabajado bajo metodologías ágiles de desarrollo como SCRUM y CANVAS.",
       "experience": [
         {
           "time": "JUL - SEPT 2022",
@@ -451,6 +452,46 @@
         ]
       },
       {
+        "name": "NodeJS",
+        "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
+        "description": "Hábil en JavaScript, con amplios conocimientos en el desarrollo frontend y backend utilizando Node.js para crear aplicaciones web completas y dinámicas.",
+        "level": "Intermedio",
+        "certificates": [
+          {
+            "tittle": "Fundamentos de NodeJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de NPM: Gestión de paquetes y dependencias en JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "Express.js",
+        "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
+        "description": "Conocimientos básicos en Express.js, capaz de desarrollar aplicaciones web backend utilizando este framework de Node.js para crear rutas, manejar peticiones HTTP y construir APIs con autenticación.",
+        "level": "Básico",
+        "certificates": [
+          {
+            "tittle": "Curso de backend con NodeJS: REST API con ExpressJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2485-backend-nodejs/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de backend con NodeJS: Bases de datos con PostgreSQL",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2507-backend-nodejs-postgres/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de backend con NodeJS: Autenticación con PassportJS y JWT",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
+          }
+        ]
+      },
+      {
         "name": "Material UI",
         "url": "https://i.ibb.co/MGJxbSv/logo.png",
         "description": "Conocimientos básicos en Material UI, capaz de diseñar interfaces web con componentes preestablecidos y estilos prediseñados, optimizando el desarrollo frontend.",
@@ -488,26 +529,7 @@
           }
         ]
       },
-      {
-        "name": "NodeJS",
-        "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
-        "description": "Hábil en JavaScript, con amplios conocimientos en el desarrollo frontend y backend utilizando Node.js para crear aplicaciones web completas y dinámicas.",
-        "level": "Intermedio",
-        "certificates": [
-          {
-            "tittle": "Fundamentos de NodeJS",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de NPM: Gestión de paquetes y dependencias en JavaScript",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de Desarrollo Frontend",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
-          }
-        ]
-      },
+
       {
         "name": "Typescript",
         "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
@@ -541,26 +563,6 @@
           {
             "tittle": "Curso de Modelado de Datos en MongoDB",
             "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/5356-mongodb-modelado/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "Express.js",
-        "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
-        "description": "Conocimientos básicos en Express.js, capaz de desarrollar aplicaciones web backend utilizando este framework de Node.js para crear rutas, manejar peticiones HTTP y construir APIs con autenticación.",
-        "level": "Básico",
-        "certificates": [
-          {
-            "tittle": "Curso de backend con NodeJS: REST API con ExpressJS",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2485-backend-nodejs/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de backend con NodeJS: Bases de datos con PostgreSQL",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2507-backend-nodejs-postgres/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de backend con NodeJS: Autenticación con PassportJS y JWT",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
           }
         ]
       }
