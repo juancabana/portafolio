@@ -27,12 +27,11 @@ const App = () => {
 
   const AppContainer = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.background,
-    margin: "0%",
   }));
 
   return (
     <ThemeProvider theme={theme}>
-      <AppContainer>
+      <AppContainer className="w-screen">
         <AppRouter />
       </AppContainer>
     </ThemeProvider>
