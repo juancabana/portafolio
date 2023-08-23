@@ -42,7 +42,7 @@ const ContentContact = () => {
           {language === "english" ? "Contact me" : "Contáctame"}
         </h3>
         <h1
-          className="text-5xl mt-11 mb-6 font-bold"
+          className="text-5xl mt-11 mb-6 font-semibold"
           style={{
             fontFamily: theme.palette.fontFamily,
             color: theme.palette.colorTittle,
