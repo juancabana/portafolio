@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <FooterWrapper>
-      <ContentFooter className=" text-center">
+      <ContentFooter className=" text-center text-sm">
         {language === "english"
           ? "Copyright © 2023 Juan Cabana | All rights reserved."
           : "Copyright © 2023 Juan Cabana | Todos los derechos reservados."}
