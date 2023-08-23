@@ -1,142 +1,126 @@
-import React from 'react';
+import React from "react";
 import styled from "@emotion/styled";
 import { useSelector } from "react-redux/es/hooks/useSelector";
-import { Button, Collapse, List } from '@mui/material';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { useTheme } from '@emotion/react';
+import { Button, Collapse, List } from "@mui/material";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import { useTheme } from "@emotion/react";
 
-const WrapperCard = styled('div')(({ theme }) => ({
-  boxSizing: 'border-box',
-  padding: '15px',
-  display: 'flex',
-  alignItems: 'center',
-  flexDirection: 'column',
-  width: '100%',
-  borderRadius: '10px',
+const WrapperCard = styled("div")(({ theme }) => ({
   border: `1px solid ${theme.palette.colorBorder}`,
   backgroundColor: theme.palette.colorCardBackground,
-  boxShadow: theme.palette.boxShadow
+  boxShadow: theme.palette.boxShadow,
+}));
+const ImageCard = styled("div")(({ theme }) => ({
+  backgroundColor: "#1d3539",
+}));
 
-}))
-const ImageCard = styled('div')(({ theme }) => ({
-  height: '100px',
-  maxHeight: '90px',
-  width: '100px',
-  minWidth: '90px',
-  borderRadius: '10px',
-  padding: '5px',
-  backgroundColor: '#1d3539',
-
-}))
-const WrapperContent = styled('div')(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  width: '100%',
-  height: '100%',
-  marginLeft: '1rem',
-
-}))
-const TittleSkill = styled('h2')(({ theme }) => ({
-  margin: '0px',
+const TittleSkill = styled("h2")(({ theme }) => ({
   color: theme.palette.colorItemHeader,
   fontFamily: theme.palette.fontFamily,
-  fontSize: '25px',
-  fontWeight: '400'
-
-}))
-const TittleLevel = styled('h4')(({ theme }) => ({
+}));
+const TittleLevel = styled("h4")(({ theme }) => ({
   color: theme.palette.colorContrast,
   fontFamily: theme.palette.fontFamily,
-  marginTop: '5px',
-  marginBottom: '0px',
-  fontSize: '15px',
-  fontWeight: '400'
-}))
-const Paragraph = styled('p')(({ theme }) => ({
+}));
+const Paragraph = styled("p")(({ theme }) => ({
   color: theme.palette.colorContent,
   fontFamily: theme.palette.fontFamily,
-  marginTop: '5px',
-  fontSize: '15px',
-  fontWeight: '400'
-}))
-const WrapperContentCard = styled('div')(({ theme }) => ({
-  display: 'flex',
-  width: '100%',
-  [theme.breakpoints.down('md')]: {
-    display: 'flex',
-  },
-}))
+}));
 
-const WrapperButton = styled('div')(({ theme }) => ({
-  display: 'flex',
-  margin: '0px',
-  padding: '0px',
-  width: '100%'
-}))
-const Projectink = styled('a')(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  textDecoration: 'none',
-  borderRadius: '0px',
-  fontFamily: ' ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji',
+const Projectink = styled("a")(({ theme }) => ({
+  fontFamily:
+    " ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
   border: `1px solid ${theme.palette.colorContrast}`,
   color: theme.palette.colorContrast,
-  padding: '5px',
-  ':hover': {
+  ":hover": {
     backgroundColor: theme.palette.colorHoverContrast,
-    transform: 'translateY(-4px)',
-    transition: 'all 0.25s',
-  }
-}))
+    transform: "translateY(-4px)",
+  },
+}));
 
 const CardSkills = ({ name, url, level, certificates, description }) => {
-
-  const Image = styled('div')(({ theme }) => ({
-    width: '100%',
-    height: '100%',
+  const Image = styled("div")(({ theme }) => ({
     backgroundImage: `url(${url})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    boxSizing: 'content-box',
-    borderRadius: '10px',
-  }))
+  }));
 
   const theme = useTheme();
-  const language = useSelector(state => state.language.language)
+  const language = useSelector((state) => state.language.language);
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
     setOpen(!open);
   };
   return (
-    <WrapperCard>
-      <WrapperContentCard>
-        <ImageCard>
-          <Image >
-          </Image>
+    <WrapperCard className="flex box-border p-4 items-center flex-col w-full rounded-lg ">
+      <div className="flex w-full">
+        <ImageCard className="h-24 w-24 max-h-20 rounded-lg p-1">
+          <Image className="w-full h-full bg-cover bg-center box-content rounded-lg"></Image>
         </ImageCard>
-        <WrapperContent>
-          <TittleSkill>{name}</TittleSkill>
-          <TittleLevel>{language === 'english' ? 'Level: ' : 'Nivel: '}{level}</TittleLevel>
-          <Paragraph>{description}</Paragraph>
-        </WrapperContent>
-      </WrapperContentCard>
-      {certificates &&
-        <WrapperButton>
-          <Button style={{ padding: '0px', marginTop: '5px', fontFamily: theme.palette.fontFamily, color: theme.palette.colorSubTittle }} onClick={handleClick}>{language === 'english' ? 'Certificates' : 'Certificados'} {!open ? <KeyboardArrowDownIcon style={{ color: theme.palette.colorSubTittle }} /> : <KeyboardArrowUpIcon style={{ color: theme.palette.colorSubTittle }} />}</Button>
-        </WrapperButton>}
-      {certificates &&
-        <Collapse in={open} style={{ width: '100%' }}>
-          <List component="div" disablePadding style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', textAlign: 'center', marginTop: '.5rem' }} >
-            {certificates.map((certificate, index) => <Projectink key={index} target='_blank' href={certificate.url}>
-              {certificate.tittle}
-            </Projectink>)}
+        <div className="flex flex-col w-full h-full ml-4">
+          <TittleSkill className="m-0 text-2xl font-normal">{name}</TittleSkill>
+          <TittleLevel className="mt-1 mb-0 text-sm font-normal">
+            {language === "english" ? "Level: " : "Nivel: "}
+            {level}
+          </TittleLevel>
+          <Paragraph className="mt-1 text-base font-normal">
+            {description}
+          </Paragraph>
+        </div>
+      </div>
+      {certificates && (
+        <div className="flex m-0 p-0 w-full">
+          <Button
+            style={{
+              padding: "0px",
+              marginTop: "5px",
+              fontFamily: theme.palette.fontFamily,
+              color: theme.palette.colorSubTittle,
+            }}
+            onClick={handleClick}
+          >
+            {language === "english" ? "Certificates" : "Certificados"}{" "}
+            {!open ? (
+              <KeyboardArrowDownIcon
+                style={{ color: theme.palette.colorSubTittle }}
+              />
+            ) : (
+              <KeyboardArrowUpIcon
+                style={{ color: theme.palette.colorSubTittle }}
+              />
+            )}
+          </Button>
+        </div>
+      )}
+      {certificates && (
+        <Collapse in={open} style={{ width: "100%" }}>
+          <List
+            component="div"
+            disablePadding
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.5rem",
+              textAlign: "center",
+              marginTop: ".5rem",
+            }}
+          >
+            {certificates.map((certificate, index) => (
+              <Projectink
+                className="flex items-center justify-center no-underline rounded-sm duration-200"
+                style={{ padding: "6px" }}
+                key={index}
+                target="_blank"
+                href={certificate.url}
+              >
+                {certificate.tittle}
+              </Projectink>
+            ))}
           </List>
-        </Collapse>}
+        </Collapse>
+      )}
     </WrapperCard>
   );
-}
+};
 
 export default CardSkills;
