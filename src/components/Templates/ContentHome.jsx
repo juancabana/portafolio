@@ -9,7 +9,6 @@ const ContentHomeContainer = styled("div")(({ theme }) => ({
 
 const TextFirstLine = styled("h2")(({ theme }) => ({
   color: theme.palette.colorSubTittle,
-  fontFamily: theme.palette.fontFamily,
   [theme.breakpoints.down("sm")]: {
     marginTop: "2rem",
     fontSize: "20px",
@@ -17,18 +16,15 @@ const TextFirstLine = styled("h2")(({ theme }) => ({
 }));
 const TextSecondLine = styled("h1")(({ theme }) => ({
   color: theme.palette.colorTittle,
-  fontFamily: theme.palette.fontFamily,
 }));
 const TextTrhirdLine = styled("h3")(({ theme }) => ({
   color: theme.palette.colorDescription,
-  fontFamily: theme.palette.fontFamily,
   [theme.breakpoints.down("sm")]: {
     fontSize: "17px",
   },
 }));
 
 const EmailLink = styled("a")(({ theme }) => ({
-  fontFamily: theme.palette.fontFamily,
   border: `1px solid ${theme.palette.colorContrast}`,
   color: theme.palette.colorContrast,
   ":hover": {
@@ -54,24 +50,24 @@ const ContentHome = () => {
 
   return (
     <ContentHomeContainer className="flex flex-col justify-center items-center px-4 grow box-border relative">
-      <TextFirstLine className="m-0 font-medium text-2xl text-center">
+      <TextFirstLine className="m-0 font-medium text-2xl text-center font-family">
         {homeData.firstLine}
       </TextFirstLine>
-      <TextSecondLine className="m-0 text-center font-bold mt-4 text-3xl sm:text-5xl">
+      <TextSecondLine className="m-0 text-center font-family font-bold mt-4 text-3xl sm:text-5xl">
         {homeData.secondLine}
       </TextSecondLine>
-      <TextTrhirdLine className="m-0 text-center font-light text-xl mt-4">
+      <TextTrhirdLine className="m-0 text-center font-family font-light text-xl mt-4">
         {homeData.thirdLine}
       </TextTrhirdLine>
       <ContentPerfil
         className="relative mt-12 mb-12 w-60 h-60 rounded-full bg-contain bg-center bg-purple-900 hover:w-64 hover:h-64 hover:duration-75 duration-100"
         to="/about"
       ></ContentPerfil>
-      <TextTrhirdLine className="m-0 text-center font-light text-xl mt-4">
+      <TextTrhirdLine className="m-0 text-center font-family font-light text-xl mt-4">
         {homeData.fourthLine}
       </TextTrhirdLine>
       <EmailLink
-        className="flex items-center justify-center no-underline text-center rounded-md h-16 w-36 mt-8 duration-200 "
+        className="flex items-center font-family justify-center no-underline text-center rounded-md h-16 w-36 mt-8 duration-200 "
         href={homeData.linkCV}
         download={true}
         title="CV"

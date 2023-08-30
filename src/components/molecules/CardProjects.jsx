@@ -17,7 +17,7 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
     <div
       className="font-medium rounded"
       style={{
-        height: "300px",
+        height: "auto",
         width: "330px",
         border: `1px solid ${theme.palette.colorTittle}`,
       }}
@@ -26,9 +26,8 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
       rel="noopener noreferrer"
     >
       <div
-        className="flex w-full justify-start text-xs p-3 gap-3"
+        className="flex w-full justify-start text-xs p-3 gap-3 font-family"
         style={{
-          fontFamily: theme.palette.fontFamily,
           color: theme.palette.colorDescription,
         }}
       >
@@ -52,9 +51,8 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
             </svg>
           </div>
           <h3
-            className="w-full text-lg font-bold m-0"
+            className="w-full text-lg font-bold m-0 font-family"
             style={{
-              fontFamily: theme.palette.fontFamily,
               color: theme.palette.colorItemHeader,
             }}
           >
@@ -62,9 +60,8 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
           </h3>
         </div>
         <p
-          className="text-sm font-normal leading-5 mt-3"
+          className="text-sm font-normal leading-5 mt-3 font-family"
           style={{
-            fontFamily: theme.palette.fontFamily,
             color: theme.palette.colorContent,
           }}
         >
@@ -73,10 +70,9 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
         <div className="flex gap-4 mt-4">
           {links.map((link, index) => (
             <Projectink
-              className="flex items-center justify-center no-underline rounded p-1 px-3 duration-200"
+              className="flex items-center font-family font-normal justify-center no-underline rounded p-1 px-3 duration-200"
               style={{
-                fontFamily: theme.palette.fontFamily,
-                border: `1px solid ${theme.palette.colorContrast}`,
+                border: `.5px solid ${theme.palette.colorContrast}`,
                 color: theme.palette.colorContrast,
                 ":hover": {
                   backgroundColor: theme.palette.colorHoverContrast,

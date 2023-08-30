@@ -12,7 +12,6 @@ const FooterWrapper = styled("div")(({ theme }) => ({
 }));
 
 const ContentFooter = styled("h5")(({ theme }) => ({
-  fontFamily: theme.palette.fontFamily,
   fontWeight: "400",
   color: theme.palette.colorTittle,
   margin: "0px",
@@ -24,7 +23,7 @@ const Footer = () => {
 
   return (
     <FooterWrapper>
-      <ContentFooter className=" text-center text-sm">
+      <ContentFooter className="font-family text-center text-sm">
         {language === "english"
           ? "Copyright © 2023 Juan Cabana | All rights reserved."
           : "Copyright © 2023 Juan Cabana | Todos los derechos reservados."}

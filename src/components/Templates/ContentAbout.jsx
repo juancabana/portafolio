@@ -5,12 +5,10 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 import CardExperience from "../molecules/CardExperience";
 
 const TittleAbout = styled("h1")(({ theme }) => ({
-  fontFamily: theme.palette.fontFamily,
   color: theme.palette.colorTittle,
 }));
 const TextAbout = styled("p")(({ theme }) => ({
   color: theme.palette.colorContent,
-  fontFamily: theme.palette.fontFamily,
 }));
 const TittleAboutContainer = styled("div")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
@@ -18,7 +16,6 @@ const TittleAboutContainer = styled("div")(({ theme }) => ({
   },
 }));
 const LinkContact = styled(Link)(({ theme }) => ({
-  fontFamily: theme.palette.fontFamily,
   border: `1px solid ${theme.palette.colorContrast}`,
   color: theme.palette.colorContrast,
   ":hover": {
@@ -26,7 +23,6 @@ const LinkContact = styled(Link)(({ theme }) => ({
   },
 }));
 const Strong = styled("strong")(({ theme }) => ({
-  fontFamily: theme.palette.fontFamily,
   color: theme.palette.colorContrast,
 }));
 
@@ -37,17 +33,17 @@ const ContentAbout = () => {
     <div className="flex justify-center">
       <div className="w-full p-4" style={{ maxWidth: "800px" }}>
         <TittleAboutContainer className="flex mt-14 content-center">
-          <TittleAbout className="w-full sm:text-4xl text-3xl mb-4 font-medium">
+          <TittleAbout className="w-full sm:text-4xl font-family text-3xl mb-4 font-medium">
             {language === "english" ? "About me" : "Sobre mi"}
           </TittleAbout>
         </TittleAboutContainer>
         <div className="w-full">
           <div className="flex flex-col items-center">
-            <TextAbout className="mt-2 leading-snug">
+            <TextAbout className="mt-2 leading-snug font-family">
               {aboutData.about}
             </TextAbout>{" "}
             <br />
-            <Strong className="text-2xl font-normal">
+            <Strong className="text-2xl font-normal font-family">
               {language === "english" ? "Experience" : "Experiencia"}
             </Strong>{" "}
             <br />
@@ -57,14 +53,14 @@ const ContentAbout = () => {
               ))}
             </div>
             <br />
-            <Strong className="text-2xl font-normal">
+            <Strong className="text-2xl font-normal font-family">
               {language === "english" ? "Education" : "Educación"}
             </Strong>{" "}
             <br />
-            <TextAbout>{aboutData.education}</TextAbout>
+            <TextAbout className="font-family">{aboutData.education}</TextAbout>
             <br />
             <LinkContact
-              className="p-0 flex items-center justify-center no-underline rounded-md h-16 w-36 mb-8 duration-200 "
+              className="p-0 flex font-family items-center justify-center no-underline rounded-md h-16 w-36 mb-8 duration-200 "
               to="/contact"
             >
               {language === "english" ? "CONTACT" : "CONTÁCTAME"}

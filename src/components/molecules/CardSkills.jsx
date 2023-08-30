@@ -17,20 +17,15 @@ const ImageCard = styled("div")(({ theme }) => ({
 
 const TittleSkill = styled("h2")(({ theme }) => ({
   color: theme.palette.colorItemHeader,
-  fontFamily: theme.palette.fontFamily,
 }));
 const TittleLevel = styled("h4")(({ theme }) => ({
   color: theme.palette.colorContrast,
-  fontFamily: theme.palette.fontFamily,
 }));
 const Paragraph = styled("p")(({ theme }) => ({
   color: theme.palette.colorContent,
-  fontFamily: theme.palette.fontFamily,
 }));
 
 const Projectink = styled("a")(({ theme }) => ({
-  fontFamily:
-    " ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
   border: `1px solid ${theme.palette.colorContrast}`,
   color: theme.palette.colorContrast,
   ":hover": {
@@ -58,12 +53,14 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
           <Image className="w-full h-full bg-cover bg-center box-content rounded-lg"></Image>
         </ImageCard>
         <div className="flex flex-col w-full h-full ml-4">
-          <TittleSkill className="m-0 text-2xl font-normal">{name}</TittleSkill>
-          <TittleLevel className="mt-1 mb-0 text-sm font-normal">
+          <TittleSkill className="m-0 text-2xl font-family font-normal">
+            {name}
+          </TittleSkill>
+          <TittleLevel className="mt-1 mb-0 text-sm font-normal font-family">
             {language === "english" ? "Level: " : "Nivel: "}
             {level}
           </TittleLevel>
-          <Paragraph className="mt-1 text-base font-normal">
+          <Paragraph className="mt-1 text-base font-normal font-family">
             {description}
           </Paragraph>
         </div>
@@ -71,10 +68,10 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
       {certificates && (
         <div className="flex m-0 p-0 w-full">
           <Button
+            className="font-family"
             style={{
               padding: "0px",
               marginTop: "5px",
-              fontFamily: theme.palette.fontFamily,
               color: theme.palette.colorSubTittle,
             }}
             onClick={handleClick}
@@ -107,7 +104,7 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
           >
             {certificates.map((certificate, index) => (
               <Projectink
-                className="flex items-center justify-center no-underline rounded-sm duration-200"
+                className="flex items-center font-family justify-center no-underline rounded-sm duration-200"
                 style={{ padding: "6px" }}
                 key={index}
                 target="_blank"

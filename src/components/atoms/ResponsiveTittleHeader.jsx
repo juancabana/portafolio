@@ -1,32 +1,31 @@
-import React from 'react';
-import Typography from '@mui/material/Typography';
-// Theme 
-import { useTheme } from '@emotion/react';
+import React from "react";
+import Typography from "@mui/material/Typography";
+// Theme
+import { useTheme } from "@emotion/react";
 
 const ResponsiveTittleHeader = () => {
-
   const theme = useTheme();
 
   return (
     <Typography
+      className="font-family-main"
       variant="h5"
       noWrap
       component="a"
       href=""
       sx={{
         mr: 2,
-        display: { xs: 'flex', md: 'none' },
+        display: { xs: "flex", md: "none" },
         flexGrow: 1,
-        fontFamily: theme.palette.fontFamily,
         fontWeight: 700,
-        letterSpacing: '.3rem',
+        letterSpacing: ".3rem",
         color: theme.palette.colorItemHeader,
-        textDecoration: 'none',
+        textDecoration: "none",
       }}
     >
       CABANA
     </Typography>
   );
-}
+};
 
 export default ResponsiveTittleHeader;

@@ -13,7 +13,6 @@ const WrapperContact = styled("div")(({ theme }) => ({
 }));
 
 const PContact = styled("p")(({ theme }) => ({
-  fontFamily: theme.palette.fontFamily,
   color: theme.palette.colorContent,
   textAlign: "center",
   marginBottom: "50px",
@@ -33,32 +32,29 @@ const ContentContact = () => {
     <div className="flex w-full grow text-center items-center justify-center ">
       <WrapperContact className="flex flex-col justify-center items-center h-full">
         <h3
-          className="text-base font-normal"
+          className="text-base font-normal font-family"
           style={{
-            fontFamily: theme.palette.fontFamily,
             color: theme.palette.colorContrast,
           }}
         >
           {language === "english" ? "Contact me" : "Contáctame"}
         </h3>
         <h1
-          className="text-5xl mt-11 mb-6 font-semibold"
+          className="text-5xl mt-11 mb-6 font-semibold font-family"
           style={{
-            fontFamily: theme.palette.fontFamily,
             color: theme.palette.colorTittle,
           }}
         >
           {language === "english" ? "Get in touch" : "Contactar"}
         </h1>
-        <PContact>
+        <PContact className="font-family">
           {language === "english"
             ? "Here you can contact me, I am open to new opportunities in front-end, but always willing to learn."
             : "Aquí te puedes contactar comigo, estoy abierto a nuevas oportunidades en front-end, pero siempre dispuesto a aprender."}
         </PContact>
         <EmailLink
-          className="p-0 flex items-center justify-center no-underline rounded-md h-16 w-36 mb-8 duration-200 "
+          className="p-0 flex items-center font-family justify-center no-underline rounded-md h-16 w-36 mb-8 duration-200 "
           style={{
-            fontFamily: theme.palette.fontFamily,
             border: `1px solid ${theme.palette.colorContrast}`,
             color: theme.palette.colorContrast,
           }}

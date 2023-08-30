@@ -15,7 +15,6 @@ const WrapperContent = styled("div")(({ theme }) => ({
   },
 }));
 const TittleProjects = styled("h1")(({ theme }) => ({
-  fontFamily: theme.palette.fontFamily,
   color: theme.palette.colorTittle,
 }));
 
@@ -28,7 +27,7 @@ const ContentProyects = () => {
   return (
     <div className="flex w-full h-full flex-col items-center box-border">
       <WrapperContent className="flex flex-col w-full h-full max-w-6xl box-border mb-10">
-        <TittleProjects className="flex w-full justify-center text-4xl items-center mt-12  text-center font-medium">
+        <TittleProjects className="flex w-full font-family justify-center text-4xl items-center mt-12  text-center font-medium">
           {language === "english"
             ? "Personal Projects"
             : "Proyectos Personales"}
