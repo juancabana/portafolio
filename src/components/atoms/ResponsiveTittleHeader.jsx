@@ -9,6 +9,7 @@ const ResponsiveTittleHeader = () => {
   return (
     <Typography
       className="font-family-main"
+      translate="no"
       variant="h5"
       noWrap
       component="a"

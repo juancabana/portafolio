@@ -10,6 +10,7 @@ const TittleHeader = () => {
     <Typography
       className="font-family-main"
       variant="h6"
+      translate="no"
       noWrap
       component="a"
       href="/"
