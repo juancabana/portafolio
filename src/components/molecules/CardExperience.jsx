@@ -18,13 +18,17 @@ const Tecnology = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.colorHoverContrast,
   color: theme.palette.colorContrast,
 }));
-
 const CardExperience = (props) => {
+  console.log(props.index);
   const { time, position, company, description, tecnologies } =
     props.experience;
 
   return (
-    <CardExperienceWrapper className="flex font-family h-auto gap-x-4 w-full p-8 box-border rounded-md leading-6">
+    <CardExperienceWrapper
+      className={`${
+        props.position % 2 ? "animate-fade-right" : "animate-fade-left"
+      } flex font-family h-auto gap-x-4 w-full p-8 box-border rounded-md leading-6`}
+    >
       <div className="w-44">
         <h5 className="m-0 w-full text-xs font-semibold mb-2">{time}</h5>
       </div>

@@ -29,7 +29,7 @@ const ContentContact = () => {
   const language = useSelector((state) => state.language.language);
 
   return (
-    <div className="flex w-full grow text-center items-center justify-center ">
+    <div className="flex w-full grow text-center items-center justify-center animate-fade animate-duration-1000">
       <WrapperContact className="flex flex-col justify-center items-center h-full">
         <h3
           className="text-base font-normal font-family"

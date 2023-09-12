@@ -34,7 +34,14 @@ const Projectink = styled("a")(({ theme }) => ({
   },
 }));
 
-const CardSkills = ({ name, url, level, certificates, description }) => {
+const CardSkills = ({
+  name,
+  url,
+  level,
+  certificates,
+  description,
+  position,
+}) => {
   const Image = styled("div")(({ theme }) => ({
     backgroundImage: `url(${url})`,
   }));
@@ -47,7 +54,11 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     setOpen(!open);
   };
   return (
-    <WrapperCard className="flex box-border p-4 items-center flex-col w-full rounded-lg ">
+    <WrapperCard
+      className={`${
+        position % 2 === 0 ? "animate-fade-left" : "animate-fade-right"
+      } flex box-border p-4 items-center flex-col w-full rounded-lg`}
+    >
       <div className="flex w-full">
         <ImageCard className="h-24 w-24 max-h-20 rounded-lg p-1">
           <Image className="w-full h-full bg-cover bg-center box-content rounded-md"></Image>

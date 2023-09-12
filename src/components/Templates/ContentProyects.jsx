@@ -25,7 +25,7 @@ const ContentProyects = () => {
   const language = useSelector((state) => state.language.language);
 
   return (
-    <div className="flex w-full h-full flex-col items-center box-border">
+    <div className="flex w-full h-full flex-col items-center box-border animate-fade-down animate-duration-1000">
       <WrapperContent className="flex flex-col w-full h-full max-w-6xl box-border mb-10">
         <TittleProjects className="flex w-full font-family justify-center text-4xl items-center mt-12  text-center font-medium">
           {language === "english"

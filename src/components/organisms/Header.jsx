@@ -61,10 +61,10 @@ function Header() {
           <ResponsiveTittleHeader />
           {/* Menú */}
           <MenuHeader pages={pages} />
-          {/* Set Theme  */}
-          <SwitchTheme />
           {/* Set Language  */}
           <Languages />
+          {/* Set Theme  */}
+          <SwitchTheme />
         </Toolbar>
       </Container>
     </AppBar>

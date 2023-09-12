@@ -15,7 +15,7 @@ const CardProjects = ({ links, title, description, tecnologies }) => {
 
   return (
     <div
-      className="font-medium rounded"
+      className="font-medium rounded animate-fade animate-duration-1000"
       style={{
         height: "auto",
         width: "330px",

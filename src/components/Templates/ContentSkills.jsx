@@ -30,6 +30,7 @@ const ContentSkills = () => {
           {skillsData.map((skill, index) => (
             <CardSkills
               key={index}
+              position={index}
               name={skill.name}
               url={skill.url}
               level={skill.level}

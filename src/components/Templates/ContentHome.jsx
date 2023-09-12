@@ -49,25 +49,25 @@ const ContentHome = () => {
   const language = useSelector((state) => state.language.language);
 
   return (
-    <ContentHomeContainer className="flex flex-col justify-center items-center px-4 grow box-border relative">
-      <TextFirstLine className="m-0 font-medium text-2xl text-center font-family">
+    <ContentHomeContainer className="flex flex-col justify-center items-center px-4 grow box-border relative ">
+      <TextFirstLine className="m-0 font-medium text-2xl text-center font-family previewItem animate-fade-down">
         {homeData.firstLine}
       </TextFirstLine>
-      <TextSecondLine className="m-0 text-center font-family font-bold mt-4 text-3xl sm:text-5xl">
+      <TextSecondLine className="m-0 text-center font-family font-bold mt-4 text-3xl sm:text-5xl animate-fade-down">
         {homeData.secondLine}
       </TextSecondLine>
-      <TextTrhirdLine className="m-0 text-center font-family font-light text-xl mt-4">
+      <TextTrhirdLine className="m-0 text-center font-family font-light text-xl mt-4 animate-fade-down">
         {homeData.thirdLine}
       </TextTrhirdLine>
       <ContentPerfil
-        className="relative mt-12 mb-12 w-60 h-60 rounded-full bg-contain bg-center bg-purple-900 hover:w-64 hover:h-64 hover:duration-75 duration-100"
+        className="animate-fade relative mt-12 mb-12 w-60 h-60 rounded-full bg-contain bg-center bg-purple-900 hover:w-64 hover:h-64 hover:duration-75 duration-200"
         to="/about"
       ></ContentPerfil>
-      <TextTrhirdLine className="m-0 text-center font-family font-light text-xl mt-4">
+      <TextTrhirdLine className="m-0 text-center font-family font-light text-xl mt-4 animate-fade-up">
         {homeData.fourthLine}
       </TextTrhirdLine>
       <EmailLink
-        className="flex items-center font-family justify-center no-underline text-center rounded-md h-16 w-36 mt-8 duration-200 "
+        className="flex items-center font-family justify-center no-underline text-center rounded-md h-16 w-36 mt-8 duration-200 animate-fade-up"
         href={homeData.linkCV}
         download={true}
         title="CV"

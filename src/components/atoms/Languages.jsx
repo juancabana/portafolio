@@ -17,7 +17,7 @@ import { useTheme } from "@emotion/react";
 const Languages = () => {
   const theme = useTheme();
   const [anchorElUser, setAnchorElUser] = useState(null);
-  const languages = [, "english", "spanish"];
+  const languages = ["english", "spanish"];
 
   // Dispatcher
   const dispatch = useDispatch();
@@ -35,7 +35,7 @@ const Languages = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 0 }}>
+    <Box sx={{ flexGrow: 0, marginRight: "2rem" }}>
       <Tooltip
         title={language === "english" ? "Change language" : "Cambiar idioma"}
       >

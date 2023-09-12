@@ -32,35 +32,41 @@ const ContentAbout = () => {
   return (
     <div className="flex justify-center">
       <div className="w-full p-4" style={{ maxWidth: "800px" }}>
-        <TittleAboutContainer className="flex mt-14 content-center">
+        <TittleAboutContainer className="flex mt-14 content-center animate-fade">
           <TittleAbout className="w-full sm:text-4xl font-family text-3xl mb-4 font-medium">
             {language === "english" ? "About me" : "Sobre mi"}
           </TittleAbout>
         </TittleAboutContainer>
         <div className="w-full">
           <div className="flex flex-col items-center">
-            <TextAbout className="mt-2 leading-snug font-family">
+            <TextAbout className="mt-2 leading-snug font-family animate-fade">
               {aboutData.about}
             </TextAbout>{" "}
             <br />
-            <Strong className="text-2xl font-normal font-family">
+            <Strong className="text-2xl font-normal font-family animate-fade">
               {language === "english" ? "Experience" : "Experiencia"}
             </Strong>{" "}
             <br />
             <div className="flex flex-col gap-6 mt-4 box-content">
               {aboutData.experience.map((experience, index) => (
-                <CardExperience key={index} experience={experience} />
+                <CardExperience
+                  key={index}
+                  position={index}
+                  experience={experience}
+                />
               ))}
             </div>
             <br />
-            <Strong className="text-2xl font-normal font-family">
+            <Strong className="text-2xl font-normal font-family animate-fade-up">
               {language === "english" ? "Education" : "Educación"}
             </Strong>{" "}
             <br />
-            <TextAbout className="font-family">{aboutData.education}</TextAbout>
+            <TextAbout className="font-family animate-fade-up">
+              {aboutData.education}
+            </TextAbout>
             <br />
             <LinkContact
-              className="p-0 flex font-family items-center justify-center no-underline rounded-md h-16 w-36 mb-8 duration-200 "
+              className="p-0 flex font-family items-center justify-center no-underline rounded-md h-16 w-36 mb-8 duration-200 animate-fade-up"
               to="/contact"
             >
               {language === "english" ? "CONTACT" : "CONTÁCTAME"}
