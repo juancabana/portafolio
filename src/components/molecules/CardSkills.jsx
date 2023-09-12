@@ -50,7 +50,7 @@ const CardSkills = ({ name, url, level, certificates, description }) => {
     <WrapperCard className="flex box-border p-4 items-center flex-col w-full rounded-lg ">
       <div className="flex w-full">
         <ImageCard className="h-24 w-24 max-h-20 rounded-lg p-1">
-          <Image className="w-full h-full bg-cover bg-center box-content rounded-lg"></Image>
+          <Image className="w-full h-full bg-cover bg-center box-content rounded-md"></Image>
         </ImageCard>
         <div className="flex flex-col w-full h-full ml-4">
           <TittleSkill className="m-0 text-2xl font-family font-normal">

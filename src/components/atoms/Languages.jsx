@@ -17,7 +17,7 @@ import { useTheme } from "@emotion/react";
 const Languages = () => {
   const theme = useTheme();
   const [anchorElUser, setAnchorElUser] = useState(null);
-  const languages = ["spanish", "english"];
+  const languages = [, "english", "spanish"];
 
   // Dispatcher
   const dispatch = useDispatch();

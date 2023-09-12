@@ -47,7 +47,7 @@ const ContentAbout = () => {
               {language === "english" ? "Experience" : "Experiencia"}
             </Strong>{" "}
             <br />
-            <div className="flex flex-col-reverse gap-6 mt-4 box-content">
+            <div className="flex flex-col gap-6 mt-4 box-content">
               {aboutData.experience.map((experience, index) => (
                 <CardExperience key={index} experience={experience} />
               ))}

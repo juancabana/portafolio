@@ -19,7 +19,7 @@
           "tecnologies": ["React", "JavaScript", "HTML", "CSS", "Bootstrap"]
         },
         {
-          "time": "MAY 2023 - PRESENT",
+          "time": "MAR - JUN 2022",
           "position": "Frontend Developer",
           "company": "EDSoft",
           "description": "Frontend developer, in an educational application project, where we carry out the integration of React and Material UI to create an immersive and friendly user experience. A new version of this application is being made, to make it more efficient and have a better user experience.",
@@ -33,7 +33,7 @@
     "skills": [
       {
         "name": "JavaScript",
-        "url": "https://i.ibb.co/2g0tqTs/js.png",
+        "url": "/assets/img/javascript.svg",
         "description": "Extensive knowledge in JavaScript, both on the frontend and backend, with the ability to develop complete and dynamic web applications.",
         "level": "Intermediate",
         "certificates": [
@@ -72,8 +72,40 @@
         ]
       },
       {
+        "name": "Typescript",
+        "url": "/assets/img/typescript.svg",
+        "description": "Basic knowledge in TypeScript, experience in web development with Node.js, and use of static typing in the code.",
+        "level": "Basic",
+        "certificates": [
+          {
+            "tittle": "Fundamentals of TypeScript Course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2878-typescript/diploma/detalle/"
+          },
+          {
+            "tittle": "Course on TypeScript: Advanced Types and Functions",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2879-typescript-tipos-avanzados/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "url": "/assets/img/mongodb.svg",
+        "description": "Knowledge in MongoDB with skills in database design, efficient queries, and development of scalable applications, using MongoDB as a storage solution.",
+        "level": "Intermediate",
+        "certificates": [
+          {
+            "tittle": "Introductory Course on MongoDB",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/4987-mongodb/diploma/detalle/"
+          },
+          {
+            "tittle": "Data Modeling Course in MongoDB",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/5356-mongodb-modelado/diploma/detalle/"
+          }
+        ]
+      },
+      {
         "name": "React",
-        "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
+        "url": "/assets/img/react.svg",
         "description": "Solid knowledge in React, capable of developing interactive and scalable web applications with a strong ability in managing components and states.",
         "level": "Intermediate",
         "certificates": [
@@ -88,52 +120,24 @@
         ]
       },
       {
-        "name": "Tailwind CSS",
-        "url": "https://i.ibb.co/P4wzqsq/icons8-tailwindcss-96.png",
-        "description": "Solid knowledge of Tailwind CSS, with adeptness in creating modern interfaces. Able to develop elegant and functional designs using its powerful features",
+        "name": "Nest.js",
+        "url": "/assets/img/nestjs.svg",
+        "description": "Strong knowledge of NestJS, including creating controllers, services and modules, as well as handling HTTP applications and configuring routes. Familiarity with the NestJS architecture and its focus on modularity and scalability.",
         "level": "Intermediate",
         "certificates": [
           {
-            "tittle": "Tailwind CSS: The definitive course",
-            "url": "https://www.udemy.com/certificate/UC-33e96cbb-ec94-4851-ab6c-b6f1d63dadb3/"
-          }
-        ]
-      },
-      {
-        "name": "Git & Github",
-        "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
-        "description": "Git and Github expert, with advanced skills in version control, project management, and effective collaboration in teams through Github.",
-        "level": "Advanced",
-        "certificates": [
-          {
-            "tittle": "Professional Course on Git and GitHub",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1557-git-github/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "NodeJS",
-        "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
-        "description": "Skilled in JavaScript, with extensive knowledge in frontend and backend development using Node.js to create complete and dynamic web applications.",
-        "level": "Intermediate",
-        "certificates": [
-          {
-            "tittle": "NodeJS Fundamentals",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
+            "tittle": "Nest: scalable development with nodejs",
+            "url": "https://www.udemy.com/certificate/UC-4edcaf16-61b1-4838-87f9-fa807c52936d/"
           },
           {
-            "tittle": "NPM Course: Package and Dependency Management in JavaScript",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
-          },
-          {
-            "tittle": "Frontend Development Course",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+            "tittle": "Backend Course with NestJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2272-nestjs/diploma/detalle/"
           }
         ]
       },
       {
         "name": "Express.js",
-        "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
+        "url": "/assets/img/express.png",
         "description": "Basic knowledge in Express.js, capable of developing backend web applications using this Node.js framework to create routes, handle HTTP requests, and build APIs with authentication.",
         "level": "Basic",
         "certificates": [
@@ -153,7 +157,7 @@
       },
       {
         "name": "Docker",
-        "url": "https://i.ibb.co/VNt10b6/file-type-docker-icon-130643.png",
+        "url": "/assets/img/docker.svg",
         "description": "Familiarity with Docker, able to build and run applications in containerized environments. Experience in basic configuration and deployment of applications using Docker to facilitate portability and management.",
         "level": "Basic",
         "certificates": [
@@ -164,14 +168,60 @@
         ]
       },
       {
+        "name": "Tailwind CSS",
+        "url": "/assets/img/tailwindcss.png",
+        "description": "Solid knowledge of Tailwind CSS, with adeptness in creating modern interfaces. Able to develop elegant and functional designs using its powerful features",
+        "level": "Intermediate",
+        "certificates": [
+          {
+            "tittle": "Tailwind CSS: The definitive course",
+            "url": "https://www.udemy.com/certificate/UC-33e96cbb-ec94-4851-ab6c-b6f1d63dadb3/"
+          }
+        ]
+      },
+      {
+        "name": "Git & Github",
+        "url": "/assets/img/git.svg",
+        "description": "Git and Github expert, with advanced skills in version control, project management, and effective collaboration in teams through Github.",
+        "level": "Advanced",
+        "certificates": [
+          {
+            "tittle": "Professional Course on Git and GitHub",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1557-git-github/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "NodeJS",
+        "url": "/assets/img/nodejs.png",
+        "description": "Skilled in JavaScript, with extensive knowledge in frontend and backend development using Node.js to create complete and dynamic web applications.",
+        "level": "Intermediate",
+        "certificates": [
+          {
+            "tittle": "NodeJS Fundamentals",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
+          },
+          {
+            "tittle": "NPM Course: Package and Dependency Management in JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
+          },
+          {
+            "tittle": "Frontend Development Course",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+
+
+      {
         "name": "Material UI",
-        "url": "https://i.ibb.co/MGJxbSv/logo.png",
+        "url": "/assets/img/materialui.png",
         "description": "Basic knowledge in Material UI, capable of designing web interfaces with pre-established components and pre-designed styles, optimizing frontend development.",
         "level": "Basic"
       },
       {
         "name": "HTML",
-        "url": "https://i.ibb.co/DRzJrLH/html.png",
+        "url": "/assets/img/html.png",
         "description": "Advanced skills in HTML, capable of creating well-structured and accessible web pages, using HTML5 to deliver robust user experiences.",
         "level": "Advanced",
         "certificates": [
@@ -187,7 +237,7 @@
       },
       {
         "name": "CSS",
-        "url": "https://i.ibb.co/B3gR7LN/css.png",
+        "url": "/assets/img/css.png",
         "description": "Advanced skills in CSS, capable of creating highly stylized and responsive web interfaces using flexbox, grid, animations, and custom styles.",
         "level": "Advanced",
         "certificates": [
@@ -200,44 +250,8 @@
             "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
-      },
-
-      {
-        "name": "Typescript",
-        "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
-        "description": "Basic knowledge in TypeScript, experience in web development with Node.js, and use of static typing in the code.",
-        "level": "Basic",
-        "certificates": [
-          {
-            "tittle": "Fundamentals of TypeScript Course",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2878-typescript/diploma/detalle/"
-          },
-          {
-            "tittle": "Course on TypeScript: Advanced Types and Functions",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2879-typescript-tipos-avanzados/diploma/detalle/"
-          },
-          {
-            "tittle": "Backend Course with NestJS",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2272-nestjs/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "MongoDB",
-        "url": "https://i.ibb.co/qY1V4Wf/file-type-mongo-icon-130383.png",
-        "description": "Knowledge in MongoDB with skills in database design, efficient queries, and development of scalable applications, using MongoDB as a storage solution.",
-        "level": "Intermediate",
-        "certificates": [
-          {
-            "tittle": "Introductory Course on MongoDB",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/4987-mongodb/diploma/detalle/"
-          },
-          {
-            "tittle": "Data Modeling Course in MongoDB",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/5356-mongodb-modelado/diploma/detalle/"
-          }
-        ]
       }
+
     ],
     "projects": [
       {
@@ -282,6 +296,21 @@
           {
             "page": "Github",
             "url": "https://github.com/juancabana/portafolio"
+          }
+        ]
+      },
+      {
+        "title": "COSCO Server",
+        "description": "Backend of a social network that allows farmers to register and log in to publish their harvests, and thus reduce their losses.",
+        "tecnologies": ["Typescript", "Nest.js", "mongoose"],
+        "links": [
+          {
+            "page": "Live",
+            "url": "https://panicky-necklace-pike.cyclic.app/api-docs"
+          },
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/Backend-proy-int-3"
           }
         ]
       },
@@ -336,18 +365,8 @@
             "url": "https://github.com/juancabana/vitagest_frontend"
           }
         ]
-      },
-      {
-        "title": "Integrating proyect",
-        "description": "It was my first integrative project, I did it in 3rd semester, it is an application for teaching stacks and queues, made purely in CSS, HTML and JavaScript.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
-        "links": [
-          {
-            "page": "Github",
-            "url": "https://github.com/juancabana/ProyectoIntegrador"
-          }
-        ]
       }
+ 
     ]
   },
   "spanish": {
@@ -370,7 +389,7 @@
           "tecnologies": ["React", "JavaScript", "HTML", "CSS", "Bootstrap"]
         },
         {
-          "time": "MAYO 2023 - PRESENTE",
+          "time": "MAR - JUN 2022",
           "position": "Frontend Developer",
           "company": "EDSoft",
           "description": "Desarrollador frontend, en un proyecto de aplicación educativa, donde llevamos a cabo la integración de React y Material UI para crear una experiencia de usuario inmersiva y amigable. Se está realizando una nueva versión de esta aplicación, para hacerla más eficiente y tener una mejor experiencia de usuario.",
@@ -385,7 +404,7 @@
     "skills": [
       {
         "name": "JavaScript",
-        "url": "https://i.ibb.co/2g0tqTs/js.png",
+        "url": "/assets/img/javascript.svg",
         "description": "Amplios conocimientos en JavaScript, tanto en el frontend como en el backend, con capacidad para desarrollar aplicaciones web completas y dinámicas.",
         "level": "Intermedio",
         "certificates": [
@@ -424,140 +443,8 @@
         ]
       },
       {
-        "name": "React",
-        "url": "https://i.ibb.co/k4Lb3CL/react-original-logo-icon-146374.png",
-        "description": "Sólidos conocimientos en React, capaz de desarrollar aplicaciones web interactivas y escalables con una habilidad destacada en el manejo de componentes y estados.",
-        "level": "Intermedio",
-        "certificates": [
-          {
-            "tittle": "Introducción a React Native",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2556-react-native/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de Desarrollo Frontend",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "Tailwind CSS",
-        "url": "https://i.ibb.co/P4wzqsq/icons8-tailwindcss-96.png",
-        "description": "Sólidos conocimientos en Tailwind CSS, con destreza en la creación de interfaces modernas. Capaz de desarrollar diseños elegantes y funcionales utilizando sus poderosas características",
-        "level": "Intermedio",
-        "certificates": [
-          {
-            "tittle": "Tailwind CSS: El curso definitivo",
-            "url": "https://www.udemy.com/certificate/UC-33e96cbb-ec94-4851-ab6c-b6f1d63dadb3/"
-          }
-        ]
-      },
-      {
-        "name": "Git & Github",
-        "url": "https://i.ibb.co/4WFwDs9/git-original-logo-icon-146509.png",
-        "description": "Experto en Git y Github, con habilidades avanzadas en control de versiones, gestión de proyectos y colaboración efectiva en equipos mediante Github.",
-        "level": "Avanzado",
-        "certificates": [
-          {
-            "tittle": "Curso Profesional de Git y GitHub",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1557-git-github/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "NodeJS",
-        "url": "https://i.ibb.co/gzsxL78/file-type-node-icon-130301.png",
-        "description": "Hábil en JavaScript, con amplios conocimientos en el desarrollo frontend y backend utilizando Node.js para crear aplicaciones web completas y dinámicas.",
-        "level": "Intermedio",
-        "certificates": [
-          {
-            "tittle": "Fundamentos de NodeJS",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de NPM: Gestión de paquetes y dependencias en JavaScript",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de Desarrollo Frontend",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "Express.js",
-        "url": "https://i.ibb.co/VScfxgH/icons8-express-js-100.png",
-        "description": "Conocimientos básicos en Express.js, capaz de desarrollar aplicaciones web backend utilizando este framework de Node.js para crear rutas, manejar peticiones HTTP y construir APIs con autenticación.",
-        "level": "Básico",
-        "certificates": [
-          {
-            "tittle": "Curso de backend con NodeJS: REST API con ExpressJS",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2485-backend-nodejs/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de backend con NodeJS: Bases de datos con PostgreSQL",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2507-backend-nodejs-postgres/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de backend con NodeJS: Autenticación con PassportJS y JWT",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "Docker",
-        "url": "https://i.ibb.co/VNt10b6/file-type-docker-icon-130643.png",
-        "description": "Familiaridad con Docker, capaz de crear y ejecutar aplicaciones en entornos de contenedores. Experiencia en la configuración básica y despliegue de aplicaciones utilizando Docker para facilitar la portabilidad y gestión",
-        "level": "Básico",
-        "certificates": [
-          {
-            "tittle": "Docker: Guia práctica de uso para desarrolladores",
-            "url": "https://www.udemy.com/certificate/UC-e670b7eb-5302-4558-a2fe-c56e80fa5b7d/"
-          }
-        ]
-      },
-      
-      {
-        "name": "Material UI",
-        "url": "https://i.ibb.co/MGJxbSv/logo.png",
-        "description": "Conocimientos básicos en Material UI, capaz de diseñar interfaces web con componentes preestablecidos y estilos prediseñados, optimizando el desarrollo frontend.",
-        "level": "Basico"
-      },
-      {
-        "name": "HTML",
-        "url": "https://i.ibb.co/DRzJrLH/html.png",
-        "description": "Habilidades avanzadas en HTML, capaz de crear páginas web bien estructuradas y accesibles, utilizando HTML5 para ofrecer experiencias de usuario sólidas.",
-        "level": "Avanzado",
-        "certificates": [
-          {
-            "tittle": "Desarrollador Full Stack con JavaScript",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de Desarrollo Frontend",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
-          }
-        ]
-      },
-      {
-        "name": "CSS",
-        "url": "https://i.ibb.co/B3gR7LN/css.png",
-        "description": "Habilidades avanzadas en CSS, capaz de crear interfaces web altamente estilizadas y responsivas mediante el uso de flexbox, grid, animaciones y estilos personalizados.",
-        "level": "Avanzado",
-        "certificates": [
-          {
-            "tittle": "Desarrollador Full Stack con JavaScript",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
-          },
-          {
-            "tittle": "Curso de Desarrollo Frontend",
-            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
-          }
-        ]
-      },
-
-      {
         "name": "Typescript",
-        "url": "https://i.ibb.co/tz0xmXW/typescript-original-logo-icon-146317.png",
+        "url": "/assets/img/typescript.svg",
         "description": "Conocimientos básicos en TypeScript, experiencia en desarrollo web con Node.js, y uso de tipado estático en el código.",
         "level": "Básico",
         "certificates": [
@@ -577,7 +464,7 @@
       },
       {
         "name": "MongoDB",
-        "url": "https://i.ibb.co/qY1V4Wf/file-type-mongo-icon-130383.png",
+        "url": "/assets/img/mongodb.svg",
         "description": "Conocimientos en MongoDB con habilidades en diseño de bases de datos, consultas eficientes y desarrollo de aplicaciones escalables, utilizando MongoDB como solución de almacenamiento.",
         "level": "Intermedio",
         "certificates": [
@@ -588,6 +475,154 @@
           {
             "tittle": "Curso de Modelado de Datos en MongoDB",
             "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/5356-mongodb-modelado/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "React",
+        "url": "/assets/img/react.svg",
+        "description": "Sólidos conocimientos en React, capaz de desarrollar aplicaciones web interactivas y escalables con una habilidad destacada en el manejo de componentes y estados.",
+        "level": "Intermedio",
+        "certificates": [
+          {
+            "tittle": "Introducción a React Native",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2556-react-native/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "Nest.js",
+        "url": "/assets/img/nestjs.svg",
+        "description": "Fuerte conocimiento de NestJS, incluida la creación de controladores, servicios y módulos, así como el manejo de aplicaciones HTTP y la configuración de rutas. Familiaridad con la arquitectura NestJS y su enfoque en la modularidad y escalabilidad.",
+        "level": "Intermedio",
+        "certificates": [
+          {
+            "tittle": "Nest: Desarrollo escalable con NodeJs",
+            "url": "https://www.udemy.com/certificate/UC-4edcaf16-61b1-4838-87f9-fa807c52936d/"
+          },
+          {
+            "tittle": "Backend Curso con NestJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2272-nestjs/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "Express.js",
+        "url": "/assets/img/express.png",
+        "description": "Conocimientos básicos en Express.js, capaz de desarrollar aplicaciones web backend utilizando este framework de Node.js para crear rutas, manejar peticiones HTTP y construir APIs con autenticación.",
+        "level": "Básico",
+        "certificates": [
+          {
+            "tittle": "Curso de backend con NodeJS: REST API con ExpressJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2485-backend-nodejs/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de backend con NodeJS: Bases de datos con PostgreSQL",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2507-backend-nodejs-postgres/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de backend con NodeJS: Autenticación con PassportJS y JWT",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2489-passport/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "Docker",
+        "url": "/assets/img/docker.svg",
+        "description": "Familiaridad con Docker, capaz de crear y ejecutar aplicaciones en entornos de contenedores. Experiencia en la configuración básica y despliegue de aplicaciones utilizando Docker para facilitar la portabilidad y gestión",
+        "level": "Básico",
+        "certificates": [
+          {
+            "tittle": "Docker: Guia práctica de uso para desarrolladores",
+            "url": "https://www.udemy.com/certificate/UC-e670b7eb-5302-4558-a2fe-c56e80fa5b7d/"
+          }
+        ]
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "/assets/img/tailwindcss.png",
+        "description": "Sólidos conocimientos en Tailwind CSS, con destreza en la creación de interfaces modernas. Capaz de desarrollar diseños elegantes y funcionales utilizando sus poderosas características",
+        "level": "Intermedio",
+        "certificates": [
+          {
+            "tittle": "Tailwind CSS: El curso definitivo",
+            "url": "https://www.udemy.com/certificate/UC-33e96cbb-ec94-4851-ab6c-b6f1d63dadb3/"
+          }
+        ]
+      },
+      {
+        "name": "Git & Github",
+        "url": "/assets/img/git.svg",
+        "description": "Experto en Git y Github, con habilidades avanzadas en control de versiones, gestión de proyectos y colaboración efectiva en equipos mediante Github.",
+        "level": "Avanzado",
+        "certificates": [
+          {
+            "tittle": "Curso Profesional de Git y GitHub",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1557-git-github/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "NodeJS",
+        "url": "/assets/img/nodejs.png",
+        "description": "Hábil en JavaScript, con amplios conocimientos en el desarrollo frontend y backend utilizando Node.js para crear aplicaciones web completas y dinámicas.",
+        "level": "Intermedio",
+        "certificates": [
+          {
+            "tittle": "Fundamentos de NodeJS",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/1759-fundamentos-node/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de NPM: Gestión de paquetes y dependencias en JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/3578-npm/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+
+
+      {
+        "name": "Material UI",
+        "url": "/assets/img/materialui.png",
+        "description": "Conocimientos básicos en Material UI, capaz de diseñar interfaces web con componentes preestablecidos y estilos prediseñados, optimizando el desarrollo frontend.",
+        "level": "Basico"
+      },
+      {
+        "name": "HTML",
+        "url": "/assets/img/html.png",
+        "description": "Habilidades avanzadas en HTML, capaz de crear páginas web bien estructuradas y accesibles, utilizando HTML5 para ofrecer experiencias de usuario sólidas.",
+        "level": "Avanzado",
+        "certificates": [
+          {
+            "tittle": "Desarrollador Full Stack con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
+          }
+        ]
+      },
+      {
+        "name": "CSS",
+        "url": "/assets/img/css.png",
+        "description": "Habilidades avanzadas en CSS, capaz de crear interfaces web altamente estilizadas y responsivas mediante el uso de flexbox, grid, animaciones y estilos personalizados.",
+        "level": "Avanzado",
+        "certificates": [
+          {
+            "tittle": "Desarrollador Full Stack con JavaScript",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/ruta/100-javascript-full-stack/diploma/detalle/"
+          },
+          {
+            "tittle": "Curso de Desarrollo Frontend",
+            "url": "https://platzi.com/p/juan-david-cabana-trejos/curso/2467-frontend-developer/diploma/detalle/"
           }
         ]
       }
@@ -634,7 +669,21 @@
           }
         ]
       },
-
+      {
+        "title": "COSCO Server",
+        "description": "Backend de una red social que permite a campesinos registrarse y loguearse para publicar sus cosechas, y así reducir sus pérdidas.",
+        "tecnologies": ["Typescript", "Nest.js","mongoose"],
+        "links": [
+          {
+            "page": "En vivo",
+            "url": "https://panicky-necklace-pike.cyclic.app/api-docs"
+          },
+          {
+            "page": "Github",
+            "url": "https://github.com/juancabana/Backend-proy-int-3"
+          }
+        ]
+      },
       {
         "title": "Pokedex Backend",
         "description": "Backend robusto y eficiente para respaldar la Pokedex, proporcionando servicios de API que entregan datos precisos y actualizados sobre los Pokémon, tendremos una alta escalabilidad y podremos agregar módulos o nuevas características de manera fácil gracias a su gestor de paquetes por defecto (NPM).",
@@ -671,7 +720,7 @@
       {
         "title": "Backend Tecno-Crop",
         "description": "Backend sencillo de una red social que comunica a vendedores de residuos con compradores. La idea de esto era que cualquier persona o empresa pueda vender sus residuos a través de esta plataforma, para no generar tantos gases de efecto invernadero.",
-        "tecnologies": ["Typescript", "Nest"],
+        "tecnologies": ["Typescript", "Nest, mongoose"],
         "links": [
           {
             "page": "Github",
@@ -689,18 +738,8 @@
             "url": "https://github.com/juancabana/vitagest_frontend"
           }
         ]
-      },
-      {
-        "title": "Proyecto Integrador",
-        "description": "Fue mi primer proyecto integrador, lo hice en el tercer semestre. Es una aplicación para enseñar pilas y colas, hecha completamente en CSS, HTML y JavaScript.",
-        "tecnologies": ["HTML", "CSS", "JavaScript"],
-        "links": [
-          {
-            "page": "Github",
-            "url": "https://github.com/juancabana/ProyectoIntegrador"
-          }
-        ]
       }
+
     ]
   }
 }
