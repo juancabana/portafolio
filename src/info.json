@@ -6,7 +6,7 @@
       "thirdLine": "Passionate about front-end and backend web development",
       "fourthLine": "Systems engineering student, 8th semester",
       "linkCV": "https://dl.dropboxusercontent.com/scl/fi/bu34751zknshofmxxxcn7/CV-Juan-Cabana.pdf?rlkey=ahqmuiy2bivxubhi7q0qtl76x&dl",
-      "urlImageHome": "https://i.ibb.co/BBMTJDT/foto.jpg"
+      "urlImageHome": "/assets/img/perfil-image.jpg"
     },
     "about": {
       "about": "Front-end and backend web developer, I am a cheerful, kind, responsible, altruistic person, I like teamwork, camaraderie, always willing and eager to learn new technologies and deepen the ones I already know. The main technologies I work with are: Javascript and its versions of ECMAScript (ES6+), Node.js and its NPM package and dependency management system, React.js, Redux, a bit of TypeScript, Tailwind CSS, MaterialUI, solid knowledge in Docker, relational database fundamentals with MySQL, and non-relational (MongoDB), Express.js, a bit of Nest.js, and I've mostly used Git and Github for version control, although I have some familiarity with Microsoft Azure. I have worked under agile development methodologies such as SCRUM and CANVAS.",
@@ -376,7 +376,7 @@
       "thirdLine": "Un apasionado por el desarrollo web front-end y backend",
       "fourthLine": "Estudiante de ingeniería de sistemas, 8º semestre",
       "linkCV": "https://dl.dropboxusercontent.com/scl/fi/bu34751zknshofmxxxcn7/CV-Juan-Cabana.pdf?rlkey=ahqmuiy2bivxubhi7q0qtl76x&dl",
-      "urlImageHome": "https://i.ibb.co/BBMTJDT/foto.jpg"
+      "urlImageHome": "/assets/img/perfil-image.jpg"
     },
     "about": {
       "about": "Desarrollador web front-end y backend, soy una persona alegre, amable, responsable, altruista, me gusta el trabajo en equipo, el compañerismo, siempre dispuesto y con ganas de aprender nuevas tecnologías y profundizar en las que ya conozco. Las principales tecnologías que manejo son: Javascript y sus versiones de ECMAScript (ES6+), Node.js y su sistema de gestión de paquetes y dependencias NPM, React.js, Redux, un poco de TypeScript, Tailwind CSS, MaterialUI, sólidos conocimientos en  Docker, fundamentos de bases de datos relacionales con MySQL, y no relacionales (MongoDB), Express.js, un poco de Nest.js, y he utilizado principalmente Git y Github para el control de versiones, aunque tengo cierta familiaridad con Microsoft Azure. He trabajado bajo metodologías ágiles de desarrollo como SCRUM y CANVAS.",
